@@ -1,0 +1,275 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|c:\\users\\wilko\\documents\\programming\\courses\\agile development team project\\shared repo\\afaocomputers\\skeleton\\adminsystem\\staffdataentry.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|solutionrelative:adminsystem\\staffdataentry.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|c:\\users\\wilko\\documents\\programming\\courses\\agile development team project\\shared repo\\afaocomputers\\skeleton\\adminsystem\\productsviewer.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|solutionrelative:adminsystem\\productsviewer.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|c:\\users\\wilko\\documents\\programming\\courses\\agile development team project\\shared repo\\afaocomputers\\skeleton\\adminsystem\\productslist.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|solutionrelative:adminsystem\\productslist.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|c:\\users\\wilko\\documents\\programming\\courses\\agile development team project\\shared repo\\afaocomputers\\skeleton\\adminsystem\\productsdataentry.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|solutionrelative:adminsystem\\productsdataentry.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|c:\\users\\wilko\\documents\\programming\\courses\\agile development team project\\shared repo\\afaocomputers\\skeleton\\adminsystem\\productsconfirmdelete.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|solutionrelative:adminsystem\\productsconfirmdelete.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|c:\\users\\wilko\\documents\\programming\\courses\\agile development team project\\shared repo\\afaocomputers\\skeleton\\adminsystem\\ordersviewer.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|solutionrelative:adminsystem\\ordersviewer.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|c:\\users\\wilko\\documents\\programming\\courses\\agile development team project\\shared repo\\afaocomputers\\skeleton\\adminsystem\\orderslist.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|solutionrelative:adminsystem\\orderslist.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|c:\\users\\wilko\\documents\\programming\\courses\\agile development team project\\shared repo\\afaocomputers\\skeleton\\adminsystem\\ordersdataentry.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|solutionrelative:adminsystem\\ordersdataentry.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|c:\\users\\wilko\\documents\\programming\\courses\\agile development team project\\shared repo\\afaocomputers\\skeleton\\adminsystem\\ordersconfirmdelete.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|solutionrelative:adminsystem\\ordersconfirmdelete.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|c:\\users\\wilko\\documents\\programming\\courses\\agile development team project\\shared repo\\afaocomputers\\skeleton\\adminsystem\\staffviewer.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|solutionrelative:adminsystem\\staffviewer.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|c:\\users\\wilko\\documents\\programming\\courses\\agile development team project\\shared repo\\afaocomputers\\skeleton\\adminsystem\\stafflist.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|solutionrelative:adminsystem\\stafflist.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|c:\\users\\wilko\\documents\\programming\\courses\\agile development team project\\shared repo\\afaocomputers\\skeleton\\adminsystem\\staffconfirmdelete.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|solutionrelative:adminsystem\\staffconfirmdelete.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|c:\\users\\wilko\\documents\\programming\\courses\\agile development team project\\shared repo\\afaocomputers\\skeleton\\adminsystem\\userviewer.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|solutionrelative:adminsystem\\userviewer.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|c:\\users\\wilko\\documents\\programming\\courses\\agile development team project\\shared repo\\afaocomputers\\skeleton\\adminsystem\\userlist.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|solutionrelative:adminsystem\\userlist.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|c:\\users\\wilko\\documents\\programming\\courses\\agile development team project\\shared repo\\afaocomputers\\skeleton\\adminsystem\\userdataentry.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|solutionrelative:adminsystem\\userdataentry.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductsViewer.aspx",
+              "DocumentMoniker": "C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem\\ProductsViewer.aspx",
+              "RelativeDocumentMoniker": "AdminSystem\\ProductsViewer.aspx",
+              "ToolTip": "C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem\\ProductsViewer.aspx",
+              "RelativeToolTip": "AdminSystem\\ProductsViewer.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-04-29T11:14:08.318Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductsList.aspx",
+              "DocumentMoniker": "C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem\\ProductsList.aspx",
+              "RelativeDocumentMoniker": "AdminSystem\\ProductsList.aspx",
+              "ToolTip": "C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem\\ProductsList.aspx",
+              "RelativeToolTip": "AdminSystem\\ProductsList.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-04-29T11:14:03.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductsDataEntry.aspx",
+              "DocumentMoniker": "C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem\\ProductsDataEntry.aspx",
+              "RelativeDocumentMoniker": "AdminSystem\\ProductsDataEntry.aspx",
+              "ToolTip": "C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem\\ProductsDataEntry.aspx",
+              "RelativeToolTip": "AdminSystem\\ProductsDataEntry.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-04-29T11:13:54.252Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductsConfirmDelete.aspx",
+              "DocumentMoniker": "C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem\\ProductsConfirmDelete.aspx",
+              "RelativeDocumentMoniker": "AdminSystem\\ProductsConfirmDelete.aspx",
+              "ToolTip": "C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem\\ProductsConfirmDelete.aspx",
+              "RelativeToolTip": "AdminSystem\\ProductsConfirmDelete.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-04-29T11:13:46.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OrdersViewer.aspx",
+              "DocumentMoniker": "C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem\\OrdersViewer.aspx",
+              "RelativeDocumentMoniker": "AdminSystem\\OrdersViewer.aspx",
+              "ToolTip": "C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem\\OrdersViewer.aspx",
+              "RelativeToolTip": "AdminSystem\\OrdersViewer.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-04-29T11:13:39.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "OrdersList.aspx",
+              "DocumentMoniker": "C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem\\OrdersList.aspx",
+              "RelativeDocumentMoniker": "AdminSystem\\OrdersList.aspx",
+              "ToolTip": "C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem\\OrdersList.aspx",
+              "RelativeToolTip": "AdminSystem\\OrdersList.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-04-29T11:13:33.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OrdersDataEntry.aspx",
+              "DocumentMoniker": "C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem\\OrdersDataEntry.aspx",
+              "RelativeDocumentMoniker": "AdminSystem\\OrdersDataEntry.aspx",
+              "ToolTip": "C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem\\OrdersDataEntry.aspx",
+              "RelativeToolTip": "AdminSystem\\OrdersDataEntry.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-04-29T11:13:26.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StaffDataEntry.aspx",
+              "DocumentMoniker": "C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem\\StaffDataEntry.aspx",
+              "RelativeDocumentMoniker": "AdminSystem\\StaffDataEntry.aspx",
+              "ToolTip": "C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem\\StaffDataEntry.aspx",
+              "RelativeToolTip": "AdminSystem\\StaffDataEntry.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-04-29T11:13:04.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OrdersConfirmDelete.aspx",
+              "DocumentMoniker": "C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem\\OrdersConfirmDelete.aspx",
+              "RelativeDocumentMoniker": "AdminSystem\\OrdersConfirmDelete.aspx",
+              "ToolTip": "C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem\\OrdersConfirmDelete.aspx",
+              "RelativeToolTip": "AdminSystem\\OrdersConfirmDelete.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-04-29T11:13:20.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "StaffViewer.aspx",
+              "DocumentMoniker": "C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem\\StaffViewer.aspx",
+              "RelativeDocumentMoniker": "AdminSystem\\StaffViewer.aspx",
+              "ToolTip": "C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem\\StaffViewer.aspx",
+              "RelativeToolTip": "AdminSystem\\StaffViewer.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-04-29T11:13:15.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "StaffList.aspx",
+              "DocumentMoniker": "C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem\\StaffList.aspx",
+              "RelativeDocumentMoniker": "AdminSystem\\StaffList.aspx",
+              "ToolTip": "C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem\\StaffList.aspx",
+              "RelativeToolTip": "AdminSystem\\StaffList.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-04-29T11:13:10.312Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "StaffConfirmDelete.aspx",
+              "DocumentMoniker": "C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem\\StaffConfirmDelete.aspx",
+              "RelativeDocumentMoniker": "AdminSystem\\StaffConfirmDelete.aspx",
+              "ToolTip": "C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem\\StaffConfirmDelete.aspx",
+              "RelativeToolTip": "AdminSystem\\StaffConfirmDelete.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-04-29T11:12:56.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UserViewer.aspx",
+              "DocumentMoniker": "C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem\\UserViewer.aspx",
+              "RelativeDocumentMoniker": "AdminSystem\\UserViewer.aspx",
+              "ToolTip": "C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem\\UserViewer.aspx",
+              "RelativeToolTip": "AdminSystem\\UserViewer.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-04-29T11:12:48.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UserList.aspx",
+              "DocumentMoniker": "C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem\\UserList.aspx",
+              "RelativeDocumentMoniker": "AdminSystem\\UserList.aspx",
+              "ToolTip": "C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem\\UserList.aspx",
+              "RelativeToolTip": "AdminSystem\\UserList.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-04-29T11:12:40.985Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UserDataEntry.aspx",
+              "DocumentMoniker": "C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem\\UserDataEntry.aspx",
+              "RelativeDocumentMoniker": "AdminSystem\\UserDataEntry.aspx",
+              "ToolTip": "C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem\\UserDataEntry.aspx",
+              "RelativeToolTip": "AdminSystem\\UserDataEntry.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-04-29T11:12:23.586Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
