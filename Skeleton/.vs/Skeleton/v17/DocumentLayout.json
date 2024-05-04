@@ -1,69 +1,73 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\wilko\\Documents\\AFAOComputers\\Skeleton\\",
+  "WorkspaceRootPath": "C:\\Users\\festu\\OneDrive\\Desktop\\Skeleton\\Skeleton\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7032FF54-9316-4FFF-9612-EBA55F9781BA}|Testing3\\TestingStaff.csproj|c:\\users\\wilko\\documents\\afaocomputers\\skeleton\\testing3\\tststaff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{53F17854-E215-4FE3-9860-C1E18BF9C6C7}|Testing2\\TestingProducts.csproj|c:\\users\\festu\\onedrive\\desktop\\skeleton\\skeleton\\testing2\\tstproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53F17854-E215-4FE3-9860-C1E18BF9C6C7}|Testing2\\TestingProducts.csproj|solutionrelative:testing2\\tstproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7032FF54-9316-4FFF-9612-EBA55F9781BA}|Testing3\\TestingStaff.csproj|c:\\users\\festu\\onedrive\\desktop\\skeleton\\skeleton\\testing3\\tststaff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7032FF54-9316-4FFF-9612-EBA55F9781BA}|Testing3\\TestingStaff.csproj|solutionrelative:testing3\\tststaff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\AFAOComputers\\Skeleton\\AdminSystem|c:\\users\\wilko\\documents\\afaocomputers\\skeleton\\adminsystem\\staffdataentry.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\AFAOComputers\\Skeleton\\AdminSystem|C:\\Users\\festu\\OneDrive\\Desktop\\Skeleton\\Skeleton\\adminsystem\\staffdataentry.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\AFAOComputers\\Skeleton\\AdminSystem|solutionrelative:adminsystem\\staffdataentry.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|C:\\Users\\wilko\\Documents\\AFAOComputers\\Skeleton\\adminsystem\\productsviewer.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|C:\\Users\\festu\\OneDrive\\Desktop\\Skeleton\\Skeleton\\adminsystem\\productsviewer.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|solutionrelative:adminsystem\\productsviewer.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|C:\\Users\\wilko\\Documents\\AFAOComputers\\Skeleton\\adminsystem\\productslist.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|C:\\Users\\festu\\OneDrive\\Desktop\\Skeleton\\Skeleton\\adminsystem\\productslist.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|solutionrelative:adminsystem\\productslist.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|C:\\Users\\wilko\\Documents\\AFAOComputers\\Skeleton\\adminsystem\\productsdataentry.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|C:\\Users\\festu\\OneDrive\\Desktop\\Skeleton\\Skeleton\\adminsystem\\productsdataentry.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|solutionrelative:adminsystem\\productsdataentry.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|C:\\Users\\wilko\\Documents\\AFAOComputers\\Skeleton\\adminsystem\\productsconfirmdelete.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|C:\\Users\\festu\\OneDrive\\Desktop\\Skeleton\\Skeleton\\adminsystem\\productsconfirmdelete.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|solutionrelative:adminsystem\\productsconfirmdelete.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|C:\\Users\\wilko\\Documents\\AFAOComputers\\Skeleton\\adminsystem\\ordersviewer.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|C:\\Users\\festu\\OneDrive\\Desktop\\Skeleton\\Skeleton\\adminsystem\\ordersviewer.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|solutionrelative:adminsystem\\ordersviewer.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|C:\\Users\\wilko\\Documents\\AFAOComputers\\Skeleton\\adminsystem\\orderslist.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|C:\\Users\\festu\\OneDrive\\Desktop\\Skeleton\\Skeleton\\adminsystem\\orderslist.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|solutionrelative:adminsystem\\orderslist.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|C:\\Users\\wilko\\Documents\\AFAOComputers\\Skeleton\\adminsystem\\ordersdataentry.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|C:\\Users\\festu\\OneDrive\\Desktop\\Skeleton\\Skeleton\\adminsystem\\ordersdataentry.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|solutionrelative:adminsystem\\ordersdataentry.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|C:\\Users\\wilko\\Documents\\AFAOComputers\\Skeleton\\adminsystem\\ordersconfirmdelete.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|C:\\Users\\festu\\OneDrive\\Desktop\\Skeleton\\Skeleton\\adminsystem\\ordersconfirmdelete.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|solutionrelative:adminsystem\\ordersconfirmdelete.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|C:\\Users\\wilko\\Documents\\AFAOComputers\\Skeleton\\adminsystem\\staffviewer.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|C:\\Users\\festu\\OneDrive\\Desktop\\Skeleton\\Skeleton\\adminsystem\\staffviewer.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|solutionrelative:adminsystem\\staffviewer.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|C:\\Users\\wilko\\Documents\\AFAOComputers\\Skeleton\\adminsystem\\stafflist.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|C:\\Users\\festu\\OneDrive\\Desktop\\Skeleton\\Skeleton\\adminsystem\\stafflist.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|solutionrelative:adminsystem\\stafflist.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|C:\\Users\\wilko\\Documents\\AFAOComputers\\Skeleton\\adminsystem\\staffconfirmdelete.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|C:\\Users\\festu\\OneDrive\\Desktop\\Skeleton\\Skeleton\\adminsystem\\staffconfirmdelete.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|solutionrelative:adminsystem\\staffconfirmdelete.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|C:\\Users\\wilko\\Documents\\AFAOComputers\\Skeleton\\adminsystem\\userviewer.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|C:\\Users\\festu\\OneDrive\\Desktop\\Skeleton\\Skeleton\\adminsystem\\userviewer.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|solutionrelative:adminsystem\\userviewer.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|C:\\Users\\wilko\\Documents\\AFAOComputers\\Skeleton\\adminsystem\\userlist.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|C:\\Users\\festu\\OneDrive\\Desktop\\Skeleton\\Skeleton\\adminsystem\\userlist.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|solutionrelative:adminsystem\\userlist.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|C:\\Users\\wilko\\Documents\\AFAOComputers\\Skeleton\\adminsystem\\userdataentry.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|C:\\Users\\festu\\OneDrive\\Desktop\\Skeleton\\Skeleton\\adminsystem\\userdataentry.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{157421EE-9D45-44EB-9290-6574686CB7FC}|C:\\Users\\wilko\\Documents\\Programming\\Courses\\Agile Development Team Project\\Shared Repo\\AFAOComputers\\Skeleton\\AdminSystem|solutionrelative:adminsystem\\userdataentry.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     }
   ],
@@ -74,15 +78,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "TstProduct.cs",
+              "DocumentMoniker": "C:\\Users\\festu\\OneDrive\\Desktop\\Skeleton\\Skeleton\\Testing2\\TstProduct.cs",
+              "RelativeDocumentMoniker": "Testing2\\TstProduct.cs",
+              "ToolTip": "C:\\Users\\festu\\OneDrive\\Desktop\\Skeleton\\Skeleton\\Testing2\\TstProduct.cs",
+              "RelativeToolTip": "Testing2\\TstProduct.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T23:32:37.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "tstStaff.cs",
-              "DocumentMoniker": "C:\\Users\\wilko\\Documents\\AFAOComputers\\Skeleton\\Testing3\\tstStaff.cs",
+              "DocumentMoniker": "C:\\Users\\festu\\OneDrive\\Desktop\\Skeleton\\Skeleton\\Testing3\\tstStaff.cs",
               "RelativeDocumentMoniker": "Testing3\\tstStaff.cs",
-              "ToolTip": "C:\\Users\\wilko\\Documents\\AFAOComputers\\Skeleton\\Testing3\\tstStaff.cs",
+              "ToolTip": "C:\\Users\\festu\\OneDrive\\Desktop\\Skeleton\\Skeleton\\Testing3\\tstStaff.cs",
               "RelativeToolTip": "Testing3\\tstStaff.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -91,11 +116,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ProductsViewer.aspx",
-              "DocumentMoniker": "C:\\Users\\wilko\\Documents\\AFAOComputers\\Skeleton\\AdminSystem\\ProductsViewer.aspx",
+              "DocumentMoniker": "C:\\Users\\festu\\OneDrive\\Desktop\\Skeleton\\Skeleton\\AdminSystem\\ProductsViewer.aspx",
               "RelativeDocumentMoniker": "AdminSystem\\ProductsViewer.aspx",
-              "ToolTip": "C:\\Users\\wilko\\Documents\\AFAOComputers\\Skeleton\\AdminSystem\\ProductsViewer.aspx",
+              "ToolTip": "C:\\Users\\festu\\OneDrive\\Desktop\\Skeleton\\Skeleton\\AdminSystem\\ProductsViewer.aspx",
               "RelativeToolTip": "AdminSystem\\ProductsViewer.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
@@ -103,11 +128,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ProductsList.aspx",
-              "DocumentMoniker": "C:\\Users\\wilko\\Documents\\AFAOComputers\\Skeleton\\AdminSystem\\ProductsList.aspx",
+              "DocumentMoniker": "C:\\Users\\festu\\OneDrive\\Desktop\\Skeleton\\Skeleton\\AdminSystem\\ProductsList.aspx",
               "RelativeDocumentMoniker": "AdminSystem\\ProductsList.aspx",
-              "ToolTip": "C:\\Users\\wilko\\Documents\\AFAOComputers\\Skeleton\\AdminSystem\\ProductsList.aspx",
+              "ToolTip": "C:\\Users\\festu\\OneDrive\\Desktop\\Skeleton\\Skeleton\\AdminSystem\\ProductsList.aspx",
               "RelativeToolTip": "AdminSystem\\ProductsList.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
@@ -115,11 +140,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "ProductsDataEntry.aspx",
-              "DocumentMoniker": "C:\\Users\\wilko\\Documents\\AFAOComputers\\Skeleton\\AdminSystem\\ProductsDataEntry.aspx",
+              "DocumentMoniker": "C:\\Users\\festu\\OneDrive\\Desktop\\Skeleton\\Skeleton\\AdminSystem\\ProductsDataEntry.aspx",
               "RelativeDocumentMoniker": "AdminSystem\\ProductsDataEntry.aspx",
-              "ToolTip": "C:\\Users\\wilko\\Documents\\AFAOComputers\\Skeleton\\AdminSystem\\ProductsDataEntry.aspx",
+              "ToolTip": "C:\\Users\\festu\\OneDrive\\Desktop\\Skeleton\\Skeleton\\AdminSystem\\ProductsDataEntry.aspx",
               "RelativeToolTip": "AdminSystem\\ProductsDataEntry.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
@@ -127,11 +152,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "ProductsConfirmDelete.aspx",
-              "DocumentMoniker": "C:\\Users\\wilko\\Documents\\AFAOComputers\\Skeleton\\AdminSystem\\ProductsConfirmDelete.aspx",
+              "DocumentMoniker": "C:\\Users\\festu\\OneDrive\\Desktop\\Skeleton\\Skeleton\\AdminSystem\\ProductsConfirmDelete.aspx",
               "RelativeDocumentMoniker": "AdminSystem\\ProductsConfirmDelete.aspx",
-              "ToolTip": "C:\\Users\\wilko\\Documents\\AFAOComputers\\Skeleton\\AdminSystem\\ProductsConfirmDelete.aspx",
+              "ToolTip": "C:\\Users\\festu\\OneDrive\\Desktop\\Skeleton\\Skeleton\\AdminSystem\\ProductsConfirmDelete.aspx",
               "RelativeToolTip": "AdminSystem\\ProductsConfirmDelete.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
@@ -139,11 +164,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "OrdersViewer.aspx",
-              "DocumentMoniker": "C:\\Users\\wilko\\Documents\\AFAOComputers\\Skeleton\\AdminSystem\\OrdersViewer.aspx",
+              "DocumentMoniker": "C:\\Users\\festu\\OneDrive\\Desktop\\Skeleton\\Skeleton\\AdminSystem\\OrdersViewer.aspx",
               "RelativeDocumentMoniker": "AdminSystem\\OrdersViewer.aspx",
-              "ToolTip": "C:\\Users\\wilko\\Documents\\AFAOComputers\\Skeleton\\AdminSystem\\OrdersViewer.aspx",
+              "ToolTip": "C:\\Users\\festu\\OneDrive\\Desktop\\Skeleton\\Skeleton\\AdminSystem\\OrdersViewer.aspx",
               "RelativeToolTip": "AdminSystem\\OrdersViewer.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
@@ -151,11 +176,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "OrdersList.aspx",
-              "DocumentMoniker": "C:\\Users\\wilko\\Documents\\AFAOComputers\\Skeleton\\AdminSystem\\OrdersList.aspx",
+              "DocumentMoniker": "C:\\Users\\festu\\OneDrive\\Desktop\\Skeleton\\Skeleton\\AdminSystem\\OrdersList.aspx",
               "RelativeDocumentMoniker": "AdminSystem\\OrdersList.aspx",
-              "ToolTip": "C:\\Users\\wilko\\Documents\\AFAOComputers\\Skeleton\\AdminSystem\\OrdersList.aspx",
+              "ToolTip": "C:\\Users\\festu\\OneDrive\\Desktop\\Skeleton\\Skeleton\\AdminSystem\\OrdersList.aspx",
               "RelativeToolTip": "AdminSystem\\OrdersList.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
@@ -163,11 +188,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "OrdersDataEntry.aspx",
-              "DocumentMoniker": "C:\\Users\\wilko\\Documents\\AFAOComputers\\Skeleton\\AdminSystem\\OrdersDataEntry.aspx",
+              "DocumentMoniker": "C:\\Users\\festu\\OneDrive\\Desktop\\Skeleton\\Skeleton\\AdminSystem\\OrdersDataEntry.aspx",
               "RelativeDocumentMoniker": "AdminSystem\\OrdersDataEntry.aspx",
-              "ToolTip": "C:\\Users\\wilko\\Documents\\AFAOComputers\\Skeleton\\AdminSystem\\OrdersDataEntry.aspx",
+              "ToolTip": "C:\\Users\\festu\\OneDrive\\Desktop\\Skeleton\\Skeleton\\AdminSystem\\OrdersDataEntry.aspx",
               "RelativeToolTip": "AdminSystem\\OrdersDataEntry.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
@@ -175,24 +200,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "StaffDataEntry.aspx",
-              "DocumentMoniker": "C:\\Users\\wilko\\Documents\\AFAOComputers\\Skeleton\\AdminSystem\\StaffDataEntry.aspx",
+              "DocumentMoniker": "C:\\Users\\festu\\OneDrive\\Desktop\\Skeleton\\Skeleton\\AdminSystem\\StaffDataEntry.aspx",
               "RelativeDocumentMoniker": "AdminSystem\\StaffDataEntry.aspx",
-              "ToolTip": "C:\\Users\\wilko\\Documents\\AFAOComputers\\Skeleton\\AdminSystem\\StaffDataEntry.aspx",
+              "ToolTip": "C:\\Users\\festu\\OneDrive\\Desktop\\Skeleton\\Skeleton\\AdminSystem\\StaffDataEntry.aspx",
               "RelativeToolTip": "AdminSystem\\StaffDataEntry.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-04-29T11:13:04.617Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-29T11:13:04.617Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "OrdersConfirmDelete.aspx",
-              "DocumentMoniker": "C:\\Users\\wilko\\Documents\\AFAOComputers\\Skeleton\\AdminSystem\\OrdersConfirmDelete.aspx",
+              "DocumentMoniker": "C:\\Users\\festu\\OneDrive\\Desktop\\Skeleton\\Skeleton\\AdminSystem\\OrdersConfirmDelete.aspx",
               "RelativeDocumentMoniker": "AdminSystem\\OrdersConfirmDelete.aspx",
-              "ToolTip": "C:\\Users\\wilko\\Documents\\AFAOComputers\\Skeleton\\AdminSystem\\OrdersConfirmDelete.aspx",
+              "ToolTip": "C:\\Users\\festu\\OneDrive\\Desktop\\Skeleton\\Skeleton\\AdminSystem\\OrdersConfirmDelete.aspx",
               "RelativeToolTip": "AdminSystem\\OrdersConfirmDelete.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
@@ -200,11 +224,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "StaffViewer.aspx",
-              "DocumentMoniker": "C:\\Users\\wilko\\Documents\\AFAOComputers\\Skeleton\\AdminSystem\\StaffViewer.aspx",
+              "DocumentMoniker": "C:\\Users\\festu\\OneDrive\\Desktop\\Skeleton\\Skeleton\\AdminSystem\\StaffViewer.aspx",
               "RelativeDocumentMoniker": "AdminSystem\\StaffViewer.aspx",
-              "ToolTip": "C:\\Users\\wilko\\Documents\\AFAOComputers\\Skeleton\\AdminSystem\\StaffViewer.aspx",
+              "ToolTip": "C:\\Users\\festu\\OneDrive\\Desktop\\Skeleton\\Skeleton\\AdminSystem\\StaffViewer.aspx",
               "RelativeToolTip": "AdminSystem\\StaffViewer.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
@@ -212,11 +236,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "StaffList.aspx",
-              "DocumentMoniker": "C:\\Users\\wilko\\Documents\\AFAOComputers\\Skeleton\\AdminSystem\\StaffList.aspx",
+              "DocumentMoniker": "C:\\Users\\festu\\OneDrive\\Desktop\\Skeleton\\Skeleton\\AdminSystem\\StaffList.aspx",
               "RelativeDocumentMoniker": "AdminSystem\\StaffList.aspx",
-              "ToolTip": "C:\\Users\\wilko\\Documents\\AFAOComputers\\Skeleton\\AdminSystem\\StaffList.aspx",
+              "ToolTip": "C:\\Users\\festu\\OneDrive\\Desktop\\Skeleton\\Skeleton\\AdminSystem\\StaffList.aspx",
               "RelativeToolTip": "AdminSystem\\StaffList.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
@@ -224,11 +248,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "StaffConfirmDelete.aspx",
-              "DocumentMoniker": "C:\\Users\\wilko\\Documents\\AFAOComputers\\Skeleton\\AdminSystem\\StaffConfirmDelete.aspx",
+              "DocumentMoniker": "C:\\Users\\festu\\OneDrive\\Desktop\\Skeleton\\Skeleton\\AdminSystem\\StaffConfirmDelete.aspx",
               "RelativeDocumentMoniker": "AdminSystem\\StaffConfirmDelete.aspx",
-              "ToolTip": "C:\\Users\\wilko\\Documents\\AFAOComputers\\Skeleton\\AdminSystem\\StaffConfirmDelete.aspx",
+              "ToolTip": "C:\\Users\\festu\\OneDrive\\Desktop\\Skeleton\\Skeleton\\AdminSystem\\StaffConfirmDelete.aspx",
               "RelativeToolTip": "AdminSystem\\StaffConfirmDelete.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
@@ -236,11 +260,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "UserViewer.aspx",
-              "DocumentMoniker": "C:\\Users\\wilko\\Documents\\AFAOComputers\\Skeleton\\AdminSystem\\UserViewer.aspx",
+              "DocumentMoniker": "C:\\Users\\festu\\OneDrive\\Desktop\\Skeleton\\Skeleton\\AdminSystem\\UserViewer.aspx",
               "RelativeDocumentMoniker": "AdminSystem\\UserViewer.aspx",
-              "ToolTip": "C:\\Users\\wilko\\Documents\\AFAOComputers\\Skeleton\\AdminSystem\\UserViewer.aspx",
+              "ToolTip": "C:\\Users\\festu\\OneDrive\\Desktop\\Skeleton\\Skeleton\\AdminSystem\\UserViewer.aspx",
               "RelativeToolTip": "AdminSystem\\UserViewer.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
@@ -248,11 +272,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "UserList.aspx",
-              "DocumentMoniker": "C:\\Users\\wilko\\Documents\\AFAOComputers\\Skeleton\\AdminSystem\\UserList.aspx",
+              "DocumentMoniker": "C:\\Users\\festu\\OneDrive\\Desktop\\Skeleton\\Skeleton\\AdminSystem\\UserList.aspx",
               "RelativeDocumentMoniker": "AdminSystem\\UserList.aspx",
-              "ToolTip": "C:\\Users\\wilko\\Documents\\AFAOComputers\\Skeleton\\AdminSystem\\UserList.aspx",
+              "ToolTip": "C:\\Users\\festu\\OneDrive\\Desktop\\Skeleton\\Skeleton\\AdminSystem\\UserList.aspx",
               "RelativeToolTip": "AdminSystem\\UserList.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
@@ -260,11 +284,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "UserDataEntry.aspx",
-              "DocumentMoniker": "C:\\Users\\wilko\\Documents\\AFAOComputers\\Skeleton\\AdminSystem\\UserDataEntry.aspx",
+              "DocumentMoniker": "C:\\Users\\festu\\OneDrive\\Desktop\\Skeleton\\Skeleton\\AdminSystem\\UserDataEntry.aspx",
               "RelativeDocumentMoniker": "AdminSystem\\UserDataEntry.aspx",
-              "ToolTip": "C:\\Users\\wilko\\Documents\\AFAOComputers\\Skeleton\\AdminSystem\\UserDataEntry.aspx",
+              "ToolTip": "C:\\Users\\festu\\OneDrive\\Desktop\\Skeleton\\Skeleton\\AdminSystem\\UserDataEntry.aspx",
               "RelativeToolTip": "AdminSystem\\UserDataEntry.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",

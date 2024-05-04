@@ -10,3 +10,9 @@ C:\Users\wilko\Documents\AFAOComputers\Skeleton\ClassLibrary\obj\Debug\ClassLibr
 C:\Users\wilko\Documents\AFAOComputers\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.csproj.CoreCompileInputs.cache
 C:\Users\wilko\Documents\AFAOComputers\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.dll
 C:\Users\wilko\Documents\AFAOComputers\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.pdb
+C:\Users\festu\OneDrive\Desktop\Skeleton\Skeleton\ClassLibrary\bin\Debug\ClassLibrary.dll
+C:\Users\festu\OneDrive\Desktop\Skeleton\Skeleton\ClassLibrary\bin\Debug\ClassLibrary.pdb
+C:\Users\festu\OneDrive\Desktop\Skeleton\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.csproj.AssemblyReference.cache
+C:\Users\festu\OneDrive\Desktop\Skeleton\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\festu\OneDrive\Desktop\Skeleton\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.dll
+C:\Users\festu\OneDrive\Desktop\Skeleton\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.pdb
