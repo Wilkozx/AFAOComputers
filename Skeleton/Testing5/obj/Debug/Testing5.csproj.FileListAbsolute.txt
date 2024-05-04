@@ -1,0 +1,14 @@
+C:\Users\festu\OneDrive\Desktop\Skeleton\Skeleton\Testing5\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\festu\OneDrive\Desktop\Skeleton\Skeleton\Testing5\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\festu\OneDrive\Desktop\Skeleton\Skeleton\Testing5\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\festu\OneDrive\Desktop\Skeleton\Skeleton\Testing5\bin\Debug\Testing5.dll
+C:\Users\festu\OneDrive\Desktop\Skeleton\Skeleton\Testing5\bin\Debug\Testing5.pdb
+C:\Users\festu\OneDrive\Desktop\Skeleton\Skeleton\Testing5\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\festu\OneDrive\Desktop\Skeleton\Skeleton\Testing5\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\festu\OneDrive\Desktop\Skeleton\Skeleton\Testing5\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\festu\OneDrive\Desktop\Skeleton\Skeleton\Testing5\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\festu\OneDrive\Desktop\Skeleton\Skeleton\Testing5\obj\Debug\Testing5.csproj.AssemblyReference.cache
+C:\Users\festu\OneDrive\Desktop\Skeleton\Skeleton\Testing5\obj\Debug\Testing5.csproj.CoreCompileInputs.cache
+C:\Users\festu\OneDrive\Desktop\Skeleton\Skeleton\Testing5\obj\Debug\Testing5.csproj.Up2Date
+C:\Users\festu\OneDrive\Desktop\Skeleton\Skeleton\Testing5\obj\Debug\Testing5.dll
+C:\Users\festu\OneDrive\Desktop\Skeleton\Skeleton\Testing5\obj\Debug\Testing5.pdb
