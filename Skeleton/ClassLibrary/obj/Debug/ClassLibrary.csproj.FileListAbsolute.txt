@@ -16,3 +16,9 @@ C:\Users\festu\OneDrive\Desktop\Skeleton\Skeleton\ClassLibrary\obj\Debug\ClassLi
 C:\Users\festu\OneDrive\Desktop\Skeleton\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.csproj.CoreCompileInputs.cache
 C:\Users\festu\OneDrive\Desktop\Skeleton\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.dll
 C:\Users\festu\OneDrive\Desktop\Skeleton\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.pdb
+C:\Users\dabou\OneDrive\Desktop\zzzz\Skeleton\ClassLibrary\bin\Debug\ClassLibrary.dll
+C:\Users\dabou\OneDrive\Desktop\zzzz\Skeleton\ClassLibrary\bin\Debug\ClassLibrary.pdb
+C:\Users\dabou\OneDrive\Desktop\zzzz\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.csproj.AssemblyReference.cache
+C:\Users\dabou\OneDrive\Desktop\zzzz\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\dabou\OneDrive\Desktop\zzzz\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.dll
+C:\Users\dabou\OneDrive\Desktop\zzzz\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.pdb

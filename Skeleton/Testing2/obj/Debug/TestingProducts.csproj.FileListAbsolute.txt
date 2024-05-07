@@ -12,3 +12,17 @@ C:\Users\festu\OneDrive\Desktop\Skeleton\Skeleton\Testing2\bin\Debug\Microsoft.V
 C:\Users\festu\OneDrive\Desktop\Skeleton\Skeleton\Testing2\obj\Debug\TestingP.EDDADD20.Up2Date
 C:\Users\festu\OneDrive\Desktop\Skeleton\Skeleton\Testing2\obj\Debug\Testing2.dll
 C:\Users\festu\OneDrive\Desktop\Skeleton\Skeleton\Testing2\obj\Debug\Testing2.pdb
+C:\Users\dabou\OneDrive\Desktop\zzzz\Skeleton\Testing2\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\dabou\OneDrive\Desktop\zzzz\Skeleton\Testing2\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\dabou\OneDrive\Desktop\zzzz\Skeleton\Testing2\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\dabou\OneDrive\Desktop\zzzz\Skeleton\Testing2\bin\Debug\Testing2.dll
+C:\Users\dabou\OneDrive\Desktop\zzzz\Skeleton\Testing2\bin\Debug\Testing2.pdb
+C:\Users\dabou\OneDrive\Desktop\zzzz\Skeleton\Testing2\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\dabou\OneDrive\Desktop\zzzz\Skeleton\Testing2\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\dabou\OneDrive\Desktop\zzzz\Skeleton\Testing2\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\dabou\OneDrive\Desktop\zzzz\Skeleton\Testing2\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\dabou\OneDrive\Desktop\zzzz\Skeleton\Testing2\obj\Debug\TestingProducts.csproj.AssemblyReference.cache
+C:\Users\dabou\OneDrive\Desktop\zzzz\Skeleton\Testing2\obj\Debug\TestingProducts.csproj.CoreCompileInputs.cache
+C:\Users\dabou\OneDrive\Desktop\zzzz\Skeleton\Testing2\obj\Debug\TestingP.EDDADD20.Up2Date
+C:\Users\dabou\OneDrive\Desktop\zzzz\Skeleton\Testing2\obj\Debug\Testing2.dll
+C:\Users\dabou\OneDrive\Desktop\zzzz\Skeleton\Testing2\obj\Debug\Testing2.pdb
