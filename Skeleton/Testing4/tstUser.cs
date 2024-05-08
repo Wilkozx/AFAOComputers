@@ -18,52 +18,79 @@ namespace Testing4
 
         public void ActiveUserOK()
         {
+            //create an instance of the we want to create
             clsUser AUser = new clsUser();
+            //create some test data to assign to the property
             Boolean TestData = true;
+            //assign the data to the property
             AUser.Active = TestData;
+            //test to see that the two values are the same
             Assert.AreEqual(AUser.Active, TestData);
         }
         public void DateofBirthPropertyOK() 
         {
-            clsUser AUser = new clsUser();  
-
+            //create an instance of the we want to create
+            clsUser AUser = new clsUser();
+            //create some test data to assign to the property
             DateTime TestData = DateTime.Now.Date;
+            //assign the data to the property
             AUser.DateofBirth = TestData;
+            //test to see that the two values are the same
             Assert.AreEqual(AUser.DateofBirth, TestData);
         }
         public void UserIdPropertyOK() 
         {
+            //create an instance of the we want to create
             clsUser AUser = new clsUser();
+            //create some test data to assign to the property
             int TestData = 1;
+            //assign the data to the property
             AUser.UserId = TestData;
+            //test to see that the two values are the same
             Assert.AreEqual(AUser.UserId, TestData);
         }
         public void UserNamePropertyOK() 
         {
+            //create an instance of the we want to create
             clsUser AUser = new clsUser();
+            //create some test data to assign to the property
             string TestData = "Omar";
+            //assign the data to the property
             AUser.UserName = TestData;
+            //test to see that the two values are the same
             Assert.AreEqual(AUser.UserName, TestData);
         }
         public void EmailPropertyOK()
         {
+            //create an instance of the we want to create
             clsUser AUser = new clsUser();
+            //create some test data to assign to the property
             string TestData = "Omar";
+            //assign the data to the property
             AUser.Email = TestData;
+            //test to see that the two values are the same
             Assert.AreEqual(AUser.Email, TestData);
         }
         public void PasswordPropertyOK()
         {
+            //create an instance of the we want to create
             clsUser AUser = new clsUser();
+            //create some test data to assign to the property
             string TestData = "12345678aa";
+            //assign the data to the property
             AUser.Password = TestData;
+            //test to see that the two values are the same
             Assert.AreEqual(AUser.Password, TestData);
         }
         public void PhoneNumberPropertyOK()
         {
+            //create an instance of the we want to create
             clsUser AUser = new clsUser();
+            //create some test data to assign to the property
             int TestData = 12345678;
+            //assign the data to the property
             AUser.PhoneNumber = TestData;
+            //test to see that the two values are the same
             Assert.AreEqual(AUser.PhoneNumber, TestData);
         }
 
