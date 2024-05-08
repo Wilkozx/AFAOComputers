@@ -22,14 +22,14 @@ namespace Testing3
             // Creates an instance of the Class clsStaff.
             clsStaff AStaff = new clsStaff();
             // Creates some test data to assign to the Property
-            Boolean TestData = true;
+            Int32 TestData = 3; 
             // Assign the data to the property.
-            AStaff.Active = TestData;
+            AStaff.StaffId = TestData;
             // Test to see that the two values are the same.
-            Assert.AreEqual(AStaff.Active, TestData);
+            Assert.AreEqual(AStaff.StaffId, TestData);
         }
 
-
+        [TestMethod]
         public void FirstNameOK()
         { 
             // Creates an instance of the Class clsStaff.
@@ -42,6 +42,7 @@ namespace Testing3
             Assert.AreEqual(AStaff.FirstName, TestData);
         }
 
+        [TestMethod]
         public void LastNameOK()
         {
             // Creates an instance of the Class clsStaff.
@@ -54,6 +55,7 @@ namespace Testing3
             Assert.AreEqual(AStaff.LastName, TestData);
         }
 
+        [TestMethod]
         public void PayeeDetailsOK()
         {
             // Creates an instance of the Class clsStaff.
@@ -66,6 +68,7 @@ namespace Testing3
             Assert.AreEqual(AStaff.PayeeDetails, TestData);
         }
 
+        [TestMethod]
         public void HasPermsOK()
         {
             // Creates an instance of the Class clsStaff.
@@ -78,6 +81,7 @@ namespace Testing3
             Assert.AreEqual(AStaff.HasPerms, TestData);
         }
 
+        [TestMethod]
         public void JoinDateOK()
         {
             // Creates an instance of the Class clsStaff.
@@ -90,6 +94,7 @@ namespace Testing3
             Assert.AreEqual(AStaff.JoinDate, TestData);
         }
 
+        [TestMethod]
         public void ContractExpiryOk()
         {
             // Creates an instance of the Class clsStaff.
@@ -99,7 +104,7 @@ namespace Testing3
             // Assign the data to the property.
             AStaff.ContractExpiary = TestData;
             // Test to see that the two values are the same.
-            Assert.AreEqual(AStaff.JoinDate, TestData);
+            Assert.AreEqual(AStaff.ContractExpiary, TestData);
         }
 
     }
