@@ -62,3 +62,7 @@ H:\Week 3 Agile\Skeleton\Testing3\obj\Debug\TestingStaff.csproj.CoreCompileInput
 H:\Week 3 Agile\Skeleton\Testing3\obj\Debug\TestingS.3624E073.Up2Date
 H:\Week 3 Agile\Skeleton\Testing3\obj\Debug\Testing3.dll
 H:\Week 3 Agile\Skeleton\Testing3\obj\Debug\Testing3.pdb
+H:\Week3Pt2Agile\Skeleton\Testing3\obj\Debug\TestingStaff.csproj.AssemblyReference.cache
+H:\Week3Pt2Agile\Skeleton\Testing3\obj\Debug\TestingStaff.csproj.CoreCompileInputs.cache
+H:\Week3Pt2Agile\Skeleton\Testing3\obj\Debug\Testing3.dll
+H:\Week3Pt2Agile\Skeleton\Testing3\obj\Debug\Testing3.pdb
