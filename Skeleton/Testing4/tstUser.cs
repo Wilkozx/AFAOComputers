@@ -15,7 +15,7 @@ namespace Testing4
             //test to see that it exists
             Assert.IsNotNull(AUser);
         }
-
+        [TestMethod]
         public void ActiveUserOK()
         {
             //create an instance of the we want to create
@@ -27,6 +27,7 @@ namespace Testing4
             //test to see that the two values are the same
             Assert.AreEqual(AUser.Active, TestData);
         }
+        [TestMethod]
         public void DateofBirthPropertyOK() 
         {
             //create an instance of the we want to create
@@ -38,6 +39,7 @@ namespace Testing4
             //test to see that the two values are the same
             Assert.AreEqual(AUser.DateofBirth, TestData);
         }
+        [TestMethod]
         public void UserIdPropertyOK() 
         {
             //create an instance of the we want to create
@@ -49,6 +51,7 @@ namespace Testing4
             //test to see that the two values are the same
             Assert.AreEqual(AUser.UserId, TestData);
         }
+        [TestMethod]
         public void UserNamePropertyOK() 
         {
             //create an instance of the we want to create
@@ -60,6 +63,7 @@ namespace Testing4
             //test to see that the two values are the same
             Assert.AreEqual(AUser.UserName, TestData);
         }
+        [TestMethod]
         public void EmailPropertyOK()
         {
             //create an instance of the we want to create
@@ -71,6 +75,7 @@ namespace Testing4
             //test to see that the two values are the same
             Assert.AreEqual(AUser.Email, TestData);
         }
+        [TestMethod]
         public void PasswordPropertyOK()
         {
             //create an instance of the we want to create
@@ -82,6 +87,7 @@ namespace Testing4
             //test to see that the two values are the same
             Assert.AreEqual(AUser.Password, TestData);
         }
+        [TestMethod]
         public void PhoneNumberPropertyOK()
         {
             //create an instance of the we want to create
