@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Skeleton",
+    "\\Skeleton\\AdminSystem"
   ],
-  "SelectedNode": "\\Skeleton.sln (Skeleton\\Skeleton.sln)",
+  "SelectedNode": "\\Skeleton\\Skeleton.sln",
   "PreviewInSolutionExplorer": false
 }
