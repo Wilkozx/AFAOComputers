@@ -19,6 +19,5 @@ public partial class _1Viewer : System.Web.UI.Page
         Response.Write(" PayeeDetails: " + AStaff.PayeeDetails);
         Response.Write(" Join Date: " + AStaff.JoinDate);
         Response.Write(" Contract Expiry: " + AStaff.ContractExpiary);
-
     }
 }

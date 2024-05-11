@@ -17,7 +17,7 @@ namespace Testing3
         }
 
         [TestMethod]
-        public void ActivePropertyOK()
+        public void StaffIdOK()
         {
             // Creates an instance of the Class clsStaff.
             clsStaff AStaff = new clsStaff();
@@ -106,6 +106,116 @@ namespace Testing3
             // Test to see that the two values are the same.
             Assert.AreEqual(AStaff.ContractExpiary, TestData);
         }
+
+        [TestMethod]
+        public void StaffIDFound()
+        {
+            clsStaff AStaff = new clsStaff();
+            Boolean Found = false;
+            Boolean Ok = true;
+            Int32 StaffID = 3;
+            Found = AStaff.Find(StaffID);
+            if (AStaff.StaffId != 3)
+            {
+                Ok = false;
+            }
+            Assert.IsTrue(Ok);
+        }
+
+        [TestMethod]
+        public void FirstNameFound()
+        {
+            clsStaff AStaff = new clsStaff();
+            Boolean Found = false;
+            Boolean Ok = true;
+            String Firstname = "Steven";
+            Int32 StaffID = 3;
+            Found = AStaff.Find(StaffID);
+            if (AStaff.FirstName != Firstname)
+            {
+                Ok = false;
+            }
+            Assert.IsTrue(Ok);
+        }
+
+        [TestMethod]
+        public void LastNameFound()
+        {
+            clsStaff AStaff = new clsStaff();
+            Boolean Found = false;
+            Boolean Ok = true;
+            String Lastname = "Williams";
+            Int32 StaffID = 3;
+            Found = AStaff.Find(StaffID);
+            if (AStaff.LastName != Lastname)
+            {
+                Ok = false;
+            }
+            Assert.IsTrue(Ok);
+        }
+
+        [TestMethod]
+        public void PayeeDetailsFound()
+        {
+            clsStaff AStaff = new clsStaff();
+            Boolean Found = false;
+            Boolean Ok = true;
+            String PayeeDetails = "testhash";
+            Int32 StaffID = 3;
+            Found = AStaff.Find(StaffID);
+            if (AStaff.PayeeDetails != PayeeDetails)
+            {
+                Ok = false;
+            }
+            Assert.IsTrue(Ok);
+        }
+
+        [TestMethod]
+        public void HasPermsFound()
+        {
+            clsStaff AStaff = new clsStaff();
+            Boolean Found = false;
+            Boolean Ok = true;
+            Boolean Perms = false;
+            Int32 StaffID = 3;
+            Found = AStaff.Find(StaffID);
+            if (AStaff.HasPerms != Perms)
+            {
+                Ok = false;
+            }
+            Assert.IsTrue(Ok);
+        }
+
+        [TestMethod]
+        public void JoinDateFound()
+        {
+            clsStaff AStaff = new clsStaff();
+            Boolean Found = false;
+            Boolean OK = true;
+            Int32 StaffID = 3;
+            Found = AStaff.Find(StaffID);
+            if (AStaff.JoinDate != Convert.ToDateTime("08/05/2024"))
+            {
+                OK = false;
+            }
+            Assert.IsTrue(OK);
+        }
+
+        [TestMethod]
+        public void ContractExpiryFound()
+        {
+            clsStaff AStaff = new clsStaff();
+            Boolean Found = false;
+            Boolean OK = true;
+            Int32 StaffID = 3;
+            Found = AStaff.Find(StaffID);
+            if (AStaff.ContractExpiary != Convert.ToDateTime("09/05/2024"))
+            {
+                OK = false;
+            }
+            Assert.IsTrue(OK);
+        }
+
 
     }
 }
