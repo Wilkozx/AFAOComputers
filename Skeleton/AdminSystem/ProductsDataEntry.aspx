@@ -24,20 +24,21 @@
             <asp:Button ID="BtnAdd" runat="server" Height="29px" OnClick="BtnAdd_Click" style="margin-left: 53px; margin-top: 334px;" Text="Add Product" Width="99px" />
             <asp:Button ID="BtnCancel" runat="server" Height="29px" style="margin-left: 37px" Text="Cancel" Width="99px" />
             <asp:TextBox ID="txtSKU" runat="server" height="20px" style="z-index: 1; left: 134px; top: 216px; position: absolute; width: 160px"></asp:TextBox>
+            <asp:Button ID="BtnFind" runat="server" OnClick="BtnFind_Click" style="z-index: 1; left: 424px; top: 48px; position: absolute; width: 84px; height: 36px" Text="Find" />
         </p>
-        <asp:Label ID="lblProductId" runat="server" style="z-index: 1; left: 6px; top: 51px; position: absolute; bottom: 607px" Text="Product ID" height="18px" width="99px"></asp:Label>
         <p style="height: 38px">
             <asp:Label ID="lblPrice" runat="server" style="z-index: 1; left: 8px; top: 135px; position: absolute; width: 99px; height: 18px" Text="Price"></asp:Label>
             <asp:TextBox ID="TxtPrice" runat="server" style="z-index: 1; left: 134px; top: 135px; position: absolute; width: 160px; height: 20px; bottom: 604px"></asp:TextBox>
         <asp:Label ID="lblName" runat="server" style="z-index: 1; left: 8px; top: 176px; position: absolute; height: 18px; width: 99px" Text="Product Name"></asp:Label>
         <asp:TextBox ID="txtName" runat="server" style="z-index: 1; left: 134px; top: 180px; position: absolute; width: 160px; height: 20px"></asp:TextBox>
         </p>
+        <asp:Label ID="lblProductId" runat="server" style="z-index: 1; left: 6px; top: 51px; position: absolute; bottom: 607px" Text="Product ID" height="18px" width="99px"></asp:Label>
         <p style="margin-top: 13px">
             &nbsp;</p>
         <p>
             &nbsp;</p>
         <p>
-            <asp:Label ID="lblSKU" runat="server" style="z-index: 1; left: 8px; top: 211px; position: absolute; width: 99px; " Text="SKU" height="18px"></asp:Label>
+            <asp:Label ID="lblSKU" runat="server" style="z-index: 1; left: 8px; top: 217px; position: absolute; width: 99px; height: 22px;" Text="SKU"></asp:Label>
             <asp:Label ID="lblDateAdded" runat="server" style="z-index: 1; left: 10px; top: 250px; position: absolute" Text="Date Added" width="99px"></asp:Label>
             <asp:TextBox ID="TxtDateAdded" runat="server" style="z-index: 1; left: 134px; top: 250px; position: absolute; width: 160px" height="20px"></asp:TextBox>
             <asp:CheckBox ID="chkVisible" runat="server" style="z-index: 1; left: 129px; top: 292px; position: absolute; width: 160px; height: 20px" Text="Visible" />

@@ -40,3 +40,9 @@ H:\Desktop\Week3\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.csproj.AssemblyRef
 H:\Desktop\Week3\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.csproj.CoreCompileInputs.cache
 H:\Desktop\Week3\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.dll
 H:\Desktop\Week3\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.pdb
+H:\Desktop\redoingClone\Skeleton\ClassLibrary\bin\Debug\ClassLibrary.dll
+H:\Desktop\redoingClone\Skeleton\ClassLibrary\bin\Debug\ClassLibrary.pdb
+H:\Desktop\redoingClone\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.csproj.AssemblyReference.cache
+H:\Desktop\redoingClone\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.csproj.CoreCompileInputs.cache
+H:\Desktop\redoingClone\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.dll
+H:\Desktop\redoingClone\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.pdb

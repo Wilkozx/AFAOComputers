@@ -93,19 +93,33 @@ namespace ClassLibrary
             }
         }
 
-        public bool Find(int productId)
+        //*******Find Method***********//
+        public bool Find(int ProductId)
         {
-            //set the private data members to the test data value
-            mProductId = 2;
-            mDateAdded = Convert.ToDateTime("23/12/2022");
-            mName = "KeyBoard";
-            mDescription = "this is a gaming keyboard";
-            mPrice = "20.37";
-            mSKU = 111111;
-            mVisibility = true;
-
-            //always return true
-            return true;
+            //Create an instance of the dataConnection
+            clsDataConnection DB = new clsDataConnection();
+            //adding the parameter for the Product ID to search for
+            DB.AddParameter("@ProductId", ProductId);
+            //Executing the store procedure
+            DB.Execute("sproc_tblProducts_filterbyProductId");
+            //if one record is found there will be either one or zero;
+            if (DB.Count == 1)
+            {
+                mProductId = Convert.ToInt32(DB.DataTable.Rows[0]["ProductId"]);
+                mName = Convert.ToString(DB.DataTable.Rows[0]["Name"]);
+                mDescription = Convert.ToString(DB.DataTable.Rows[0]["Description"]);
+                mSKU = Convert.ToInt32(DB.DataTable.Rows[0]["SKU"]);
+                mPrice = Convert.ToString(DB.DataTable.Rows[0]["Price"]);
+                mDateAdded = Convert.ToDateTime(DB.DataTable.Rows[0]["Date_Added"]);
+                mVisibility = Convert.ToBoolean(DB.DataTable.Rows[0]["IsVisible"]);
+                //Returning that everything is Working
+                return true;
+            }
+            else
+            {
+                //showing that there is a problem
+                return false;
+            }
         }
 
     }
