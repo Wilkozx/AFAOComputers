@@ -26,7 +26,7 @@ namespace Testing2
         }
 
         [TestMethod]
-        public void DatePostedOk()
+        public void DateaDDEDOk()
         {
             clsProduct AProduct = new clsProduct();
 
@@ -39,7 +39,7 @@ namespace Testing2
         public void isProductIdok()
         {
             clsProduct AProduct = new clsProduct();
-            int TestData = 2;
+            int TestData = 3;
             AProduct.ProductId = TestData;
             Assert.AreEqual(AProduct.ProductId, TestData);
         }
@@ -85,7 +85,7 @@ namespace Testing2
             //Creating a Boolean variable to store the results of the validation
             Boolean Found = false;
             //Create some test data to use with the method
-            Int32 ProductId = 2;
+            Int32 ProductId = 7;
             //invoke the method
             Found = AProduct.Find(ProductId);
             //test to see if the results is true
@@ -101,11 +101,11 @@ namespace Testing2
             //Creating a boolean variable to record if the data is OK
             Boolean OK = true;
             //creating a test to use with the method
-            Int32 ProductId = 2;
+            Int32 ProductId = 7;
             //invokinhg the method;
             Found = AProduct.Find(ProductId);
             //check the Address id
-            if (AProduct.ProductId != 2)
+            if (AProduct.ProductId != 7)
             {
                 OK = false;
             }
@@ -119,9 +119,9 @@ namespace Testing2
             clsProduct AProduct = new clsProduct();
             Boolean Found = false;
             Boolean OK = true;
-            Int32 ProductId = 2;
+            Int32 ProductId = 7;
             Found = AProduct.Find(ProductId);
-            if (AProduct.DateAdded != Convert.ToDateTime("23/12/2022"))
+            if (AProduct.DateAdded != Convert.ToDateTime("12/05/2024"))
             {
                 OK = false;
             }
@@ -133,9 +133,9 @@ namespace Testing2
             clsProduct AProduct = new clsProduct();
             Boolean Found = false;
             Boolean OK = true;
-            Int32 ProductId = 2;
+            Int32 ProductId = 7;
             Found = AProduct.Find(ProductId);
-            if (AProduct.Name != "KeyBoard")
+            if (AProduct.Name != "Laptop")
             {
                 OK = false;
             }
@@ -147,9 +147,9 @@ namespace Testing2
             clsProduct AProduct = new clsProduct();
             Boolean Found = false;
             Boolean OK = true;
-            Int32 ProductId = 2;
+            Int32 ProductId = 7;
             Found = AProduct.Find(ProductId);
-            if (AProduct.Description != "this is a gaming keyboard")
+            if (AProduct.Description != "Acer Laptop")
             {
                 OK = false;
             }
@@ -161,9 +161,9 @@ namespace Testing2
             clsProduct AProduct = new clsProduct();
             Boolean Found = false;
             Boolean OK = true;
-            Int32 ProductId = 2;
+            Int32 ProductId = 7;
             Found = AProduct.Find(ProductId);
-            if (AProduct.Price != "20.37")
+            if (AProduct.Price != "200.0000")
             {
                 OK = false;
             }
@@ -175,9 +175,9 @@ namespace Testing2
             clsProduct AProduct = new clsProduct();
             Boolean Found = false;
             Boolean OK = true;
-            Int32 ProductId = 2;
+            Int32 ProductId = 7;
             Found = AProduct.Find(ProductId);
-            if (AProduct.SKU != 111111)
+            if (AProduct.SKU != 1234)
             {
                 OK = false;
             }
@@ -189,7 +189,7 @@ namespace Testing2
             clsProduct AProduct = new clsProduct();
             Boolean Found = false;
             Boolean OK = true;
-            Int32 ProductId = 2;
+            Int32 ProductId = 7;
             Found = AProduct.Find(ProductId);
             if (AProduct.Visible != true)
             {

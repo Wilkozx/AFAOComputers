@@ -38,4 +38,31 @@ public partial class _1_DataEntry : System.Web.UI.Page
         //navigate to the view page
         Response.Redirect("ProductsViewer.aspx");
     }
+
+    protected void BtnFind_Click(object sender, EventArgs e)
+    {
+        //creating an instance of address class
+        clsProduct AProduct = new clsProduct();
+        //creating variable to store the primary key
+        Int32 ProductId;
+        //creating variable to store the result of the find operation
+        Boolean Found = false;
+        //get the primary key entered by the user
+        ProductId = Convert.ToInt32(TxtProductId.Text);
+        //find the record
+        Found = AProduct.Find(ProductId);
+        //I found
+        if(Found ==true)
+
+        { //Displaying the values of the properties in the form
+            TxtProductId.Text = AProduct.ProductId.ToString();
+            txtName.Text = AProduct.Name;
+            txtDescription.Text = AProduct.Description;
+            TxtPrice.Text = AProduct.Price.ToString();
+            TxtDateAdded.Text= AProduct.DateAdded.ToString();
+            txtSKU.Text = AProduct.SKU.ToString();
+            chkVisible.Checked = AProduct.Visible;
+          
+        }
+    }
 }
