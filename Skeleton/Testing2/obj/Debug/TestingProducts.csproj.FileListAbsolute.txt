@@ -102,3 +102,19 @@ H:\Week 3 Pt3Agile\Skeleton\Testing2\obj\Debug\TestingProducts.csproj.CoreCompil
 H:\Week 3 Pt3Agile\Skeleton\Testing2\obj\Debug\TestingP.EDDADD20.Up2Date
 H:\Week 3 Pt3Agile\Skeleton\Testing2\obj\Debug\Testing2.dll
 H:\Week 3 Pt3Agile\Skeleton\Testing2\obj\Debug\Testing2.pdb
+H:\Desktop\week3Agile\Skeleton\Testing2\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+H:\Desktop\week3Agile\Skeleton\Testing2\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+H:\Desktop\week3Agile\Skeleton\Testing2\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+H:\Desktop\week3Agile\Skeleton\Testing2\bin\Debug\Testing2.dll
+H:\Desktop\week3Agile\Skeleton\Testing2\bin\Debug\Testing2.pdb
+H:\Desktop\week3Agile\Skeleton\Testing2\bin\Debug\ClassLibrary.dll
+H:\Desktop\week3Agile\Skeleton\Testing2\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+H:\Desktop\week3Agile\Skeleton\Testing2\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+H:\Desktop\week3Agile\Skeleton\Testing2\bin\Debug\ClassLibrary.pdb
+H:\Desktop\week3Agile\Skeleton\Testing2\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+H:\Desktop\week3Agile\Skeleton\Testing2\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+H:\Desktop\week3Agile\Skeleton\Testing2\obj\Debug\TestingProducts.csproj.AssemblyReference.cache
+H:\Desktop\week3Agile\Skeleton\Testing2\obj\Debug\TestingProducts.csproj.CoreCompileInputs.cache
+H:\Desktop\week3Agile\Skeleton\Testing2\obj\Debug\TestingP.EDDADD20.Up2Date
+H:\Desktop\week3Agile\Skeleton\Testing2\obj\Debug\Testing2.dll
+H:\Desktop\week3Agile\Skeleton\Testing2\obj\Debug\Testing2.pdb

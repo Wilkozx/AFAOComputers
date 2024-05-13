@@ -122,5 +122,9 @@ namespace ClassLibrary
             }
         }
 
+        public string Valid(String name, String description, String sKU, String Date_Added, String Price)
+        {
+            return "";
+        }
     }
 }

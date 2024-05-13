@@ -8,6 +8,11 @@ namespace Testing2
     [TestClass]
     public class TstProduct
     {
+        string Name = "Laptop";
+        string Description = "Acer Laptop";
+        string SKU = "1234";
+        String Price = "200.0000";
+        string Date_Added = "12/05/2024";
         [TestMethod]
         public void TestMethod1()
         {
@@ -198,7 +203,18 @@ namespace Testing2
             Assert.IsTrue(OK);
         }
 
+        [TestMethod]
 
+        public void ValidMethodOkay()
+        {
+            //creating an instance of the class i want to create
+            clsProduct AProduct = new clsProduct();
+            //string variable to store any error messages 
+            String Error = "";
+            //invoke the method
+            Error = AProduct.Valid(Name, Description, SKU,Date_Added, Price);
+            Assert.AreEqual(Error, "");
+        }
     }
 
 }

@@ -52,3 +52,9 @@ H:\Week 3 Pt3Agile\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.csproj.AssemblyR
 H:\Week 3 Pt3Agile\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.csproj.CoreCompileInputs.cache
 H:\Week 3 Pt3Agile\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.dll
 H:\Week 3 Pt3Agile\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.pdb
+H:\Desktop\week3Agile\Skeleton\ClassLibrary\bin\Debug\ClassLibrary.dll
+H:\Desktop\week3Agile\Skeleton\ClassLibrary\bin\Debug\ClassLibrary.pdb
+H:\Desktop\week3Agile\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.csproj.AssemblyReference.cache
+H:\Desktop\week3Agile\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.csproj.CoreCompileInputs.cache
+H:\Desktop\week3Agile\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.dll
+H:\Desktop\week3Agile\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.pdb
