@@ -98,14 +98,32 @@ namespace ClassLibrary
 
         public bool Find(int staffID)
         {
-            mStaffId = 3;
-            mFirstName = "Steven";
-            mLastName = "Williams";
-            mPayeeDetails = "testhash";
-            mHasPerms = false;
-            mJoinDate = Convert.ToDateTime("08/05/2024");
-            mContractExpiry = Convert.ToDateTime("09/05/2024");
-            return true;
+            // Create an instance of the data base connection
+            clsDataConnection DB = new clsDataConnection();
+            // Add the parameter for the staff id to search for
+            DB.AddParameter("@StaffId", staffID);
+            // Execute our stored procedure
+            DB.Execute("sproc_tblStaff_FilterByStaffId");
+            // Check if a record exists
+            if (DB.Count == 1)
+            {
+                // Copy the data from the database to our private data members
+                mStaffId = Convert.ToInt32(DB.DataTable.Rows[0]["Staff_Id"]);
+                mFirstName = Convert.ToString(DB.DataTable.Rows[0]["Firstname"]);
+                mLastName = Convert.ToString(DB.DataTable.Rows[0]["Lastname"]);
+                mPayeeDetails = Convert.ToString(DB.DataTable.Rows[0]["PayeeDetails"]);
+                mHasPerms = Convert.ToBoolean(DB.DataTable.Rows[0]["HasPerms"]);
+                mJoinDate = Convert.ToDateTime(DB.DataTable.Rows[0]["Join_Date"]);
+                mContractExpiry = Convert.ToDateTime(DB.DataTable.Rows[0]["Contract_Expiry_Date"]);
+                // Return that everything worked ok!
+                return true;
+            }
+            // If no record is found then...
+            else
+            {
+                // Return false indicating that there is a problem
+                return false;
+            }
         }
     }
 }

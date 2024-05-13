@@ -113,9 +113,9 @@ namespace Testing3
             clsStaff AStaff = new clsStaff();
             Boolean Found = false;
             Boolean Ok = true;
-            Int32 StaffID = 3;
+            Int32 StaffID = 1;
             Found = AStaff.Find(StaffID);
-            if (AStaff.StaffId != 3)
+            if (AStaff.StaffId != 1)
             {
                 Ok = false;
             }
@@ -128,8 +128,8 @@ namespace Testing3
             clsStaff AStaff = new clsStaff();
             Boolean Found = false;
             Boolean Ok = true;
-            String Firstname = "Steven";
-            Int32 StaffID = 3;
+            String Firstname = "Alex";
+            Int32 StaffID = 1;
             Found = AStaff.Find(StaffID);
             if (AStaff.FirstName != Firstname)
             {
@@ -144,8 +144,8 @@ namespace Testing3
             clsStaff AStaff = new clsStaff();
             Boolean Found = false;
             Boolean Ok = true;
-            String Lastname = "Williams";
-            Int32 StaffID = 3;
+            String Lastname = "Talks";
+            Int32 StaffID = 1;
             Found = AStaff.Find(StaffID);
             if (AStaff.LastName != Lastname)
             {
@@ -160,8 +160,8 @@ namespace Testing3
             clsStaff AStaff = new clsStaff();
             Boolean Found = false;
             Boolean Ok = true;
-            String PayeeDetails = "testhash";
-            Int32 StaffID = 3;
+            String PayeeDetails = "8743b52063cd84097a65d1633f5c74f5";
+            Int32 StaffID = 1;
             Found = AStaff.Find(StaffID);
             if (AStaff.PayeeDetails != PayeeDetails)
             {
@@ -177,7 +177,7 @@ namespace Testing3
             Boolean Found = false;
             Boolean Ok = true;
             Boolean Perms = false;
-            Int32 StaffID = 3;
+            Int32 StaffID = 1;
             Found = AStaff.Find(StaffID);
             if (AStaff.HasPerms != Perms)
             {
@@ -192,9 +192,9 @@ namespace Testing3
             clsStaff AStaff = new clsStaff();
             Boolean Found = false;
             Boolean OK = true;
-            Int32 StaffID = 3;
+            Int32 StaffID = 1;
             Found = AStaff.Find(StaffID);
-            if (AStaff.JoinDate != Convert.ToDateTime("08/05/2024"))
+            if (AStaff.JoinDate != Convert.ToDateTime("26/07/2024"))
             {
                 OK = false;
             }
@@ -207,9 +207,9 @@ namespace Testing3
             clsStaff AStaff = new clsStaff();
             Boolean Found = false;
             Boolean OK = true;
-            Int32 StaffID = 3;
+            Int32 StaffID = 1;
             Found = AStaff.Find(StaffID);
-            if (AStaff.ContractExpiary != Convert.ToDateTime("09/05/2024"))
+            if (AStaff.ContractExpiary != Convert.ToDateTime("26/07/2026"))
             {
                 OK = false;
             }
