@@ -46,3 +46,9 @@ H:\Desktop\redoingClone\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.csproj.Asse
 H:\Desktop\redoingClone\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.csproj.CoreCompileInputs.cache
 H:\Desktop\redoingClone\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.dll
 H:\Desktop\redoingClone\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.pdb
+H:\Documents\AFAOComputers (1)\AFAOComputers\Skeleton\ClassLibrary\bin\Debug\ClassLibrary.dll
+H:\Documents\AFAOComputers (1)\AFAOComputers\Skeleton\ClassLibrary\bin\Debug\ClassLibrary.pdb
+H:\Documents\AFAOComputers (1)\AFAOComputers\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.csproj.AssemblyReference.cache
+H:\Documents\AFAOComputers (1)\AFAOComputers\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.csproj.CoreCompileInputs.cache
+H:\Documents\AFAOComputers (1)\AFAOComputers\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.dll
+H:\Documents\AFAOComputers (1)\AFAOComputers\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.pdb

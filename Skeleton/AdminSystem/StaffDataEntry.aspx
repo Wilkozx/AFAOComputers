@@ -101,6 +101,18 @@
         border-radius: 5px;
     }
 
+
+    #btnFind {
+        display: grid;
+        left: auto;
+        grid-row-start: 4;
+        grid-column-start: 1;
+        width: 100px;
+        height: 25px;
+        text-align: center;
+        border-radius: 5px;
+    }
+
     #error {
         display: grid;
         grid-row-start: 5;
@@ -149,14 +161,15 @@
         </div>
         <div id="bundleJoindate">
             <label id="lblJoinDate" for="txtJoinDate">Join Date</label>
-            <asp:TextBox ID="txtJoinDate" runat="server" type="date" CssId="txtJoinDate" CssClass="input" style="z-index: 1"></asp:TextBox>
+            <asp:TextBox ID="txtJoinDate" runat="server" CssId="txtJoinDate" CssClass="input" style="z-index: 1"></asp:TextBox>
         </div>
         <div id="bundleExpirydate">
             <label id="lblExpiryDate" for="txtExpiryDate">Expiry Date</label>
-            <asp:TextBox ID="txtExpiryDate" runat="server" type="date" CssId="txtExpiryDate" CssClass="input" style="z-index: 1"></asp:TextBox>
+            <asp:TextBox ID="txtExpiryDate" runat="server" CssId="txtExpiryDate" CssClass="input" style="z-index: 1"></asp:TextBox>
         </div>
         <asp:Button runat="server" id="btnOk" Text="ok" OnClick="btnOk_Click" />
         <asp:Button runat="server" id="btnCancel" Text="cancel" />
+        <asp:Button runat="server" ID="btnFind" Text="find" OnClick="btnFind_Click"/>
         <span id="error"></span>
     </form>
 </body>

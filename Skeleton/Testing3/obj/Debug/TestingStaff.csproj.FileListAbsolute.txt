@@ -98,3 +98,19 @@ H:\Desktop\redoingClone\Skeleton\Testing3\obj\Debug\TestingStaff.csproj.CoreComp
 H:\Desktop\redoingClone\Skeleton\Testing3\obj\Debug\TestingS.3624E073.Up2Date
 H:\Desktop\redoingClone\Skeleton\Testing3\obj\Debug\Testing3.dll
 H:\Desktop\redoingClone\Skeleton\Testing3\obj\Debug\Testing3.pdb
+H:\Documents\AFAOComputers (1)\AFAOComputers\Skeleton\Testing3\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+H:\Documents\AFAOComputers (1)\AFAOComputers\Skeleton\Testing3\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+H:\Documents\AFAOComputers (1)\AFAOComputers\Skeleton\Testing3\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+H:\Documents\AFAOComputers (1)\AFAOComputers\Skeleton\Testing3\bin\Debug\Testing3.dll
+H:\Documents\AFAOComputers (1)\AFAOComputers\Skeleton\Testing3\bin\Debug\Testing3.pdb
+H:\Documents\AFAOComputers (1)\AFAOComputers\Skeleton\Testing3\bin\Debug\ClassLibrary.dll
+H:\Documents\AFAOComputers (1)\AFAOComputers\Skeleton\Testing3\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+H:\Documents\AFAOComputers (1)\AFAOComputers\Skeleton\Testing3\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+H:\Documents\AFAOComputers (1)\AFAOComputers\Skeleton\Testing3\bin\Debug\ClassLibrary.pdb
+H:\Documents\AFAOComputers (1)\AFAOComputers\Skeleton\Testing3\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+H:\Documents\AFAOComputers (1)\AFAOComputers\Skeleton\Testing3\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+H:\Documents\AFAOComputers (1)\AFAOComputers\Skeleton\Testing3\obj\Debug\TestingStaff.csproj.AssemblyReference.cache
+H:\Documents\AFAOComputers (1)\AFAOComputers\Skeleton\Testing3\obj\Debug\TestingStaff.csproj.CoreCompileInputs.cache
+H:\Documents\AFAOComputers (1)\AFAOComputers\Skeleton\Testing3\obj\Debug\TestingS.3624E073.Up2Date
+H:\Documents\AFAOComputers (1)\AFAOComputers\Skeleton\Testing3\obj\Debug\Testing3.dll
+H:\Documents\AFAOComputers (1)\AFAOComputers\Skeleton\Testing3\obj\Debug\Testing3.pdb
