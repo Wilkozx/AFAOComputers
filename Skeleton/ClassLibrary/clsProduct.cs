@@ -124,7 +124,46 @@ namespace ClassLibrary
 
         public string Valid(String name, String description, String sKU, String Date_Added, String Price)
         {
-            return "";
+            //create a string variable to store the error
+            String Error = "";
+            //create a temporary variable to store the date values
+            DateTime Datetemp;
+
+            if (name.Length == 0) {
+                Error = Error + "The Name cannot be blank";
+            }
+            if (name.Length > 25)
+            {
+                Error = Error + "The Product name must be less than 25 : ";
+            }
+            try
+            {
+                //copying the dateAdded value to the DateTemp Variable
+                Datetemp = Convert.ToDateTime(Date_Added);
+                //i chech to see if the date is less than todays date
+                if (Datetemp < DateTime.Now.Date)
+                {
+                    Error = Error + "The date cannot be in the past: ";
+                }
+                if (Datetemp > DateTime.Now.Date)
+                {
+                    Error = Error + "The date cannot be in the Future: ";
+                }
+            }catch
+            {
+                Error = Error + "The Date was not a Valid Date : ";
+            }
+            if (description.Length == 0)
+            {
+                Error = Error + "The Description cannot be Empty: ";
+            }
+            if (description.Length > 2550)
+            {
+                Error = Error + "The Description Must be less than 2550 Characters: ";
+
+            }
+            return Error;
+            
         }
     }
 }
