@@ -110,3 +110,17 @@ H:\Desktop\week3Agile\Skeleton\Testing1\obj\Debug\TestingOrders.csproj.CoreCompi
 H:\Desktop\week3Agile\Skeleton\Testing1\obj\Debug\TestingO.64048BAB.Up2Date
 H:\Desktop\week3Agile\Skeleton\Testing1\obj\Debug\Testing1.dll
 H:\Desktop\week3Agile\Skeleton\Testing1\obj\Debug\Testing1.pdb
+H:\Desktop\todaysAgile\Skeleton\Testing1\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+H:\Desktop\todaysAgile\Skeleton\Testing1\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+H:\Desktop\todaysAgile\Skeleton\Testing1\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+H:\Desktop\todaysAgile\Skeleton\Testing1\bin\Debug\Testing1.dll
+H:\Desktop\todaysAgile\Skeleton\Testing1\bin\Debug\Testing1.pdb
+H:\Desktop\todaysAgile\Skeleton\Testing1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+H:\Desktop\todaysAgile\Skeleton\Testing1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+H:\Desktop\todaysAgile\Skeleton\Testing1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+H:\Desktop\todaysAgile\Skeleton\Testing1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+H:\Desktop\todaysAgile\Skeleton\Testing1\obj\Debug\TestingOrders.csproj.AssemblyReference.cache
+H:\Desktop\todaysAgile\Skeleton\Testing1\obj\Debug\TestingOrders.csproj.CoreCompileInputs.cache
+H:\Desktop\todaysAgile\Skeleton\Testing1\obj\Debug\TestingO.64048BAB.Up2Date
+H:\Desktop\todaysAgile\Skeleton\Testing1\obj\Debug\Testing1.dll
+H:\Desktop\todaysAgile\Skeleton\Testing1\obj\Debug\Testing1.pdb

@@ -1,6 +1,7 @@
 ﻿using ClassLibrary;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
+using System.IO;
 using System.Reflection;
 
 namespace Testing2
@@ -12,7 +13,7 @@ namespace Testing2
         string Description = "Acer Laptop";
         string SKU = "1234";
         String Price = "200.0000";
-        string Date_Added = "12/05/2024";
+        string Date_Added = DateTime.Now.Date.ToString();
         [TestMethod]
         public void TestMethod1()
         {
@@ -164,10 +165,9 @@ namespace Testing2
         public void TestPriceFound()
         {
             clsProduct AProduct = new clsProduct();
-            Boolean Found = false;
             Boolean OK = true;
             Int32 ProductId = 7;
-            Found = AProduct.Find(ProductId);
+            AProduct.Find(ProductId);
             if (AProduct.Price != "200.0000")
             {
                 OK = false;
@@ -215,6 +215,264 @@ namespace Testing2
             Error = AProduct.Valid(Name, Description, SKU,Date_Added, Price);
             Assert.AreEqual(Error, "");
         }
+        [TestMethod]
+
+        public void NameNoMinLessOne()
+        {
+            clsProduct AProduct = new clsProduct();
+            //string error to store any error messages
+            string Error = "";
+            //create some test data to pass the method
+            string Name = "";
+            Error = AProduct.Valid(Name, Description, SKU, Date_Added, Price);
+            //test to see that the results is correct
+            Assert.AreNotEqual(Error, "");
+        }
+        [TestMethod]
+        public void NameNoMinPlusOne()
+        {
+            clsProduct AProduct = new clsProduct();
+            string Error = "";
+            string Name = "ke";
+            Error = AProduct.Valid(Name, Description, SKU, Date_Added, Price);
+            Assert.AreEqual(Error, "");
+        }
+        [TestMethod]
+        public void NameNoMin()
+        {
+            clsProduct AProduct = new clsProduct();
+            string Error = "";
+            string Name = "k";
+            Error = AProduct.Valid(Name, Description, SKU, Date_Added, Price);
+            Assert.AreEqual(Error, "");
+        }
+        [TestMethod]
+        public void NameNoMaxLessOne()
+        {
+            clsProduct AProduct = new clsProduct();
+            string Error = "";
+            string Name = "aaaaaaaaaaaaaaaaaaaaaaaa";
+            Error = AProduct.Valid(Name, Description, SKU, Date_Added, Price);
+            Assert.AreEqual(Error, "");
+        }
+        [TestMethod]
+        public void NameNoMax()
+        {
+            clsProduct AProduct = new clsProduct();
+            string Error = "";
+            string Name = "aaaaaaaaaaaaaaaaaaaaaaaaa";
+            Error = AProduct.Valid(Name, Description, SKU, Date_Added, Price);
+            Assert.AreEqual(Error, "");
+        }
+        [TestMethod]
+        public void NameNoMid()
+        {
+            clsProduct AProduct = new clsProduct();
+            string Error = "";
+            string Name = "aaaaaaaaaaaaa";
+            Error = AProduct.Valid(Name, Description, SKU, Date_Added, Price);
+            Assert.AreEqual(Error, "");
+        }
+        [TestMethod]
+        public void NameNoMaxPlusOne()
+        {
+            clsProduct AProduct = new clsProduct();
+            string Error = "";
+            string Name = "aaaaaaaaaaaaaaaaaaaaaaaaaa";
+            Error = AProduct.Valid(Name, Description, SKU, Date_Added, Price);
+            Assert.AreNotEqual(Error, "");
+        }
+        [TestMethod]
+        public void NameNoExtreme()
+        {
+            clsProduct AProduct = new clsProduct();
+            string Error = "";
+            string Name = "";
+            Name = Name.PadRight(255, 'a');
+            Error = AProduct.Valid(Name, Description, SKU, Date_Added, Price);
+            Assert.AreNotEqual(Error, "");
+        }
+        [TestMethod]
+        public void DateAddedExtremMin()
+        {
+            //create an instance of the class we want to create
+            clsProduct AProduct = new clsProduct();
+            String Error = "";
+            //create a variable to store the test date data
+            DateTime TestDate;
+            //set the date totodays date
+            TestDate = DateTime.Now.Date;
+            //change the date to whatever the date is less 100 years
+            TestDate = TestDate.AddYears(-100);
+            //convert the date variable to a string variable
+            string Date_Added = TestDate.ToString();
+            //invoke the method
+            Error = AProduct.Valid(Name, Description, SKU, Date_Added, Price);
+            //test to see that the result is correct
+            Assert.AreNotEqual(Error, "");
+
+        }
+        [TestMethod]
+        public void DateAddedExtremMax()
+        {
+            //create an instance of the class we want to create
+            clsProduct AProduct = new clsProduct();
+            String Error = "";
+            //create a variable to store the test date data
+            DateTime TestDate;
+            //set the date totodays date
+            TestDate = DateTime.Now.Date;
+            //change the date to whatever the date is less 100 years
+            TestDate = TestDate.AddYears(100);
+            //convert the date variable to a string variable
+            string Date_Added = TestDate.ToString();
+            //invoke the method
+            Error = AProduct.Valid(Name, Description, SKU, Date_Added, Price);
+            //test to see that the result is correct
+            Assert.AreNotEqual(Error, "");
+
+        }
+        [TestMethod]
+        public void DateAddedMinLessOne()
+        {
+            //create an instance of the class we want to create
+            clsProduct AProduct = new clsProduct();
+            String Error = "";
+            //create a variable to store the test date data
+            DateTime TestDate;
+            //set the date totodays date
+            TestDate = DateTime.Now.Date;
+            //change the date to whatever the date is less 100 years
+            TestDate = TestDate.AddYears(-1);
+            //convert the date variable to a string variable
+            string Date_Added = TestDate.ToString();
+            //invoke the method
+            Error = AProduct.Valid(Name, Description, SKU, Date_Added, Price);
+            //test to see that the result is correct
+            Assert.AreNotEqual(Error, "");
+
+        }
+
+        [TestMethod]
+        public void DateAddedMin()
+        {
+            //create an instance of the class we want to create
+            clsProduct AProduct = new clsProduct();
+            String Error = "";
+            //create a variable to store the test date data
+            DateTime TestDate;
+            //set the date totodays date
+            TestDate = DateTime.Now.Date;
+
+            //convert the date variable to a string variable
+            string Date_Added = TestDate.ToString();
+            //invoke the method
+            Error = AProduct.Valid(Name, Description, SKU, Date_Added, Price);
+            //test to see that the result is correct
+            Assert.AreEqual(Error, "");
+
+        }
+        [TestMethod]
+        public void DateAddedPlusOne()
+        {
+            //create an instance of the class we want to create
+            clsProduct AProduct = new clsProduct();
+            String Error = "";
+            //create a variable to store the test date data
+            DateTime TestDate;
+            //set the date totodays date
+            TestDate = DateTime.Now.Date;
+            //change the date to whatever the date is less 100 years
+            TestDate = TestDate.AddYears(1);
+            //convert the date variable to a string variable
+            string Date_Added = TestDate.ToString();
+            //invoke the method
+            Error = AProduct.Valid(Name, Description, SKU, Date_Added, Price);
+            //test to see that the result is correct
+            Assert.AreNotEqual(Error, "");
+
+        }
+        [TestMethod]
+        public void DateAddedInvalidData()
+        {
+            clsProduct AProduct = new clsProduct();
+            String Error = "";
+            String Date_Added = "this is invalid Date";
+            Error = AProduct.Valid(Name, Description,SKU, Date_Added, Price);
+            Assert.AreNotEqual(Error, "");
+        }
+        [TestMethod]
+        public void DescriptionMinLessOne()
+        {
+            clsProduct AProduct = new clsProduct();
+            String Error = "";
+            String Description = "";
+            Error = AProduct.Valid(Name, Description, SKU, Date_Added, Price);
+            Assert.AreNotEqual(Error, "");
+        }
+        [TestMethod]
+        public void DescriptionMin()
+        {
+            clsProduct AProduct = new clsProduct();
+            String Error = "";
+            String Description = "a";
+            Error = AProduct.Valid(Name, Description, SKU, Date_Added, Price);
+            Assert.AreEqual(Error, "");
+        }
+        [TestMethod]
+        public void DescriptionMinPlusOne()
+        {
+            clsProduct AProduct = new clsProduct();
+            String Error = "";
+            String Description = "aa";
+            Error = AProduct.Valid(Name, Description, SKU, Date_Added, Price);
+            Assert.AreEqual(Error, "");
+        }
+        [TestMethod]
+        public void DescriptionMaxLessOne()
+        {
+            clsProduct AProduct = new clsProduct();
+            String Error = "";
+            String Description = "";
+            Description = Description.PadRight(2549, 'a');
+            Error = AProduct.Valid(Name, Description, SKU, Date_Added, Price);
+            Assert.AreEqual(Error, "");
+        }
+        [TestMethod]
+        public void DescriptionMax()
+        {
+            clsProduct AProduct = new clsProduct();
+            String Error = "";
+            String Description = "";
+            Description = Description.PadRight(2550, 'a');
+            Error = AProduct.Valid(Name, Description, SKU, Date_Added, Price);
+            Assert.AreEqual(Error, "");
+        }
+        [TestMethod]
+        public void DescriptionMaxPlusOne()
+        {
+            clsProduct AProduct = new clsProduct();
+            String Error = "";
+            String Description = "";
+            Description = Description.PadRight(2551, 'a');
+            Error = AProduct.Valid(Name, Description, SKU, Date_Added, Price);
+            Assert.AreNotEqual(Error, "");
+        }
+        [TestMethod]
+        public void DescriptionMid()
+        {
+            clsProduct AProduct = new clsProduct();
+            String Error = "";
+            String Description = "";
+            Description = Description.PadRight(1280, 'a');
+            Error = AProduct.Valid(Name, Description, SKU, Date_Added, Price);
+            Assert.AreEqual(Error, "");
+        }
+        
+
+       
+
+
     }
 
 }
