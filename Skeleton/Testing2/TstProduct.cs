@@ -212,7 +212,7 @@ namespace Testing2
             //string variable to store any error messages 
             String Error = "";
             //invoke the method
-            Error = AProduct.Valid(Name, Description, SKU,Date_Added, Price);
+            Error = AProduct.Valid(Name, Description, SKU, Date_Added, Price);
             Assert.AreEqual(Error, "");
         }
         [TestMethod]
@@ -398,7 +398,7 @@ namespace Testing2
             clsProduct AProduct = new clsProduct();
             String Error = "";
             String Date_Added = "this is invalid Date";
-            Error = AProduct.Valid(Name, Description,SKU, Date_Added, Price);
+            Error = AProduct.Valid(Name, Description, SKU, Date_Added, Price);
             Assert.AreNotEqual(Error, "");
         }
         [TestMethod]
@@ -468,11 +468,211 @@ namespace Testing2
             Error = AProduct.Valid(Name, Description, SKU, Date_Added, Price);
             Assert.AreEqual(Error, "");
         }
-        
+        [TestMethod]
 
-       
+        public void SKUMinLessOne()
+        {
+            clsProduct AProduct = new clsProduct();
+            String Error = "";
+            String SKU = "111";
+            Error = AProduct.Valid(Name, Description, SKU, Date_Added, Price);
+            Assert.AreNotEqual(Error, "");
 
 
+
+        }
+        [TestMethod]
+        public void SKUMin()
+        {
+            clsProduct AProduct = new clsProduct();
+            String Error = "";
+            String SKU = "11111";
+            Error = AProduct.Valid(Name, Description, SKU, Date_Added, Price);
+            Assert.AreEqual(Error, "");
+
+        }
+        [TestMethod]
+        public void SKUMinPlusOne()
+        {
+            clsProduct AProduct = new clsProduct();
+            String Error = "";
+            String SKU = "111111";
+            Error = AProduct.Valid(Name, Description, SKU, Date_Added, Price);
+            Assert.AreEqual(Error, "");
+
+        }
+        [TestMethod]
+        public void SKUMaxLessOne()
+        {
+            clsProduct AProduct = new clsProduct();
+            String Error = "";
+            String SKU = "111111111111111";
+            Error = AProduct.Valid(Name, Description, SKU, Date_Added, Price);
+            Assert.AreEqual(Error, "");
+
+        }
+        [TestMethod]
+        public void SKUMax()
+        {
+            clsProduct AProduct = new clsProduct();
+            String Error = "";
+            String SKU = "1111111111111111";
+            Error = AProduct.Valid(Name, Description, SKU, Date_Added, Price);
+            Assert.AreEqual(Error, "");
+
+        }
+        [TestMethod]
+        public void SKUMaxPlusOne()
+        {
+            clsProduct AProduct = new clsProduct();
+            String Error = "";
+            String SKU = "111111111111111111";
+            Error = AProduct.Valid(Name, Description, SKU, Date_Added, Price);
+            Assert.AreNotEqual(Error, "");
+
+        }
+        [TestMethod]
+        public void SKUMid()
+        {
+            clsProduct AProduct = new clsProduct();
+            String Error = "";
+            String SKU = "11111111";
+            Error = AProduct.Valid(Name, Description, SKU, Date_Added, Price);
+            Assert.AreEqual(Error, "");
+
+        }
+        [TestMethod]
+        public void SKUExtremMax()
+        {
+            clsProduct AProduct = new clsProduct();
+            String Error = "";
+            String SKU = "1";
+            SKU = SKU.PadRight(255, '1');
+            Error = AProduct.Valid(Name, Description, SKU, Date_Added, Price);
+            Assert.AreNotEqual(Error, "");
+
+        }
+        [TestMethod]
+        public void SKUvalidData()
+        {
+            clsProduct AProduct = new clsProduct();
+            string Error = "";
+            // Test with SKU containing only digits
+            string SKU = "1234567890123456"; // 16 digits
+            Error = AProduct.Valid(Name, Description, SKU, Date_Added, Price);
+            Assert.AreEqual(Error, "");
+
+        }
+        [TestMethod]
+
+        public void SKUInvalidData()
+        {
+            clsProduct AProduct = new clsProduct();
+            string Error = "";
+            // Test with SKU containing non-digit characters
+            string SKU = "1234567890A"; // 16 digits
+            Error = AProduct.Valid(Name, Description, SKU, Date_Added, Price);
+            Assert.AreNotEqual(Error, "");// Expecting an error message
+        }
+        [TestMethod]
+
+        public void PriceMinLessOne()
+        {
+            clsProduct AProduct = new clsProduct();
+            String Error = "";
+            String Price = "";
+            Error = AProduct.Valid(Name, Description, SKU, Date_Added, Price);
+            Assert.AreNotEqual(Error, "");
+
+        }
+        [TestMethod]
+
+        public void PriceMin()
+        {
+            clsProduct AProduct = new clsProduct();
+            String Error = "";
+            String Price = "1";
+            Error = AProduct.Valid(Name, Description, SKU, Date_Added, Price);
+            Assert.AreEqual(Error, "");
+
+        }
+        public void PlusMinPlusOne()
+        {
+            clsProduct AProduct = new clsProduct();
+            String Error = "";
+            String Price = "12";
+            Error = AProduct.Valid(Name, Description, SKU, Date_Added, Price);
+            Assert.AreEqual(Error, "");
+
+        }
+        [TestMethod]
+        public void PriceMaxLessOne()
+        {
+            clsProduct AProduct = new clsProduct();
+            String Error = "";
+            String Price = "121212121212121";
+            Error = AProduct.Valid(Name, Description, SKU, Date_Added, Price);
+            Assert.AreEqual(Error, "");
+
+        }
+        [TestMethod]
+        public void PriceMax()
+        {
+            clsProduct AProduct = new clsProduct();
+            String Error = "";
+            String Price = "1212121212121212";
+            Error = AProduct.Valid(Name, Description, SKU, Date_Added, Price);
+            Assert.AreEqual(Error, "");
+
+        }
+        [TestMethod]
+        public void PriceMaxPlusOne()
+        {
+            clsProduct AProduct = new clsProduct();
+            String Error = "";
+            String Price = "12121212121212121";
+            Error = AProduct.Valid(Name, Description, SKU, Date_Added, Price);
+            Assert.AreNotEqual(Error, "");
+
+        }
+        [TestMethod]
+        public void PriceMid()
+        {
+            clsProduct AProduct = new clsProduct();
+            String Error = "";
+            String Price = "12121212";
+            Error = AProduct.Valid(Name, Description, SKU, Date_Added, Price);
+            Assert.AreEqual(Error, "");
+
+        }
+        [TestMethod]
+        public void PriceExtremMax()
+        {
+            clsProduct AProduct = new clsProduct();
+            String Error = "";
+            String Price = "1";
+            Price = SKU.PadRight(255, '1');
+            Error = AProduct.Valid(Name, Description, SKU, Date_Added, Price);
+            Assert.AreNotEqual(Error, "");
+
+        }
+        [TestMethod]
+        public void PriceOnlyNumbersAndDecimals()
+        {
+            clsProduct AProduct = new clsProduct();
+            string Error = "";
+
+            // Test with valid price containing only numbers and decimals
+            string Price = "123.45";
+            Error = AProduct.Valid(Name, Description, SKU, Date_Added, Price);
+            Assert.AreEqual(Error, "");
+
+            // Test with invalid price containing characters
+            Price = "123.45A"; // Non-numeric character 'A' present
+            Error = AProduct.Valid(Name, Description, SKU, Date_Added, Price);
+            Assert.AreNotEqual(Error, ""); // Expecting an error message
+        }
     }
-
 }
+
+
