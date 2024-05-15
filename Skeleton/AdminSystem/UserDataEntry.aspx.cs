@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
+using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 using ClassLibrary;
 
@@ -30,6 +31,43 @@ public partial class _1_DataEntry : System.Web.UI.Page
         Session["AUser"] = AUser;
         //Navigate to the view page
         Response.Redirect("UserViewer.aspx");
+
+    }
+
+    protected void btnFind_Click(object sender, EventArgs e)
+    {
+        // Create an instance of the Staff class
+        clsUser AUser = new clsUser();
+        // Create a variable to store the primary key
+        Int32 UserId;
+        // Create a variable to store the result of the operation
+        Boolean Found = false;
+        // Get the primary key entered by the user
+        UserId = Convert.ToInt32(txtUserId.Text);
+        // Find the record
+        Found = AUser.Find(UserId);
+        // If Found...
+        if (Found == true)
+        {
+            // Display the values of the properties in the form
+            txtUserName.Text = AUser.UserName;
+            txtEmail.Text = AUser.Email;
+            txtPassword.Text = AUser.HashedPass;
+            chkboxStaff.Checked = AUser.isStaff;
+            txtDateofBirth.Text = AUser.DateofBirth.ToString("dd-mm-yyyy");
+            txtPhoneNumber.Text = AUser.PhoneNumber.ToString();
+
+        }
+        else
+        {
+            ERROR.InnerText = "Bye";
+        }
+        
+    }
+
+
+    protected void Button1_Click(object sender, EventArgs e)
+    {
 
     }
 }

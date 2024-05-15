@@ -7,6 +7,14 @@ namespace Testing4
     [TestClass]
     public class tstUser
     {
+        int UserId = 1;
+        string UserName = "Omar";
+        string Email = "omar@gmail.com";
+        string DateofBirth = DateTime.Now.ToShortDateString();
+        string HashedPass = "xxxxx";
+        int PhoneNumber = 12345678;
+        bool isStaff = true;
+        
         [TestMethod]
         public void TestMethod1()
         {
@@ -106,7 +114,7 @@ namespace Testing4
 
             clsUser AUser = new clsUser();
             Boolean Found = false;
-            Int32 UserId = 3;
+            Int32 UserId = 2;
             Found = AUser.Find(UserId);
             Assert.IsTrue(Found);
         }
@@ -144,7 +152,7 @@ namespace Testing4
             clsUser AUser = new clsUser();
             Boolean Found = false;
             Boolean Ok = true;
-            Int32 UserId = 3;
+            Int32 UserId = 2;
             Found = AUser.Find(UserId);
             if (AUser.Email != "omar@gmail.com")
             {
@@ -158,7 +166,7 @@ namespace Testing4
             clsUser AUser = new clsUser();
             Boolean Found = false;
             Boolean Ok = true;
-            Int32 UserId = 3;
+            Int32 UserId = 2;
             Found = AUser.Find(UserId);
             if (AUser.DateofBirth != Convert.ToDateTime("23/12/2022"))
             {
@@ -172,7 +180,7 @@ namespace Testing4
             clsUser AUser = new clsUser();
             Boolean Found = false;
             Boolean Ok = true;
-            Int32 UserId = 3;
+            Int32 UserId = 2;
             Found = AUser.Find(UserId);
             if (AUser.HashedPass != "xxxxxxxxxx")
             {
@@ -186,7 +194,7 @@ namespace Testing4
             clsUser AUser = new clsUser();
             Boolean Found = false;
             Boolean Ok = true;
-            Int32 UserId = 3;
+            Int32 UserId = 2;
             Found = AUser.Find(UserId);
             if (AUser.PhoneNumber != 12345678)
             {
@@ -208,6 +216,14 @@ namespace Testing4
             }
             Assert.IsTrue(Ok);
         }
+        [TestMethod]
+        public void ValidMethodOK() {
+            clsUser AUser = new clsUser();
+            String Error = "";
+            Error = AUser.Valid(UserId, UserName, Email, DateofBirth, HashedPass, PhoneNumber, isStaff);
+            Assert.AreEqual(Error, "");
+        }
+       
     }
 }
 
