@@ -140,3 +140,19 @@ H:\Desktop\todaysAgile\Skeleton\Testing4\obj\Debug\TestingUser.csproj.CoreCompil
 H:\Desktop\todaysAgile\Skeleton\Testing4\obj\Debug\TestingU.C3DB0E51.Up2Date
 H:\Desktop\todaysAgile\Skeleton\Testing4\obj\Debug\Testing4.dll
 H:\Desktop\todaysAgile\Skeleton\Testing4\obj\Debug\Testing4.pdb
+H:\Week4 Pt 1 Agile\Skeleton\Testing4\obj\Debug\TestingUser.csproj.AssemblyReference.cache
+H:\Week4 Pt 1 Agile\Skeleton\Testing4\obj\Debug\TestingUser.csproj.CoreCompileInputs.cache
+H:\Week4 Pt 1 Agile\Skeleton\Testing4\obj\Debug\Testing4.dll
+H:\Week4 Pt 1 Agile\Skeleton\Testing4\obj\Debug\Testing4.pdb
+H:\Week4 Pt 1 Agile\Skeleton\Testing4\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+H:\Week4 Pt 1 Agile\Skeleton\Testing4\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+H:\Week4 Pt 1 Agile\Skeleton\Testing4\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+H:\Week4 Pt 1 Agile\Skeleton\Testing4\bin\Debug\Testing4.dll
+H:\Week4 Pt 1 Agile\Skeleton\Testing4\bin\Debug\Testing4.pdb
+H:\Week4 Pt 1 Agile\Skeleton\Testing4\bin\Debug\ClassLibrary.dll
+H:\Week4 Pt 1 Agile\Skeleton\Testing4\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+H:\Week4 Pt 1 Agile\Skeleton\Testing4\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+H:\Week4 Pt 1 Agile\Skeleton\Testing4\bin\Debug\ClassLibrary.pdb
+H:\Week4 Pt 1 Agile\Skeleton\Testing4\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+H:\Week4 Pt 1 Agile\Skeleton\Testing4\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+H:\Week4 Pt 1 Agile\Skeleton\Testing4\obj\Debug\TestingU.C3DB0E51.Up2Date

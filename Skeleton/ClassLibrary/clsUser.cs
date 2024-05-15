@@ -99,15 +99,37 @@ namespace ClassLibrary
 
         public bool Find(int userId)
         {
-            mUserId = 2;
-            mUserName = "omar";
-            mEmail = "omar@gmail.com";
-            mDateofBirth = Convert.ToDateTime("23/12/2022");
-            mHashedPass = "xxxxxxxxxx";
-            mPhoneNumber = 12345678;
-            misStaff = true;
-            return true;
+            // Create an instance of the data base connection
+            clsDataConnection DB = new clsDataConnection();
+            // Add the parameter for the staff id to search for
+            DB.AddParameter("@user_Id", userId);
+            // Execute our stored procedure
+            DB.Execute("sproc_tblUsers_FilterByUserId");
+            // Check if a record exists
+            if (DB.Count == 1)
+            {
+                // Copy the data from the database to our private data members
+                mUserId = Convert.ToInt32(DB.DataTable.Rows[0]["user_id"]);
+                mUserName = Convert.ToString(DB.DataTable.Rows[0]["username"]);
+                mEmail = Convert.ToString(DB.DataTable.Rows[0]["email"]);
+                mPhoneNumber = Convert.ToInt32(DB.DataTable.Rows[0]["phone_number"]);
+                misStaff = Convert.ToBoolean(DB.DataTable.Rows[0]["isStaff"]);
+                mDateofBirth = Convert.ToDateTime(DB.DataTable.Rows[0]["date_of_birth"]);
+                mHashedPass = Convert.ToString(DB.DataTable.Rows[0]["hashed_password"]);
+                // Return that everything worked ok!
+                return true;
+            }
+            // If no record is found then...
+            else
+            {
+                // Return false indicating that there is a problem
+                return false;
+            }
         }
 
+        public string Valid(int userId, string userName, string email, string dateofBirth, string hashedPass, int phoneNumber, bool isStaff)
+        {
+            return "";
+        }
     }
 }

@@ -12,7 +12,7 @@
         </div>
 &nbsp;
         <asp:TextBox ID="txtUserId" runat="server" style="z-index: 1; left: 172px; top: 34px; position: absolute; width: 126px"></asp:TextBox>
-        <asp:Label ID="lblUserName" runat="server" style="z-index: 1; left: 9px; top: 72px; position: absolute" Text="UserName" width="87px"></asp:Label>
+        <asp:Label ID="lblUserName" runat="server" style="z-index: 1; left: 10px; top: 77px; position: absolute" Text="UserName" width="87px"></asp:Label>
         <asp:Label ID="lblUserId" runat="server" style="z-index: 1; left: 9px; top: 34px; position: absolute; width: 87px; bottom: 623px" Text="UserId"></asp:Label>
         <p>
             &nbsp;</p>
@@ -37,7 +37,13 @@
             <asp:TextBox ID="txtEmail" runat="server" style="z-index: 1; left: 172px; top: 107px; position: absolute" width="128px"></asp:TextBox>
         </p>
         <asp:Button ID="btnCancel" runat="server" OnClick="btnCancel_Click" style="z-index: 1; left: 154px; top: 296px; position: absolute" Text="Cancel" />
-        <asp:Button ID="btnOk" runat="server" OnClick="btnOk_Click" style="z-index: 1; left: 48px; top: 295px; position: absolute; width: 54px" Text="Ok" />
+        <asp:Button ID="btnOk" runat="server" OnClick="btnOk_Click" style="z-index: 1; left: 46px; top: 296px; position: absolute; width: 54px" Text="Ok" />
+        <p>
+            <asp:Button ID="btnFind" runat="server" OnClick="btnFind_Click" style="z-index: 1; left: 358px; top: 285px; position: absolute; height: 72px; width: 474px; margin-top: 4px; margin-bottom: 135px;" Text="Find" />
+        </p>
+        <span runat="server" id="ERROR">
+
+        </span>
     </form>
 </body>
 </html>
