@@ -64,3 +64,9 @@ H:\Desktop\todaysAgile\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.csproj.Assem
 H:\Desktop\todaysAgile\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.csproj.CoreCompileInputs.cache
 H:\Desktop\todaysAgile\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.dll
 H:\Desktop\todaysAgile\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.pdb
+H:\Desktop\WednessdayLab\Skeleton\ClassLibrary\bin\Debug\ClassLibrary.dll
+H:\Desktop\WednessdayLab\Skeleton\ClassLibrary\bin\Debug\ClassLibrary.pdb
+H:\Desktop\WednessdayLab\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.csproj.AssemblyReference.cache
+H:\Desktop\WednessdayLab\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.csproj.CoreCompileInputs.cache
+H:\Desktop\WednessdayLab\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.dll
+H:\Desktop\WednessdayLab\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.pdb

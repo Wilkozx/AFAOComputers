@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text.RegularExpressions;
 
 namespace ClassLibrary
 {
@@ -162,8 +163,45 @@ namespace ClassLibrary
                 Error = Error + "The Description Must be less than 2550 Characters: ";
 
             }
+            if (string.IsNullOrEmpty(sKU))
+            {
+                Error = "SKU cannot be empty";
+            }
+
+            else
+            {
+                // Check if SKU contains only digits
+                if (!Regex.IsMatch(sKU, @"^\d+$"))
+                {
+                    Error = "SKU must contain only digits";
+                }
+                else if (sKU.Length < 4)
+                {
+                    Error = "SKU must be at least 5 digits long";
+                }
+                else if (sKU.Length > 16)
+                {
+                    Error = "SKU must not be more than 16 digits long";
+                }
+            }
+            if (string.IsNullOrEmpty(Price))
+            {
+                Error = "Price Field cannot be blank";
+            }
+            else
+            {
+                // Check if Price contains only numbers and decimals
+                if (!Regex.IsMatch(Price, @"^\d+(\.\d+)?$"))
+                {
+                    Error = "Price must contain only numbers and decimals";
+                }
+                else if (Price.Length > 16)
+                {
+                    Error = "Price cannot be more than 16 digits";
+                }
+            }
+
             return Error;
-            
         }
     }
 }
