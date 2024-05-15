@@ -138,3 +138,17 @@ H:\Week4 Pt 1 Agile\Skeleton\Testing1\obj\Debug\TestingOrders.csproj.CoreCompile
 H:\Week4 Pt 1 Agile\Skeleton\Testing1\obj\Debug\TestingO.64048BAB.Up2Date
 H:\Week4 Pt 1 Agile\Skeleton\Testing1\obj\Debug\Testing1.dll
 H:\Week4 Pt 1 Agile\Skeleton\Testing1\obj\Debug\Testing1.pdb
+H:\Desktop\redo\Skeleton\Testing1\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+H:\Desktop\redo\Skeleton\Testing1\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+H:\Desktop\redo\Skeleton\Testing1\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+H:\Desktop\redo\Skeleton\Testing1\bin\Debug\Testing1.dll
+H:\Desktop\redo\Skeleton\Testing1\bin\Debug\Testing1.pdb
+H:\Desktop\redo\Skeleton\Testing1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+H:\Desktop\redo\Skeleton\Testing1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+H:\Desktop\redo\Skeleton\Testing1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+H:\Desktop\redo\Skeleton\Testing1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+H:\Desktop\redo\Skeleton\Testing1\obj\Debug\TestingOrders.csproj.AssemblyReference.cache
+H:\Desktop\redo\Skeleton\Testing1\obj\Debug\TestingOrders.csproj.CoreCompileInputs.cache
+H:\Desktop\redo\Skeleton\Testing1\obj\Debug\TestingO.64048BAB.Up2Date
+H:\Desktop\redo\Skeleton\Testing1\obj\Debug\Testing1.dll
+H:\Desktop\redo\Skeleton\Testing1\obj\Debug\Testing1.pdb
