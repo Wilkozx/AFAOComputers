@@ -5,39 +5,45 @@ using System.Text.RegularExpressions;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Xml.Linq;
 using ClassLibrary;
 
 public partial class _1_DataEntry : System.Web.UI.Page
 {
-    protected void Page_Load(object sender, EventArgs e)
+    protected void btnOk_Click(object sender, EventArgs e)
     {
-
-    }
-
-    protected void BtnAdd_Click(object sender, EventArgs e)
-    {
-        //create a new instance of a clsProduct
         clsProduct AProduct = new clsProduct();
-
-        //capture the name
-        AProduct.Name = txtName.Text;
-        //capture the description
-        AProduct.Description = txtDescription.Text;
-        //capture the product ID
-        AProduct.ProductId = Convert.ToInt32(TxtProductId.Text);
-        //Capture the SKU
-        AProduct.SKU = Convert.ToInt32(txtSKU.Text);
-        //Capture the sku
-        AProduct.DateAdded = Convert.ToDateTime(DateTime.Now);
-        //Capture the Price
-        AProduct.Price = TxtPrice.Text;
-        //Capture the Visibility
+        string Name = txtName.Text;
+        string Description = txtDescription.Text;
+        string Price = TxtPrice.Text;
+        string Date_Added = TxtDateAdded.Text;
+        string sKU = txtSKU.Text;
         AProduct.Visible = chkVisible.Checked;
-        //store the Product in the session object;
-        Session["AProduct"] = AProduct;
-        //navigate to the view page
-        Response.Redirect("ProductsViewer.aspx");
+        
+        string Error = "";
+        //Vallidating the entered Data
+        Error = AProduct.Valid(Name, Description, sKU, Date_Added, Price);
+        if (Error == "")
+        {
+            //CAPTURING THE DETAILS
+            AProduct.Name = Name;
+            AProduct.Description = Description;
+            AProduct.Price = Price;
+            AProduct.SKU= Convert.ToInt32(txtSKU.Text);
+            AProduct.DateAdded = Convert.ToDateTime(Date_Added);
+
+            //store the Product in the session object;
+            Session["AProduct"] = AProduct;
+            //navigate to the view page
+            Response.Redirect("ProductsViewer.aspx");
+
+        }
+        else
+        {
+            lblError.Text = Error;
+        }
     }
+
 
     protected void BtnFind_Click(object sender, EventArgs e)
     {
@@ -65,4 +71,5 @@ public partial class _1_DataEntry : System.Web.UI.Page
           
         }
     }
+  
 }
