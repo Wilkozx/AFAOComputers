@@ -16,13 +16,12 @@
         <div>
             <p>
                 <asp:TextBox ID="TxtProductId" runat="server" style="z-index: 1; left: 134px; top: 46px; position: absolute; height: 20px; width: 160px"></asp:TextBox>
+                <asp:Button ID="btnOk" runat="server" height="29px" OnClick="btnOk_Click" style="z-index: 1; left: 130px; top: 379px; position: absolute; width: 88px" Text="OK" />
             </p>
         </div>
         <p style="width: 1440px; height: 303px">
             <asp:Label ID="lblDescription" runat="server" style="z-index: 1; left: 8px; top: 91px; position: absolute; " Text="Description" height="18px" width="99px"></asp:Label>
                 <asp:TextBox ID="txtDescription" runat="server" style="z-index: 1; left: 134px; top: 94px; position: absolute; width: 160px" height="20px"></asp:TextBox>
-            <asp:Button ID="BtnAdd" runat="server" Height="29px" OnClick="BtnAdd_Click" style="margin-left: 53px; margin-top: 334px;" Text="Add Product" Width="99px" />
-            <asp:Button ID="BtnCancel" runat="server" Height="29px" style="margin-left: 37px" Text="Cancel" Width="99px" />
             <asp:TextBox ID="txtSKU" runat="server" height="20px" style="z-index: 1; left: 134px; top: 216px; position: absolute; width: 160px"></asp:TextBox>
             <asp:Button ID="BtnFind" runat="server" OnClick="BtnFind_Click" style="z-index: 1; left: 424px; top: 48px; position: absolute; width: 84px; height: 36px" Text="Find" />
         </p>
@@ -31,6 +30,7 @@
             <asp:TextBox ID="TxtPrice" runat="server" style="z-index: 1; left: 134px; top: 135px; position: absolute; width: 160px; height: 20px; bottom: 604px"></asp:TextBox>
         <asp:Label ID="lblName" runat="server" style="z-index: 1; left: 8px; top: 176px; position: absolute; height: 18px; width: 99px" Text="Product Name"></asp:Label>
         <asp:TextBox ID="txtName" runat="server" style="z-index: 1; left: 134px; top: 180px; position: absolute; width: 160px; height: 20px"></asp:TextBox>
+            <asp:Button ID="btnCancel" runat="server" style="z-index: 1; left: 268px; top: 378px; position: absolute; width: 88px" Text="CANCEL" />
         </p>
         <asp:Label ID="lblProductId" runat="server" style="z-index: 1; left: 6px; top: 51px; position: absolute; bottom: 607px" Text="Product ID" height="18px" width="99px"></asp:Label>
         <p style="margin-top: 13px">
