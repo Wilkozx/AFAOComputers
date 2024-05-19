@@ -3,6 +3,8 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.IO;
 using System.Reflection;
+using System.Collections.Generic;
+
 
 namespace Testing2
 {
@@ -673,6 +675,87 @@ namespace Testing2
             Assert.AreNotEqual(Error, ""); // Expecting an error message
         }
     }
-}
 
+
+
+        [TestClass]
+        public class tstProductCollection
+        {
+            [TestMethod]
+            public void instanceokay()
+            {
+                clsProductCollection AllProducts = new  clsProductCollection();
+                //testing to see that it exists:
+                Assert.IsNotNull(AllProducts);
+            }
+        [TestMethod]
+        public void ProductsListOk()
+        {
+            //lets create an instance of the class we want to create
+            clsProductCollection AllProducts = new clsProductCollection(); 
+            //create some test data to assign to the property
+            //in this case the data will be list of products
+            List<clsProduct> TestList = new List<clsProduct>();
+            //add an Item to the list
+            //create the item of test data
+            clsProduct TestItem = new clsProduct();
+            //setting its properties
+            TestItem.Visible = true;
+            TestItem.ProductId = 1;
+            TestItem.Name = "Mouse";
+            TestItem.Description = "this is rubbish mouse";
+            TestItem.DateAdded = DateTime.Now;
+            TestItem.SKU = 1233221;
+            TestItem.Price = "283.23";
+            //Add the item to the test list
+            TestList.Add(TestItem);
+            //assign the data to the property
+            AllProducts.ProductList = TestList;
+            //test to see that the two values are the same
+            Assert.AreEqual(AllProducts.ProductList, TestList);
+        }
+      
+        [TestMethod]
+        public void ThisProductPropertyOkay()
+        {
+            clsProductCollection AllProducts = new clsProductCollection();
+            clsProduct TestProduct = new clsProduct();
+            //set the properties of the test object
+            TestProduct.Visible = true;
+            TestProduct.ProductId = 1;
+            TestProduct.Name = "Mouse";
+            TestProduct.Description = "this is rubbish mouse";
+            TestProduct.DateAdded = DateTime.Now;
+            TestProduct.SKU = 1233221;
+            TestProduct.Price = "283.23";
+
+            //assign the data to the property
+            AllProducts.ThisProduct = TestProduct;
+            //testing
+            Assert.AreEqual(AllProducts.ThisProduct, TestProduct);
+
+        }
+        [TestMethod]
+        public void ListAndCountOkay()
+        {
+            clsProductCollection AllProducts = new clsProductCollection();
+            List<clsProduct>TestList = new List<clsProduct>();
+            clsProduct TestItem = new clsProduct();
+            TestItem.Visible = true;
+            TestItem.ProductId = 1;
+            TestItem.Name = "Mouse";
+            TestItem.Description = "this is rubbish mouse";
+            TestItem.DateAdded = DateTime.Now;
+            TestItem.SKU = 1233221;
+            TestItem.Price = "283.23";
+            //Add the item to the test list
+            TestList.Add(TestItem);
+            //assign the data to the property
+            AllProducts.ProductList = TestList;
+            //test to see that the two values are the same
+            Assert.AreEqual(AllProducts.Count, TestList.Count);
+        }
+       
+    }
+}
 

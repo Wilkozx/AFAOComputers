@@ -6,7 +6,7 @@ namespace ClassLibrary
     public class clsProduct
 
     {
-        //private data for the address id Property;
+        //private data for the Product id Property;
         private Int32 mProductId;
         private DateTime mDateAdded;
         private string mName;
