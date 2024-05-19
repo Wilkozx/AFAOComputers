@@ -166,3 +166,17 @@ H:\Desktop\Lab11\Skeleton\Testing1\obj\Debug\TestingOrders.csproj.CoreCompileInp
 H:\Desktop\Lab11\Skeleton\Testing1\obj\Debug\TestingO.64048BAB.Up2Date
 H:\Desktop\Lab11\Skeleton\Testing1\obj\Debug\Testing1.dll
 H:\Desktop\Lab11\Skeleton\Testing1\obj\Debug\Testing1.pdb
+H:\Desktop\lab12\Skeleton\Testing1\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+H:\Desktop\lab12\Skeleton\Testing1\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+H:\Desktop\lab12\Skeleton\Testing1\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+H:\Desktop\lab12\Skeleton\Testing1\bin\Debug\Testing1.dll
+H:\Desktop\lab12\Skeleton\Testing1\bin\Debug\Testing1.pdb
+H:\Desktop\lab12\Skeleton\Testing1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+H:\Desktop\lab12\Skeleton\Testing1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+H:\Desktop\lab12\Skeleton\Testing1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+H:\Desktop\lab12\Skeleton\Testing1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+H:\Desktop\lab12\Skeleton\Testing1\obj\Debug\TestingOrders.csproj.AssemblyReference.cache
+H:\Desktop\lab12\Skeleton\Testing1\obj\Debug\TestingOrders.csproj.CoreCompileInputs.cache
+H:\Desktop\lab12\Skeleton\Testing1\obj\Debug\TestingO.64048BAB.Up2Date
+H:\Desktop\lab12\Skeleton\Testing1\obj\Debug\Testing1.dll
+H:\Desktop\lab12\Skeleton\Testing1\obj\Debug\Testing1.pdb
