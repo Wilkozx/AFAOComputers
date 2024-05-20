@@ -127,9 +127,34 @@ namespace ClassLibrary
             }
         }
 
-        public string Valid(int userId, string userName, string email, string dateofBirth, string hashedPass, int phoneNumber, bool isStaff)
+        public string Valid(string userName, string email, string dateofBirth, int phoneNumber, bool isStaff)
         {
-            return "";
+            String Error = "";
+            if (userName.Length < 4)
+            {
+                Error = Error + "The Username must be greater than 4 characters";
+            }
+            if (userName.Length > 15)
+            {
+                Error = Error + "The Username must be Less than 15 characters";
+            }
+            if (email.Length < 5)
+            {
+                Error = Error + "The Email must be greater than 5 characters";
+            }
+            if (email.Length > 50)
+            {
+                Error = Error + "The Email must be Less than 50 characters";
+            }
+            if (phoneNumber < 6)
+            {
+                Error = Error + "The phonenumber must be greater than 6 characters";
+            }
+            if (phoneNumber > 15)
+            {
+                Error = Error + "The Phone number must be Less than 15 characters";
+            }
+            return Error;
         }
     }
 }
