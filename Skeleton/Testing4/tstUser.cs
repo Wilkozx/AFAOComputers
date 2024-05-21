@@ -299,7 +299,7 @@ namespace Testing4
             clsUser AUser = new clsUser();
             String Error = "";
             String Email = "aaaaa";
-            Error = AUser.Valid(UserId, UserName, Email, DateofBirth, PhoneNumber, isStaff);
+            Error = AUser.Valid(UserName, Email, DateofBirth, PhoneNumber, isStaff);
             Assert.AreNotEqual(Error, "");
         }
         public void EmailMinPlusOne()
@@ -406,6 +406,17 @@ namespace Testing4
 
             Error = AUser.Valid(UserName, Email, DateofBirth, PhoneNumber, isStaff);
             Assert.AreNotEqual(Error, "");
+        }
+        [TestClass]
+        public class tstUserCollection
+        {
+            [TestMethod]
+            public void InstanceOK()
+            {
+                clsUserCollection AllUsers = new clsUserCollection();
+
+                Assert.IsNotNull(AllUsers);
+            }
         }
 
     }

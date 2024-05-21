@@ -100,3 +100,9 @@ H:\Desktop\lab13b\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.csproj.AssemblyRe
 H:\Desktop\lab13b\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.csproj.CoreCompileInputs.cache
 H:\Desktop\lab13b\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.dll
 H:\Desktop\lab13b\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.pdb
+C:\Users\dabou\OneDrive\Desktop\Agile dev adsadsa\Skeleton\ClassLibrary\bin\Debug\ClassLibrary.dll
+C:\Users\dabou\OneDrive\Desktop\Agile dev adsadsa\Skeleton\ClassLibrary\bin\Debug\ClassLibrary.pdb
+C:\Users\dabou\OneDrive\Desktop\Agile dev adsadsa\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.csproj.AssemblyReference.cache
+C:\Users\dabou\OneDrive\Desktop\Agile dev adsadsa\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\dabou\OneDrive\Desktop\Agile dev adsadsa\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.dll
+C:\Users\dabou\OneDrive\Desktop\Agile dev adsadsa\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.pdb

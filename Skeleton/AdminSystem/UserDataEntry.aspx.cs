@@ -25,12 +25,32 @@ public partial class _1_DataEntry : System.Web.UI.Page
     {
         //create a new instance of clsUser
         clsUser AUser = new clsUser();
-        //capture UserId
-        AUser.UserName = txtUserName.Text;
-        //store the address in the session object
-        Session["AUser"] = AUser;
-        //Navigate to the view page
-        Response.Redirect("UserViewer.aspx");
+        string UserName = txtUserName.Text;
+        string Email = txtEmail.Text;
+        string Password = txtPassword.Text; 
+        string PhoneNumber = Convert.ToString(txtPhoneNumber.Text);
+        string DateOfBirth = txtDateofBirth.Text;
+        string isStaff = Convert.ToString(chkboxStaff.Text);
+        string Error = "";
+        Error = AUser.Valid(UserName,Email,DateOfBirth,PhoneNumber, isStaff);
+        if (Error == "")
+        {
+            //capture UserId
+            AUser.UserName = txtUserName.Text;
+            AUser.Email = txtEmail.Text;
+            AUser.isStaff = chkboxStaff.Checked;
+            AUser.PhoneNumber = Convert.ToInt32(txtPhoneNumber.Text);
+            AUser.HashedPass = txtPassword.Text;
+            AUser.DateofBirth = Convert.ToDateTime(txtDateofBirth.Text);
+            //store the address in the session object
+            Session["AUser"] = AUser;
+            //Navigate to the view page
+            Response.Redirect("UserViewer.aspx");
+        }
+        else
+        {
+           ERROR.InnerText = Error;
+        }
 
     }
 

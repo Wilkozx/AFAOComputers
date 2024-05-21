@@ -208,3 +208,7 @@ H:\Desktop\Lab13\Skeleton\Testing4\obj\Debug\TestingUser.csproj.AssemblyReferenc
 H:\Desktop\Lab13\Skeleton\Testing4\obj\Debug\TestingUser.csproj.CoreCompileInputs.cache
 H:\Desktop\Lab13\Skeleton\Testing4\obj\Debug\Testing4.dll
 H:\Desktop\Lab13\Skeleton\Testing4\obj\Debug\Testing4.pdb
+C:\Users\dabou\OneDrive\Desktop\Agile dev adsadsa\Skeleton\Testing4\obj\Debug\TestingUser.csproj.AssemblyReference.cache
+C:\Users\dabou\OneDrive\Desktop\Agile dev adsadsa\Skeleton\Testing4\obj\Debug\TestingUser.csproj.CoreCompileInputs.cache
+C:\Users\dabou\OneDrive\Desktop\Agile dev adsadsa\Skeleton\Testing4\obj\Debug\Testing4.dll
+C:\Users\dabou\OneDrive\Desktop\Agile dev adsadsa\Skeleton\Testing4\obj\Debug\Testing4.pdb
