@@ -78,5 +78,20 @@ namespace ClassLibrary
             //execute the query returning the primary key value
             return DB.Execute("sproc_tblProducts_Insert");
         }
+
+        public void Update()
+        {
+            clsDataConnection DB = new clsDataConnection();
+            DB.AddParameter("@ProductId", mThisProduct.ProductId);
+            DB.AddParameter("@SKU", mThisProduct.SKU);
+            DB.AddParameter("@Name", mThisProduct.Name);
+            DB.AddParameter("@Price", mThisProduct.Price);
+            DB.AddParameter("@Date_Added", mThisProduct.DateAdded);
+            DB.AddParameter("@Description", mThisProduct.Description);
+            DB.AddParameter("@IsVisible", mThisProduct.Visible);
+
+            //execute the query returning the primary key value
+            DB.Execute("sproc_tblProducts_Update");
+        }
     }
 }

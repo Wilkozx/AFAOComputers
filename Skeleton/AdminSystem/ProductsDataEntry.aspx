@@ -30,7 +30,7 @@
             <asp:TextBox ID="TxtPrice" runat="server" style="z-index: 1; left: 134px; top: 135px; position: absolute; width: 160px; height: 20px; bottom: 604px"></asp:TextBox>
         <asp:Label ID="lblName" runat="server" style="z-index: 1; left: 8px; top: 176px; position: absolute; height: 18px; width: 99px" Text="Product Name"></asp:Label>
         <asp:TextBox ID="txtName" runat="server" style="z-index: 1; left: 134px; top: 180px; position: absolute; width: 160px; height: 20px"></asp:TextBox>
-            <asp:Button ID="btnCancel" runat="server" style="z-index: 1; left: 268px; top: 378px; position: absolute; width: 88px" Text="CANCEL" />
+            <asp:Button ID="btnCancel" runat="server" style="z-index: 1; left: 268px; top: 381px; position: absolute; width: 88px; height: 28px;" Text="CANCEL" />
         </p>
         <asp:Label ID="lblProductId" runat="server" style="z-index: 1; left: 6px; top: 51px; position: absolute; bottom: 607px" Text="Product ID" height="18px" width="99px"></asp:Label>
         <p style="margin-top: 13px">
