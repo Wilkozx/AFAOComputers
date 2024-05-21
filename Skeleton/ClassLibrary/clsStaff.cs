@@ -132,9 +132,6 @@ namespace ClassLibrary
             // Create our error string
             String Error = "";
 
-            // Create a tempt value
-            DateTime dateTemp;
-
             // Add validation for staff_id 'because it can be modified on the frontend
 
             // Firstname Validation
@@ -143,6 +140,7 @@ namespace ClassLibrary
             if (firstname == "")
             {
                 // Append the error to our error string.
+                Error = Error += "Firstname cannot be blank : ";
                 Error += "Firstname cannot be blank : ";
             }
 
