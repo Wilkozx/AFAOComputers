@@ -204,3 +204,7 @@ H:\Desktop\lab12\Skeleton\Testing4\obj\Debug\TestingUser.csproj.CoreCompileInput
 H:\Desktop\lab12\Skeleton\Testing4\obj\Debug\TestingU.C3DB0E51.Up2Date
 H:\Desktop\lab12\Skeleton\Testing4\obj\Debug\Testing4.dll
 H:\Desktop\lab12\Skeleton\Testing4\obj\Debug\Testing4.pdb
+H:\Desktop\Lab13\Skeleton\Testing4\obj\Debug\TestingUser.csproj.AssemblyReference.cache
+H:\Desktop\Lab13\Skeleton\Testing4\obj\Debug\TestingUser.csproj.CoreCompileInputs.cache
+H:\Desktop\Lab13\Skeleton\Testing4\obj\Debug\Testing4.dll
+H:\Desktop\Lab13\Skeleton\Testing4\obj\Debug\Testing4.pdb

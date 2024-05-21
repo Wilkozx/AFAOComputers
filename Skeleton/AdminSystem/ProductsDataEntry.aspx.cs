@@ -31,11 +31,14 @@ public partial class _1_DataEntry : System.Web.UI.Page
             AProduct.Price = Price;
             AProduct.SKU= Convert.ToInt32(txtSKU.Text);
             AProduct.DateAdded = Convert.ToDateTime(Date_Added);
-
-            //store the Product in the session object;
-            Session["AProduct"] = AProduct;
+            AProduct.Visible= chkVisible.Checked;
+            //Creating a new instance of the address collection
+            clsProductCollection ProductList = new clsProductCollection();
+            //set the thisProduct property
+            ProductList.ThisProduct = AProduct;
+            ProductList.Add();
             //navigate to the view page
-            Response.Redirect("ProductsViewer.aspx");
+            Response.Redirect("ProductsList.aspx");
 
         }
         else
@@ -71,5 +74,10 @@ public partial class _1_DataEntry : System.Web.UI.Page
           
         }
     }
-  
+
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+
+    }
 }

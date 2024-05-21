@@ -10,6 +10,8 @@ namespace ClassLibrary
     public class clsProductCollection
     {
         List<clsProduct> mProductList = new List<clsProduct>();
+        //private data for collection
+        clsProduct mThisProduct = new clsProduct();
         public List<clsProduct> ProductList
         {
            
@@ -22,7 +24,14 @@ namespace ClassLibrary
             set { 
             }
                 }
-        public clsProduct ThisProduct { get; set; }
+        public clsProduct ThisProduct {
+            get
+            {
+                return mThisProduct;
+            }
+            set { mThisProduct =value;
+            }
+            }
 
         public clsProductCollection()
         {
@@ -54,6 +63,20 @@ namespace ClassLibrary
                 //Point at the next record
                 Index++;
             }
+        }
+
+        public int Add()
+        {
+          clsDataConnection DB =new clsDataConnection();
+            DB.AddParameter("@SKU", mThisProduct.SKU);
+            DB.AddParameter("@Name", mThisProduct.Name);
+            DB.AddParameter("@Price", mThisProduct.Price);
+            DB.AddParameter("@Date_Added", mThisProduct.DateAdded);
+            DB.AddParameter("@Description", mThisProduct.Description);
+            DB.AddParameter("@IsVisible", mThisProduct.Visible);
+
+            //execute the query returning the primary key value
+            return DB.Execute("sproc_tblProducts_Insert");
         }
     }
 }

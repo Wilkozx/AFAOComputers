@@ -755,6 +755,31 @@ namespace Testing2
             //test to see that the two values are the same
             Assert.AreEqual(AllProducts.Count, TestList.Count);
         }
+        [TestMethod]
+        public void AddProductMethodOk()
+        {
+            clsProductCollection AllProducts = new clsProductCollection();
+            //creating the item of test
+            clsProduct TestItem = new clsProduct();
+            Int32 PrimaryKey = 0;
+            //set the properties 
+            TestItem.Visible = true;
+            TestItem.ProductId = 1;
+            TestItem.Name = "Mouse";
+            TestItem.Description = "this is rubbish mouse";
+            TestItem.DateAdded = DateTime.Now;
+            TestItem.SKU = 1233221;
+            TestItem.Price = "283.23";
+            //set thisProduct to the test data
+            AllProducts.ThisProduct = TestItem;
+            //add the record
+            PrimaryKey = AllProducts.Add();
+            TestItem.ProductId = PrimaryKey;
+            AllProducts.ThisProduct.Find(PrimaryKey);
+
+            Assert.AreEqual(AllProducts.ThisProduct,TestItem);
+
+        }
        
     }
 }
