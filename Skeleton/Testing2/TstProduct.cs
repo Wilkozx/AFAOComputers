@@ -780,7 +780,38 @@ namespace Testing2
             Assert.AreEqual(AllProducts.ThisProduct,TestItem);
 
         }
-       
+        [TestMethod]
+       public void UpdateMethodOkay()
+        {
+            clsProductCollection AllProducts = new clsProductCollection();
+            clsProduct TestItem = new clsProduct();
+            Int32 PrimaryKey = 0;
+            TestItem.Visible = true;
+            TestItem.ProductId = 1;
+            TestItem.Name = "Mouse";
+            TestItem.Description = "this is rubbish mouse";
+            TestItem.DateAdded = DateTime.Now;
+            TestItem.SKU = 1233221;
+            TestItem.Price = "283.23";
+            //setting thisProduct to the test
+            AllProducts.ThisProduct = TestItem;
+            //Add the record
+            PrimaryKey=AllProducts.Add();
+            TestItem.ProductId = PrimaryKey;
+            //modify the test record
+            TestItem.Visible = false;
+            TestItem.ProductId = 3;
+            TestItem.Name = "mouse pad";
+            TestItem.Description = "this is rubbish will need to clean";
+            TestItem.DateAdded = DateTime.Now;
+            TestItem.SKU = 4233221;
+            TestItem.Price = "283.23";
+            //set the record
+            AllProducts.ThisProduct = TestItem;
+            //updating the record
+            AllProducts.Update();
+            Assert.AreEqual(AllProducts.ThisProduct, TestItem);
+        }
     }
 }
 

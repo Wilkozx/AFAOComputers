@@ -94,3 +94,9 @@ H:\Desktop\Lab13\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.csproj.AssemblyRef
 H:\Desktop\Lab13\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.csproj.CoreCompileInputs.cache
 H:\Desktop\Lab13\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.dll
 H:\Desktop\Lab13\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.pdb
+H:\Desktop\lab13b\Skeleton\ClassLibrary\bin\Debug\ClassLibrary.dll
+H:\Desktop\lab13b\Skeleton\ClassLibrary\bin\Debug\ClassLibrary.pdb
+H:\Desktop\lab13b\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.csproj.AssemblyReference.cache
+H:\Desktop\lab13b\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.csproj.CoreCompileInputs.cache
+H:\Desktop\lab13b\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.dll
+H:\Desktop\lab13b\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.pdb
