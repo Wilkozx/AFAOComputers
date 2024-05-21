@@ -27,4 +27,11 @@ public partial class _1_List : System.Web.UI.Page
         LstProductList.DataBind();
     }
 
+
+    protected void btnAddProduct_Click(object sender, EventArgs e)
+    {
+        Session["ProductId"] = -1;
+        //redirecting 
+        Response.Redirect("ProductsDataEntry.aspx");
+    }
 }
