@@ -15,7 +15,8 @@
         <asp:Label ID="lblUserName" runat="server" style="z-index: 1; left: 10px; top: 77px; position: absolute" Text="UserName" width="87px"></asp:Label>
         <asp:Label ID="lblUserId" runat="server" style="z-index: 1; left: 9px; top: 34px; position: absolute; width: 87px; bottom: 623px" Text="UserId"></asp:Label>
         <p>
-            &nbsp;</p>
+            <asp:Button ID="btnFind" runat="server" OnClick="btnFind_Click" style="z-index: 1; left: 320px; top: 52px; position: absolute; height: 27px; width: 60px; margin-top: 4px; margin-bottom: 135px;" Text="Find" />
+        </p>
         <p>
             <asp:Label ID="lblEmail" runat="server" style="z-index: 1; left: 9px; top: 110px; position: absolute; width: 87px; margin-bottom: 0px" Text="Email"></asp:Label>
             <asp:TextBox ID="txtUserName" runat="server" style="z-index: 1; left: 172px; top: 73px; position: absolute" width="128px"></asp:TextBox>
@@ -39,8 +40,7 @@
         <asp:Button ID="btnCancel" runat="server" OnClick="btnCancel_Click" style="z-index: 1; left: 154px; top: 296px; position: absolute" Text="Cancel" />
         <asp:Button ID="btnOk" runat="server" OnClick="btnOk_Click" style="z-index: 1; left: 46px; top: 296px; position: absolute; width: 54px" Text="Ok" />
         <p>
-            <asp:Button ID="btnFind" runat="server" OnClick="btnFind_Click" style="z-index: 1; left: 358px; top: 285px; position: absolute; height: 72px; width: 474px; margin-top: 4px; margin-bottom: 135px;" Text="Find" />
-        </p>
+            &nbsp;</p>
         <span runat="server" id="ERROR">
 
         </span>
