@@ -106,3 +106,9 @@ C:\Users\dabou\OneDrive\Desktop\Agile dev adsadsa\Skeleton\ClassLibrary\obj\Debu
 C:\Users\dabou\OneDrive\Desktop\Agile dev adsadsa\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.csproj.CoreCompileInputs.cache
 C:\Users\dabou\OneDrive\Desktop\Agile dev adsadsa\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.dll
 C:\Users\dabou\OneDrive\Desktop\Agile dev adsadsa\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.pdb
+H:\Week4 Prac 12\Skeleton\ClassLibrary\bin\Debug\ClassLibrary.dll
+H:\Week4 Prac 12\Skeleton\ClassLibrary\bin\Debug\ClassLibrary.pdb
+H:\Week4 Prac 12\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.csproj.AssemblyReference.cache
+H:\Week4 Prac 12\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.csproj.CoreCompileInputs.cache
+H:\Week4 Prac 12\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.dll
+H:\Week4 Prac 12\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.pdb

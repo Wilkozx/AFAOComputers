@@ -32,7 +32,7 @@ public partial class _1_DataEntry : System.Web.UI.Page
         string DateOfBirth = txtDateofBirth.Text;
         string isStaff = Convert.ToString(chkboxStaff.Text);
         string Error = "";
-        Error = AUser.Valid(UserName,Email,DateOfBirth,PhoneNumber, isStaff);
+        Error = AUser.Valid(UserName,Email,DateOfBirth);
         if (Error == "")
         {
             //capture UserId

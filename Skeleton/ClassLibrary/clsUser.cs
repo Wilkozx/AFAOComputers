@@ -127,7 +127,7 @@ namespace ClassLibrary
             }
         }
 
-        public string Valid(string userName, string email, string dateofBirth, int phoneNumber, bool isStaff)
+        public string Valid(string userName, string email, string dateofBirth)
         {
             String Error = "";
             if (userName.Length < 4)
@@ -146,14 +146,8 @@ namespace ClassLibrary
             {
                 Error = Error + "The Email must be Less than 50 characters";
             }
-            if (phoneNumber < 6)
-            {
-                Error = Error + "The phonenumber must be greater than 6 characters";
-            }
-            if (phoneNumber > 15)
-            {
-                Error = Error + "The Phone number must be Less than 15 characters";
-            }
+            
+            
             return Error;
         }
     }
