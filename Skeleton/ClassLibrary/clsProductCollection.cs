@@ -35,34 +35,15 @@ namespace ClassLibrary
 
         public clsProductCollection()
         {
-           //variable for the index
-           Int32 Index =0;
-            //variable to store the record count
-            Int32 RecordCount = 0;
-
-            //onjecting the store data connect
-            clsDataConnection DB =new clsDataConnection();
-            //EXECUTE
+            //object for data connection
+            clsDataConnection DB = new clsDataConnection();
+            //EXECUTE 
             DB.Execute("sproc_tblProducts_SelectAll");
-            //Get the count of records
-            RecordCount = DB.Count;
-            //while there are records to process
-            while (Index < RecordCount)
-            {
-                clsProduct AProduct = new clsProduct();
-                //Reading in the field for the current record
-                AProduct.ProductId = Convert.ToInt32(DB.DataTable.Rows[Index]["ProductId"]);
-                AProduct.Name = Convert.ToString(DB.DataTable.Rows[Index]["Name"]);
-                AProduct.Description = Convert.ToString(DB.DataTable.Rows[Index]["Description"]);
-                AProduct.SKU = Convert.ToInt32(DB.DataTable.Rows[Index]["SKU"]);
-                AProduct.Price = Convert.ToString(DB.DataTable.Rows[Index]["Price"]);
-                AProduct.DateAdded = Convert.ToDateTime(DB.DataTable.Rows[Index]["Date_Added"]);
-                AProduct.Visible = Convert.ToBoolean(DB.DataTable.Rows[Index]["IsVisible"]);
-                //Add the Record to the private data member
-                mProductList.Add(AProduct);
-                //Point at the next record
-                Index++;
-            }
+            //populate the array list with the data table
+            PopulateArray(DB);
+
+
+
         }
 
         public int Add()
@@ -101,5 +82,42 @@ namespace ClassLibrary
             //execute the store procedure 
             DB.Execute("sproc_tblProducts_Delete");
         }
+
+        public void ReportByName(string Name)
+        {
+            clsDataConnection DB = new clsDataConnection();
+            DB.AddParameter("@Name", Name);
+            //executing the stored procedure 
+            DB.Execute("sproc_tblProducts_FilterByName");
+            //Populate the array list with the data table
+            PopulateArray(DB);
+        }
+        void PopulateArray(clsDataConnection DB)
+        {
+            Int32 Index = 0;
+            //variable to store the record count
+            Int32 RecordCount;
+            //getting the count of the record 
+            RecordCount = DB.Count;
+            //clearing the private array list
+            mProductList = new List<clsProduct>();
+            //while there are no records to process
+            while(Index < RecordCount){
+               clsProduct AProduct = new clsProduct();
+                //creating the blank products current record
+                AProduct.ProductId = Convert.ToInt32(DB.DataTable.Rows[Index]["ProductId"]);
+                AProduct.Name = Convert.ToString(DB.DataTable.Rows[Index]["Name"]);
+                AProduct.Description = Convert.ToString(DB.DataTable.Rows[Index]["Description"]);
+                AProduct.SKU = Convert.ToInt32(DB.DataTable.Rows[Index]["SKU"]);
+                AProduct.Price = Convert.ToString(DB.DataTable.Rows[Index]["Price"]);
+                AProduct.DateAdded = Convert.ToDateTime(DB.DataTable.Rows[Index]["Date_Added"]);
+                AProduct.Visible = Convert.ToBoolean(DB.DataTable.Rows[Index]["IsVisible"]);
+                mProductList.Add(AProduct);
+                //point at the next record 
+                Index++;    
+
+            }
+        }
     }
+
 }

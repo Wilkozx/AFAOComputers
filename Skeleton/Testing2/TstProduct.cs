@@ -844,6 +844,50 @@ namespace Testing2
             Assert.IsFalse( Found );
 
         }
+        [TestMethod]
+        public void ReportByNameMethodOkay()
+        {
+            //creating the instanse of the class
+            clsProductCollection AllProduct = new clsProductCollection();
+            //creating an instance of the filtered data
+            clsProductCollection filteredProducts = new clsProductCollection();
+            //apply a blank string (should return all record)
+            filteredProducts.ReportByName("");
+            //testing
+            Assert.AreEqual(AllProduct.Count, filteredProducts.Count);
+        }
+        [TestMethod]
+        public void ReportByNameNoneFound() {
+        clsProductCollection FilteredProducts = new clsProductCollection();
+            FilteredProducts.ReportByName("XXXXXX");
+         Assert.AreEqual(0, FilteredProducts.Count);
+                }
+
+        [TestMethod]
+
+        public void ReportByNameTestDataFound() {
+        clsProductCollection filterProducts = new clsProductCollection();
+            //variable to store the outcome
+            Boolean OK = true;
+            //apply a name that doestnt exist
+            filterProducts.ReportByName("Mouse");
+                //check that the correct number of record are found
+         if (filterProducts.Count == 3)
+            {
+                if (filterProducts.ProductList[0].ProductId  != 49){
+                    OK= false;
+                }if (filterProducts.ProductList[0].ProductId != 47){
+                    OK = false;
+                        }
+                if (filterProducts.ProductList[0].ProductId != 46)
+                {
+                    OK = false;
+                }else {  OK = false; }
+            }
+         //test to see that there are no records
+         Assert.IsTrue( OK );
+        }
+
     }
 }
 
