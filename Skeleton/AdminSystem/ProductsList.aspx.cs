@@ -76,4 +76,32 @@ public partial class _1_List : System.Web.UI.Page
             LblError.Text = "Please select the Product from the list to delete: ";
         }
     }
+
+    protected void BtnFilter_Click(object sender, EventArgs e)
+    {
+        //creating an instance of the address object
+        clsProductCollection AProduct = new clsProductCollection(); 
+        //retrieve the value of the post code from the pressentation layer
+        AProduct.ReportByName(txtFilter.Text);
+        //setting the data source to the list of addresses in the collection
+        LstProductList.DataSource = AProduct.ProductList;
+        //Set the name of the field to display
+        LstProductList.DataTextField = "Name";
+        //bind the data to the list
+        LstProductList.DataBind();
+    }
+
+    protected void BntclearFilter_Click(object sender, EventArgs e)
+    {
+        clsProductCollection AProduct = new clsProductCollection();
+        //set an empty string
+        AProduct.ReportByName("");
+        //CLEARING 
+        txtFilter.Text = "";
+        //setting the data source to the list of products in the collection
+        LstProductList.DataSource= AProduct.ProductList;
+        LstProductList.DataValueField = "ProductId";
+        LstProductList.DataValueField = "Name";
+        LstProductList.DataBind();
+    }
 }
