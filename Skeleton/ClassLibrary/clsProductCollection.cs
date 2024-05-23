@@ -93,5 +93,13 @@ namespace ClassLibrary
             //execute the query returning the primary key value
             DB.Execute("sproc_tblProducts_Update");
         }
+
+        public void Delete()
+        {
+            clsDataConnection DB = new clsDataConnection();
+            DB.AddParameter("@ProductId", mThisProduct.ProductId);
+            //execute the store procedure 
+            DB.Execute("sproc_tblProducts_Delete");
+        }
     }
 }

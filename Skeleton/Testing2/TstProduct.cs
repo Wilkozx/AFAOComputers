@@ -812,6 +812,38 @@ namespace Testing2
             AllProducts.Update();
             Assert.AreEqual(AllProducts.ThisProduct, TestItem);
         }
+        [TestMethod]
+        public void DeleteMethodOkay()
+        {
+            clsProductCollection AllProducts = new clsProductCollection();
+            //create the item of test data
+            clsProduct TestItem = new clsProduct();
+            //variable to store the primary key
+            Int32 PrimaryKey = 0;
+            //set its properties 
+            TestItem.Visible = false;
+            TestItem.ProductId = 3;
+            TestItem.Name = "mouse pad";
+            TestItem.Description = "this is rubbish will need to clean";
+            TestItem.DateAdded = DateTime.Now;
+            TestItem.SKU = 4233221;
+            TestItem.Price = "283.23";
+            //set thisProduct to the test data
+            AllProducts.ThisProduct = TestItem;
+            //add the record
+            PrimaryKey = AllProducts.Add();
+            //set the primary key of the test data
+            TestItem.ProductId = PrimaryKey;
+            //fine the record
+            AllProducts.ThisProduct.Find(PrimaryKey);
+            //delete the record
+            AllProducts.Delete();
+            //now find the record 
+            Boolean Found = AllProducts.ThisProduct.Find(PrimaryKey);
+            //test to see if the record exist
+            Assert.IsFalse( Found );
+
+        }
     }
 }
 

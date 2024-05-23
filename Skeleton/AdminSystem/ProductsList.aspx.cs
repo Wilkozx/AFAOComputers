@@ -56,4 +56,24 @@ public partial class _1_List : System.Web.UI.Page
             LblError.Text = "Pleass select a product from the list to edith";
         }
     }
+
+    protected void BtnDelete_Click(object sender, EventArgs e)
+    {
+        Int32 ProductId;
+        //if statement when the record is selected
+        if (LstProductList.SelectedIndex != -1)
+        {
+            //get the primary key value of the record delete
+            ProductId = Convert.ToInt32(LstProductList.SelectedValue);
+            //store the selected data
+            Session["ProductId"] = ProductId;
+            //redirect to the delete page
+            Response.Redirect("ProductsConfirmDelete.aspx");
+        }
+        else //if no record has been selected 
+        {
+            //Display the error message
+            LblError.Text = "Please select the Product from the list to delete: ";
+        }
+    }
 }
