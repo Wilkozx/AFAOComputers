@@ -27,6 +27,8 @@ public partial class ProductsLogin : System.Web.UI.Page
         PassWord = Convert.ToString(txtPassWord.Text);
         //find the record
         Found = AnAcccount.FindAccount(UserName, PassWord);
+        //capturing the user name
+        Session["AnAccount"] = AnAcccount;
         //if the acount exist
         if (TxtUserName.Text == "")
         {
@@ -42,5 +44,10 @@ public partial class ProductsLogin : System.Web.UI.Page
             lblError.Text = "Login Details are incorrect. Please try again: ";
         }
 
+    }
+
+    protected void btnCancel_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("TeamMainMenu.aspx");
     }
 }
