@@ -17,6 +17,12 @@ public partial class _1_List : System.Web.UI.Page
         {
             DisplayProducts(); 
         }
+ //creating a new instance of clsProductAccount
+ clsProductAccount AnAccount = new clsProductAccount();
+        //getting data from the session object
+        AnAccount = (clsProductAccount)Session["AnAccount"];
+        //display the user name
+        Response.Write("Logged in as:" + AnAccount.UserName);
     }
     void DisplayProducts()
     {
@@ -103,5 +109,10 @@ public partial class _1_List : System.Web.UI.Page
         LstProductList.DataValueField = "ProductId";
         LstProductList.DataValueField = "Name";
         LstProductList.DataBind();
+    }
+
+    protected void BtnReturn_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("TeamMainMenu.aspx");
     }
 }

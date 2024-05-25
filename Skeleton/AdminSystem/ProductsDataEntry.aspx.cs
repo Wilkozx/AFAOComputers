@@ -120,4 +120,14 @@ public partial class _1_DataEntry : System.Web.UI.Page
         TxtPrice.Text = Products.ThisProduct.Price.ToString();  
         chkVisible.Checked = Products.ThisProduct.Visible;
     }
+
+    protected void btnReturn_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("TeamMainMenu.aspx");
+    }
+
+    protected void btnCancel_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("ProductsList.aspx");
+    }
 }
