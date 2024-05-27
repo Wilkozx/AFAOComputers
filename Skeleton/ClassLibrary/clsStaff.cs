@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Runtime.Remoting.Metadata.W3cXsd2001;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace ClassLibrary
 {
@@ -216,5 +218,6 @@ namespace ClassLibrary
 
             return Error;
         }
+
     }
 }
