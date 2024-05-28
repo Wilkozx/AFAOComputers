@@ -12,7 +12,7 @@
             left: 140px;
             z-index: 1;
             width: 502px;
-            height: 500px;
+            height: 449px;
         }
     </style>
 </head>
@@ -48,13 +48,18 @@
         <p>
             &nbsp;</p>
         <p>
-            &nbsp;</p>
+            <asp:Label ID="lblEnterName" runat="server" Text="Label"></asp:Label>
+            <asp:TextBox ID="txtFilterInput" runat="server"></asp:TextBox>
+            <asp:Button ID="btnApplyFilter" runat="server" OnClick="btnApplyFilter_Click" Text="Apply Filter" />
+            <asp:Button ID="btnClearFilter" runat="server" OnClick="btnClearFilter_Click" Text="Clear Filter" />
+        </p>
         <p>
             <asp:Button ID="btnAdd" runat="server" OnClick="btnAdd_Click" Text="Add" />
             <asp:Button ID="btnEdit" runat="server" OnClick="btnEdit_Click" Text="Edit" />
             <asp:Button ID="btnDelete" runat="server" OnClick="btnDelete_Click" Text="Delete" />
         </p>
         <asp:Label ID="lblError" runat="server" Text="[lblError]"></asp:Label>
+        <asp:Button ID="btnMainMenu" runat="server" OnClick="btnMainMenu_Click" Text="Return To Main Menu" />
     </form>
 </body>
 </html>

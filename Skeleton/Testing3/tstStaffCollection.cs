@@ -55,7 +55,7 @@ namespace Testing3
             TestStaff.LastName = "Test";
             TestStaff.HasPerms = false;
             TestStaff.JoinDate = DateTime.Now;
-            TestStaff.ContractExpiary= DateTime.Now.AddDays(1);
+            TestStaff.ContractExpiary = DateTime.Now.AddDays(1);
             // assign the data to the property
             AllStaff.ThisStaff = TestStaff;
             Assert.AreEqual(AllStaff.ThisStaff, TestStaff);
@@ -105,7 +105,7 @@ namespace Testing3
             TestItem.PayeeDetails = unhashedPayeeDetails;
             TestItem.HasPerms = false;
             TestItem.JoinDate = DateTime.Now;
-            TestItem.ContractExpiary= DateTime.Now.AddDays(1);
+            TestItem.ContractExpiary = DateTime.Now.AddDays(1);
             // set ThisStaff to the test data
             AllStaff.ThisStaff = TestItem;
             // add the record   
@@ -128,8 +128,8 @@ namespace Testing3
             // Variable to store the primary key
             Int32 PrimaryKey = 0;
             // set it's properties
-            TestItem.FirstName= "Test";
-            TestItem.LastName= "Test";
+            TestItem.FirstName = "Test";
+            TestItem.LastName = "Test";
             // generate sort code & account number
             string sortCode = "123456";
             string accountNumber = "12324123";
@@ -149,7 +149,7 @@ namespace Testing3
             TestItem.LastName = "TestChanged";
             TestItem.HasPerms = true;
             TestItem.JoinDate = DateTime.Now.AddDays(31);
-            TestItem.ContractExpiary= DateTime.Now.AddDays(52);
+            TestItem.ContractExpiary = DateTime.Now.AddDays(52);
             // set the record based on new data
             StaffList.ThisStaff = TestItem;
             // update the record
@@ -158,7 +158,7 @@ namespace Testing3
             StaffList.ThisStaff.Find(PrimaryKey);
             // test to see if ThisStaff matches the test data
             Assert.AreEqual(StaffList.ThisStaff, TestItem);
-            
+
         }
 
         [TestMethod]
@@ -195,6 +195,61 @@ namespace Testing3
             Boolean Found = StaffList.ThisStaff.Find(PrimaryKey);
             // test to see that the record was not found
             Assert.IsFalse(Found);
+        }
+
+        [TestMethod]
+        public void ReportByFirstnameOK()
+        {
+            // create an instance of the class containing unfiltered results
+            clsStaffCollection StaffList = new clsStaffCollection();
+            // create an instance of filtered data
+            clsStaffCollection FilteredStaffList = new clsStaffCollection();
+            // apply a blank string (should return all records);
+            FilteredStaffList.ReportByFirstname("");
+            // Test to see if the two values are the same
+            Assert.AreEqual(StaffList.Count, FilteredStaffList.Count);
+        }
+
+        [TestMethod]
+        public void ReportByFirstnameNoneFound()
+        {
+            // create an instance of the class we want to create
+            clsStaffCollection FilteredStaffList = new clsStaffCollection();
+            // apply a first name that doesnt exist
+            FilteredStaffList.ReportByFirstname("xxx xx");
+            // test to see if there are no records
+            Assert.AreEqual(0, FilteredStaffList.Count);
+        }
+
+        [TestMethod]
+        public void ReportByFirstnameTestDataFound()
+        {
+            // create an instance of the filtered data
+            clsStaffCollection FilteredStaffList = new clsStaffCollection();
+            // variable to store the outcome
+            Boolean OK = true;
+            // apply a first name that doesn't exist
+            FilteredStaffList.ReportByFirstname("catch");
+            // check that the correct number of records are found
+            if (FilteredStaffList.Count == 2)
+            {
+                // check to see if the first record is 21
+                if (FilteredStaffList.StaffList[0].StaffId != 21)
+                {
+                    OK = false;
+                }
+                // check to see if the secon record is 22
+                if (FilteredStaffList.StaffList[1].StaffId != 22)
+                {
+                    OK = false;
+                }
+            }
+            else
+            {
+                OK = false;
+            }
+            // test to see if there are no records
+            Assert.IsTrue(OK);
         }
 
 

@@ -56,34 +56,12 @@ namespace ClassLibrary
 
         public clsStaffCollection()
         {
-            // variable for the index
-            Int32 Index = 0;
-            // variable to store the record count
-            Int32 RecordCount = 0;
             // object for the database connect
             clsDataConnection DB = new clsDataConnection();
             // execute stored procedure 
             DB.Execute("sproc_tblStaff_SelectAll");
-            // get the count of records 
-            RecordCount = DB.Count;
-
-            while (Index < RecordCount)
-            {
-                // create a blank staff 
-                clsStaff AStaff = new clsStaff();
-                // read in the fiels for the current record
-                AStaff.StaffId = Convert.ToInt32(DB.DataTable.Rows[Index]["Staff_Id"]);
-                AStaff.FirstName = Convert.ToString(DB.DataTable.Rows[Index]["Firstname"]);
-                AStaff.LastName = Convert.ToString(DB.DataTable.Rows[Index]["Lastname"]);
-                AStaff.HasPerms = Convert.ToBoolean(DB.DataTable.Rows[Index]["hasPerms"]);
-                AStaff.JoinDate = Convert.ToDateTime(DB.DataTable.Rows[Index]["Join_Date"]);
-                AStaff.ContractExpiary = Convert.ToDateTime(DB.DataTable.Rows[Index]["Contract_Expiry_Date"]);
-                // add the record to the private data member
-                mStaffList.Add(AStaff);
-                // point to next record
-                Index++;
-            }
-
+            // populate the array list with the data table
+            PopulateArray(DB);
         }
 
         public int Add()
@@ -130,6 +108,49 @@ namespace ClassLibrary
             DB.AddParameter("@StaffId", mThisStaff.StaffId);
             // execute the procedure
             DB.Execute("sproc_tblStaff_Delete");
+        }
+
+        public void ReportByFirstname(string Firstname)
+        {
+            // filteres the records based on full or partial firstname
+            // connnect to the database
+            clsDataConnection DB = new clsDataConnection();
+            // send the firstname parameter to the database
+            DB.AddParameter("@Firstname", Firstname);
+            // execute the stored procedure
+            DB.Execute("sproc_tblStaff_FilterByFirstname");
+            // populate the array list with the data table
+            PopulateArray(DB);  
+        }
+
+        void PopulateArray(clsDataConnection DB)
+        {
+            // populates the array list based on the data table in the parameter DB
+            // variable for the index
+            Int32 Index = 0;
+            // variable to store record count
+            Int32 RecordCount;
+            // get number of records
+            RecordCount = DB.Count;
+            // clear the private array list
+            mStaffList = new List<clsStaff>();
+            // while there are records to process
+            while (Index < RecordCount)
+            {
+                // create a blank staff 
+                clsStaff AStaff = new clsStaff();
+                // read in the fiels for the current record
+                AStaff.StaffId = Convert.ToInt32(DB.DataTable.Rows[Index]["Staff_Id"]);
+                AStaff.FirstName = Convert.ToString(DB.DataTable.Rows[Index]["Firstname"]);
+                AStaff.LastName = Convert.ToString(DB.DataTable.Rows[Index]["Lastname"]);
+                AStaff.HasPerms = Convert.ToBoolean(DB.DataTable.Rows[Index]["hasPerms"]);
+                AStaff.JoinDate = Convert.ToDateTime(DB.DataTable.Rows[Index]["Join_Date"]);
+                AStaff.ContractExpiary = Convert.ToDateTime(DB.DataTable.Rows[Index]["Contract_Expiry_Date"]);
+                // add the record to the private data member
+                mStaffList.Add(AStaff);
+                // point to next record
+                Index++;
+            }
         }
 
 

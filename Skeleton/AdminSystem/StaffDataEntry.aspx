@@ -170,6 +170,7 @@
         <asp:Button runat="server" id="btnOk" Text="ok" OnClick="btnOk_Click" />
         <asp:Button runat="server" id="btnCancel" Text="cancel" />
         <asp:Button runat="server" ID="btnFind" Text="find" OnClick="btnFind_Click"/>
+        <asp:Button ID="btnMainMenu" runat="server" OnClick="btnMainMenu_Click" Text="Return To Main Menu" />
         <span runat="server" id="error"></span>
     </form>
 </body>
