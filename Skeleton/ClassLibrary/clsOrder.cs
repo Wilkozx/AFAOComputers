@@ -95,6 +95,9 @@ namespace ClassLibrary
                 mOrderDate = value;
             }
         }
+
+        public bool Status { get; internal set; }
+
         public bool Find(int OrderID)
         {
             // Create an instance of the data base connection
