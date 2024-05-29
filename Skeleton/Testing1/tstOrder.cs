@@ -32,6 +32,21 @@ namespace Testing6
 
         internal class clsOrder
         {
+            internal int OrderID;
+
+            public string OrderId { get; internal set; }
+            public string Status { get; internal set; }
+            public string Quantity { get; internal set; }
+            public DateTime OrderDate { get; internal set; }
+            public string ShipmentId { get; internal set; }
+            public string ShipmentID { get; internal set; }
+            public string CustomerId { get; internal set; }
+            public DateTime ShipmentDate { get; internal set; }
+
+            internal bool Find(int orderID)
+            {
+                throw new NotImplementedException();
+            }
         }
         [TestMethod]
         public void StatusOK()
@@ -88,7 +103,7 @@ namespace Testing6
             // Creates an instance of the Class clsOrder.
             clsOrder AnOrder = new clsOrder();
             // Creates some test data to assign to the Property
-            Int TestData = "ProductID";
+            string TestData = "9";
             // Assign the data to the property.
             AnOrder.Quantity = TestData;
             // Test to see that the two values are the same.
@@ -115,7 +130,7 @@ namespace Testing6
             Boolean Ok = true;
             Int32 OrderID = 1;
             Found = AnOrder.Find(OrderID);
-            if (AnOrder.OrderId != 1)
+            if (AnOrder.OrderID != 1)
             {
                 Ok = false;
             }
@@ -129,7 +144,7 @@ namespace Testing6
             Boolean Ok = true;
             String Status = "Pending";
             Int32 OrderID = 1;
-            Found = AStaff.Find(OrderID);
+            Found = AnOrder.Find(OrderID);
             if (AnOrder.Status != Status)
             {
                 Ok = false;
@@ -208,4 +223,7 @@ namespace Testing6
             }
             Assert.IsTrue(Ok);
         }
+    }
+}
+        
 

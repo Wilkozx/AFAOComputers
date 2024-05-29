@@ -189,10 +189,7 @@ public class clsDataConnection
         return Convert.ToInt32(returnValue.Value);
     }
 
-    internal void AddParameter(string v, object status)
-    {
-        throw new NotImplementedException();
-    }
+   
 
     public Int32 Count
     //property that returns the count of records in the query results

@@ -9,10 +9,10 @@ namespace ClassLibrary
 {
     public class clsOrderCollection
     {
-        List<clsOrder> mProductList = new List<clsOrder>();
+        List<clsOrder> mOrderList = new List<clsOrder>();
         //private data for collection
         clsOrder mThisOrder = new clsOrder();
-        private object mOrderList;
+       
 
         public List<clsOrder> OrderList
         {
