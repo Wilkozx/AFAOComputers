@@ -512,7 +512,6 @@ namespace Testing4
                 // set it's properties
                 TestItem.UserName = "Test";
                 TestItem.HashedPass = "Test";
-                // generate sort code & account number
                 TestItem.Email = "omar@gmail.com";
                 TestItem.isStaff = false;
                 TestItem.DateofBirth = DateTime.Now;
@@ -529,7 +528,7 @@ namespace Testing4
                 Assert.AreEqual(AllUsers.ThisUser, TestItem);
             }
             [TestMethod]
-            public void UpdateMethodOK()
+             public void UpdateMethodOK()
             {
                 // create an instance of the class we want to create
                 clsUserCollection AllUsers = new clsUserCollection();
