@@ -474,7 +474,61 @@ namespace Testing4
                 AllUsers.ThisUser = TestAddress;
                 Assert.AreEqual(AllUsers.ThisUser, TestAddress);
             }
-            
+            [TestMethod]
+            public void ListAndCountOK()
+            {
+                // create an instance of the class we want to create
+                clsUserCollection AllUsers = new clsUserCollection();
+                // create some test data for the property
+                List<clsUser> TestList = new List<clsUser>();
+                // add an item to the list
+                // create test item for the list
+                clsUser TestItem = new clsUser();
+                // set it's properties
+                TestItem.UserId = 1;
+                TestItem.UserName = "omar";
+                TestItem.Email = "omar@gmail.com";
+                TestItem.isStaff = false;
+                TestItem.DateofBirth = DateTime.Now;
+                TestItem.HashedPass = "Test";
+                TestItem.PhoneNumber = 123456789;
+                // add test item to the test list
+                TestList.Add(TestItem);
+                // assign data to property
+                AllUsers.UserList = TestList;
+                // test to see if the two values are the same
+                Assert.AreEqual(AllUsers.Count, TestList.Count);
+            }
+
+            [TestMethod]
+            public void AddMethodOK()
+            {
+                // create an instance of the class we want to create
+                clsUserCollection AllUsers = new clsUserCollection();
+                // create the test data for it
+                clsUser TestItem = new clsUser();
+                // variable to store the primary key
+                Int32 PrimaryKey = 0;
+                // set it's properties
+                TestItem.UserName = "Test";
+                TestItem.HashedPass = "Test";
+                // generate sort code & account number
+                TestItem.Email = "omar@gmail.com";
+                TestItem.isStaff = false;
+                TestItem.DateofBirth = DateTime.Now;
+                TestItem.PhoneNumber = 123456789;
+                // set ThisStaff to the test data
+                AllUsers.ThisUser = TestItem;
+                // add the record   
+                PrimaryKey = AllUsers.Add();
+                // set the primary key of the test data
+                TestItem.UserId = PrimaryKey;
+                // find the record
+                AllUsers.ThisUser.Find(PrimaryKey);
+                // test to see if thw two values are the same
+                Assert.AreEqual(AllUsers.ThisUser, TestItem);
+            }
+
         }
 
     }

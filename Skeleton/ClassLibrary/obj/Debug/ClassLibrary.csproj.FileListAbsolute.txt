@@ -136,3 +136,9 @@ H:\Downloads\AFAOComputers\AFAOComputers\Skeleton\ClassLibrary\obj\Debug\ClassLi
 H:\Downloads\AFAOComputers\AFAOComputers\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.pdb
 H:\Downloads\AFAOComputers\AFAOComputers\Skeleton\ClassLibrary\bin\Debug\ClassLibrary.dll
 H:\Downloads\AFAOComputers\AFAOComputers\Skeleton\ClassLibrary\bin\Debug\ClassLibrary.pdb
+C:\Users\dabou\OneDrive\Desktop\Update\Skeleton\ClassLibrary\bin\Debug\ClassLibrary.dll
+C:\Users\dabou\OneDrive\Desktop\Update\Skeleton\ClassLibrary\bin\Debug\ClassLibrary.pdb
+C:\Users\dabou\OneDrive\Desktop\Update\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.csproj.AssemblyReference.cache
+C:\Users\dabou\OneDrive\Desktop\Update\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\dabou\OneDrive\Desktop\Update\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.dll
+C:\Users\dabou\OneDrive\Desktop\Update\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.pdb
