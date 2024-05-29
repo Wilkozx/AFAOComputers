@@ -260,3 +260,7 @@ C:\Users\dabou\OneDrive\Desktop\Update\Skeleton\Testing4\obj\Debug\TestingUser.c
 C:\Users\dabou\OneDrive\Desktop\Update\Skeleton\Testing4\obj\Debug\TestingU.C3DB0E51.Up2Date
 C:\Users\dabou\OneDrive\Desktop\Update\Skeleton\Testing4\obj\Debug\Testing4.dll
 C:\Users\dabou\OneDrive\Desktop\Update\Skeleton\Testing4\obj\Debug\Testing4.pdb
+H:\Week 6 pt3\Skeleton\Testing4\obj\Debug\TestingUser.csproj.AssemblyReference.cache
+H:\Week 6 pt3\Skeleton\Testing4\obj\Debug\TestingUser.csproj.CoreCompileInputs.cache
+H:\Week 6 pt3\Skeleton\Testing4\obj\Debug\Testing4.dll
+H:\Week 6 pt3\Skeleton\Testing4\obj\Debug\Testing4.pdb

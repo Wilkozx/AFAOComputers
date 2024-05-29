@@ -250,3 +250,7 @@ C:\Users\dabou\OneDrive\Desktop\Update\Skeleton\Testing1\obj\Debug\TestingOrders
 C:\Users\dabou\OneDrive\Desktop\Update\Skeleton\Testing1\obj\Debug\TestingO.64048BAB.Up2Date
 C:\Users\dabou\OneDrive\Desktop\Update\Skeleton\Testing1\obj\Debug\Testing1.dll
 C:\Users\dabou\OneDrive\Desktop\Update\Skeleton\Testing1\obj\Debug\Testing1.pdb
+H:\Week 6 pt3\Skeleton\Testing1\obj\Debug\TestingOrders.csproj.AssemblyReference.cache
+H:\Week 6 pt3\Skeleton\Testing1\obj\Debug\TestingOrders.csproj.CoreCompileInputs.cache
+H:\Week 6 pt3\Skeleton\Testing1\obj\Debug\Testing1.dll
+H:\Week 6 pt3\Skeleton\Testing1\obj\Debug\Testing1.pdb
