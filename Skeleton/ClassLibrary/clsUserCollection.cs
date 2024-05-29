@@ -86,7 +86,6 @@ namespace ClassLibrary
             // connect to the database
             clsDataConnection DB = new clsDataConnection();
             // set the parameters for the stores procedure
-            DB.AddParameter("@UserId", mThisUser.UserId);
             DB.AddParameter("@UserName", mThisUser.UserName);
             DB.AddParameter("@Email", mThisUser.Email);
             DB.AddParameter("@HashedPass", mThisUser.HashedPass);
