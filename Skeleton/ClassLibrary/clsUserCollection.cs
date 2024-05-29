@@ -45,7 +45,7 @@ namespace ClassLibrary
         public clsUserCollection()
         {
             clsDataConnection DB = new clsDataConnection();
-            DB.Execute("sproc_tblUser_SelectAll");
+            DB.Execute("sproc_tblUsers_SelectAll");
             PopulateArray(DB);
         }
 
@@ -69,9 +69,10 @@ namespace ClassLibrary
                 AUser.UserId = Convert.ToInt32(DB.DataTable.Rows[Index]["user_id"]);
                 AUser.UserName = Convert.ToString(DB.DataTable.Rows[Index]["username"]);
                 AUser.Email = Convert.ToString(DB.DataTable.Rows[Index]["email"]);
+                AUser.HashedPass = Convert.ToString(DB.DataTable.Rows[Index]["hashed_password"]);
                 AUser.isStaff = Convert.ToBoolean(DB.DataTable.Rows[Index]["isStaff"]);
-                AUser.DateofBirth = Convert.ToDateTime(DB.DataTable.Rows[Index]["date_of_Birth"]);
-                AUser.PhoneNumber = Convert.ToInt32(DB.DataTable.Rows[Index]["PhoneNumber"]);
+                AUser.DateofBirth = Convert.ToDateTime(DB.DataTable.Rows[Index]["date_of_birth"]);
+                AUser.PhoneNumber = Convert.ToInt32(DB.DataTable.Rows[Index]["Phone_number"]);
                 // add the record to the private data member
                 mUserList.Add(AUser);
                 // point to next record
@@ -85,8 +86,10 @@ namespace ClassLibrary
             // connect to the database
             clsDataConnection DB = new clsDataConnection();
             // set the parameters for the stores procedure
+            DB.AddParameter("@UserId", mThisUser.UserId);
             DB.AddParameter("@UserName", mThisUser.UserName);
             DB.AddParameter("@Email", mThisUser.Email);
+            DB.AddParameter("@HashedPass", mThisUser.HashedPass);
             DB.AddParameter("@isStaff", mThisUser.isStaff);
             DB.AddParameter("@Date_of_Birth", mThisUser.DateofBirth);
             DB.AddParameter("@PhoneNumber", mThisUser.PhoneNumber);

@@ -306,3 +306,19 @@ C:\Users\dabou\OneDrive\Desktop\Update\Skeleton\Testing3\obj\Debug\TestingStaff.
 C:\Users\dabou\OneDrive\Desktop\Update\Skeleton\Testing3\obj\Debug\TestingS.3624E073.Up2Date
 C:\Users\dabou\OneDrive\Desktop\Update\Skeleton\Testing3\obj\Debug\Testing3.dll
 C:\Users\dabou\OneDrive\Desktop\Update\Skeleton\Testing3\obj\Debug\Testing3.pdb
+H:\Week 6 practical\Skeleton\Testing3\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+H:\Week 6 practical\Skeleton\Testing3\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+H:\Week 6 practical\Skeleton\Testing3\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+H:\Week 6 practical\Skeleton\Testing3\bin\Debug\Testing3.dll
+H:\Week 6 practical\Skeleton\Testing3\bin\Debug\Testing3.pdb
+H:\Week 6 practical\Skeleton\Testing3\bin\Debug\ClassLibrary.dll
+H:\Week 6 practical\Skeleton\Testing3\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+H:\Week 6 practical\Skeleton\Testing3\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+H:\Week 6 practical\Skeleton\Testing3\bin\Debug\ClassLibrary.pdb
+H:\Week 6 practical\Skeleton\Testing3\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+H:\Week 6 practical\Skeleton\Testing3\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+H:\Week 6 practical\Skeleton\Testing3\obj\Debug\TestingStaff.csproj.AssemblyReference.cache
+H:\Week 6 practical\Skeleton\Testing3\obj\Debug\TestingStaff.csproj.CoreCompileInputs.cache
+H:\Week 6 practical\Skeleton\Testing3\obj\Debug\TestingS.3624E073.Up2Date
+H:\Week 6 practical\Skeleton\Testing3\obj\Debug\Testing3.dll
+H:\Week 6 practical\Skeleton\Testing3\obj\Debug\Testing3.pdb

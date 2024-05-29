@@ -20,8 +20,8 @@ public partial class _1_List : System.Web.UI.Page
     {
         clsUserCollection Users = new clsUserCollection();
         lstUserList.DataSource = Users.UserList;
-        lstUserList.DataValueField = "Name";
-        lstUserList.DataTextField = "Email";
+        lstUserList.DataValueField = "UserId";
+        lstUserList.DataTextField = "UserName";
         lstUserList.DataBind();
     }
 
@@ -31,7 +31,7 @@ public partial class _1_List : System.Web.UI.Page
     {
         Session["UserId"] = -1;
 
-        Response.Redirect("UserDataList.aspx");
+        Response.Redirect("UserDataEntry.aspx");
 
     }
 }

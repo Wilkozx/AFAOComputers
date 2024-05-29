@@ -142,3 +142,9 @@ C:\Users\dabou\OneDrive\Desktop\Update\Skeleton\ClassLibrary\obj\Debug\ClassLibr
 C:\Users\dabou\OneDrive\Desktop\Update\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.csproj.CoreCompileInputs.cache
 C:\Users\dabou\OneDrive\Desktop\Update\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.dll
 C:\Users\dabou\OneDrive\Desktop\Update\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.pdb
+H:\Week 6 practical\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.csproj.AssemblyReference.cache
+H:\Week 6 practical\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.csproj.CoreCompileInputs.cache
+H:\Week 6 practical\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.dll
+H:\Week 6 practical\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.pdb
+H:\Week 6 practical\Skeleton\ClassLibrary\bin\Debug\ClassLibrary.dll
+H:\Week 6 practical\Skeleton\ClassLibrary\bin\Debug\ClassLibrary.pdb
