@@ -113,6 +113,16 @@
         border-radius: 5px;
     }
 
+    #btnMainMenu {
+    display: grid;
+    left: auto;
+    grid-row-start: 5;
+    grid-column-start: 2;
+    height: 25px;
+    text-align: center;
+    border-radius: 5px;
+    }
+
     #error {
         display: grid;
         grid-row-start: 5;

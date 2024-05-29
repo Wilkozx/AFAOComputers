@@ -127,4 +127,9 @@ public partial class _1_List : System.Web.UI.Page
     {
         Response.Redirect("TeamMainMenu.aspx");
     }
+
+    protected void lstStaffList_SelectedIndexChanged(object sender, EventArgs e)
+    {
+
+    }
 }
