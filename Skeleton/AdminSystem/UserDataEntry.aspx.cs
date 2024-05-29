@@ -42,10 +42,12 @@ public partial class _1_DataEntry : System.Web.UI.Page
             AUser.PhoneNumber = Convert.ToInt32(txtPhoneNumber.Text);
             AUser.HashedPass = txtPassword.Text;
             AUser.DateofBirth = Convert.ToDateTime(txtDateofBirth.Text);
-            //store the address in the session object
-            Session["AUser"] = AUser;
+
+            clsUserCollection UserList = new clsUserCollection();
+            UserList.ThisUser = AUser;
+            UserList.Add();
             //Navigate to the view page
-            Response.Redirect("UserViewer.aspx");
+            Response.Redirect("UserList.aspx");
         }
         else
         {
