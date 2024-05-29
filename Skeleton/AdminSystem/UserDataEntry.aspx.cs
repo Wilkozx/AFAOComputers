@@ -25,6 +25,7 @@ public partial class _1_DataEntry : System.Web.UI.Page
     {
         //create a new instance of clsUser
         clsUser AUser = new clsUser();
+        string UserId = Convert.ToString(txtUserId.Text);
         string UserName = txtUserName.Text;
         string Email = txtEmail.Text;
         string Password = txtPassword.Text; 
@@ -36,16 +37,28 @@ public partial class _1_DataEntry : System.Web.UI.Page
         if (Error == "")
         {
             //capture UserId
-            AUser.UserName = txtUserName.Text;
-            AUser.Email = txtEmail.Text;
+            AUser.UserId = Convert.ToInt32(UserId);
+            AUser.UserName = UserName;
+            AUser.Email = Email;
             AUser.isStaff = chkboxStaff.Checked;
-            AUser.PhoneNumber = Convert.ToInt32(txtPhoneNumber.Text);
+            AUser.PhoneNumber = Convert.ToInt32(PhoneNumber);
             AUser.HashedPass = txtPassword.Text;
-            AUser.DateofBirth = Convert.ToDateTime(txtDateofBirth.Text);
+            AUser.DateofBirth = Convert.ToDateTime(DateOfBirth);
 
             clsUserCollection UserList = new clsUserCollection();
-            UserList.ThisUser = AUser;
-            UserList.Add();
+            if (Convert.ToInt32(UserId) == -1)
+            {
+                UserList.ThisUser = AUser;
+                UserList.Add();
+            }
+            else
+            {
+                UserList.ThisUser.Find(Convert.ToInt32(UserId));
+                UserList.ThisUser = AUser;
+                UserList.Update();
+            }
+           
+            
             //Navigate to the view page
             Response.Redirect("UserList.aspx");
         }
@@ -85,6 +98,21 @@ public partial class _1_DataEntry : System.Web.UI.Page
             ERROR.InnerText = "Bye";
         }
         
+    }
+    void DisplayUser()
+    {
+        clsUserCollection UserList = new clsUserCollection();
+        //UserList.ThisUser.Find(UserId);
+        txtUserId.Text = UserList.ThisUser.UserId.ToString();
+        txtUserName.Text = UserList.ThisUser.UserName;
+        txtEmail.Text = UserList.ThisUser.Email;
+        txtPassword.Text = UserList.ThisUser.HashedPass;
+        chkboxStaff.Checked = UserList.ThisUser.isStaff;
+        txtDateofBirth.Text = UserList.ThisUser.DateofBirth.ToString("dd-mm-yyyy");
+        txtPhoneNumber.Text = UserList.ThisUser.PhoneNumber.ToString();
+
+
+
     }
 
 

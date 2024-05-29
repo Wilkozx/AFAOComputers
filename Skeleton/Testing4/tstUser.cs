@@ -229,7 +229,7 @@ namespace Testing4
         {
             clsUser AUser = new clsUser();
             String Error = "";
-            String Username = "aaa";
+            String UserName = "aaa";
             Error = AUser.Valid(UserName, Email, DateofBirth);
             Assert.AreNotEqual(Error, "");
         }
@@ -238,7 +238,7 @@ namespace Testing4
         {
             clsUser AUser = new clsUser();
             String Error = "";
-            String Username = "aaaa";
+            String UserName = "aaaa";
             Error = AUser.Valid(UserName, Email, DateofBirth);
             Assert.AreEqual(Error, "");
         }
@@ -247,7 +247,7 @@ namespace Testing4
         {
             clsUser AUser = new clsUser();
             String Error = "";
-            String Username = "aaaaa";
+            String UserName = "aaaaa";
             Error = AUser.Valid(UserName, Email, DateofBirth);
             Assert.AreNotEqual(Error, "");
         }
@@ -256,7 +256,7 @@ namespace Testing4
         {
             clsUser AUser = new clsUser();
             String Error = "";
-            String Username = "aaaaaaaaaaaaaa";
+            String UserName = "aaaaaaaaaaaaaa";
             Error = AUser.Valid(UserName, Email, DateofBirth);
             Assert.AreEqual(Error, "");
         }
@@ -265,7 +265,7 @@ namespace Testing4
         {
             clsUser AUser = new clsUser();
             String Error = "";
-            String Username = "aaaaaaaaaaaaaaa";
+            String UserName = "aaaaaaaaaaaaaaa";
             Error = AUser.Valid(UserName, Email, DateofBirth);
             Assert.AreEqual(Error, "");
         }
@@ -274,7 +274,7 @@ namespace Testing4
         {
             clsUser AUser = new clsUser();
             String Error = "";
-            String Username = "aaaaaaaaaaaaaaaa";
+            String UserName = "aaaaaaaaaaaaaaaa";
             Error = AUser.Valid(UserName, Email, DateofBirth);
             Assert.AreNotEqual(Error, "");
         }
@@ -283,7 +283,7 @@ namespace Testing4
         {
             clsUser AUser = new clsUser();
             String Error = "";
-            String Username = "aaaaaaaaa";
+            String UserName = "aaaaaaaaa";
             Error = AUser.Valid(UserName, Email, DateofBirth);
             Assert.AreEqual(Error, "");
         }
@@ -359,7 +359,7 @@ namespace Testing4
         {
             clsUser AUser = new clsUser();
             String Error = "";
-            int Number = 11111;
+            int PhoneNumber = 11111;
             Error = AUser.Valid(UserName, Email, DateofBirth);
             Assert.AreNotEqual(Error, "");
         }
@@ -367,7 +367,7 @@ namespace Testing4
         {
             clsUser AUser = new clsUser();
             String Error = "";
-            int Number = 111111;
+            int PhoneNumber = 111111;
             Error = AUser.Valid(UserName, Email, DateofBirth);
             Assert.AreNotEqual(Error, "");
         }
@@ -375,7 +375,7 @@ namespace Testing4
         {
             clsUser AUser = new clsUser();
             String Error = "";
-            int Number = 1111111;
+            int PhoneNumber = 1111111;
             Error = AUser.Valid(UserName, Email, DateofBirth);
             Assert.AreNotEqual(Error, "");
         }
@@ -383,7 +383,7 @@ namespace Testing4
         {
             clsUser AUser = new clsUser();
             String Error = "";
-            Int64 Number = 11111111111111;
+            Int64 PhoneNumber = 11111111111111;
             
             Error = AUser.Valid(UserName, Email, DateofBirth);
             Assert.AreNotEqual(Error, "");
@@ -392,7 +392,7 @@ namespace Testing4
         {
             clsUser AUser = new clsUser();
             String Error = "";
-            Int64 Number = 111111111111111;
+            Int64 PhoneNumber = 111111111111111;
 
             Error = AUser.Valid(UserName, Email, DateofBirth);
             Assert.AreNotEqual(Error, "");
@@ -401,7 +401,7 @@ namespace Testing4
         {
             clsUser AUser = new clsUser();
             String Error = "";
-            Int64 Number = 1111111111111111;
+            Int64 PhoneNumber = 1111111111111111;
 
             Error = AUser.Valid(UserName, Email, DateofBirth);
             Assert.AreNotEqual(Error, "");
@@ -410,7 +410,7 @@ namespace Testing4
         {
             clsUser AUser = new clsUser();
             String Error = "";
-            Int64 Number = 1111111111;
+            Int64 PhoneNumber = 1111111111;
 
             Error = AUser.Valid(UserName, Email, DateofBirth);
             Assert.AreNotEqual(Error, "");
@@ -523,6 +523,45 @@ namespace Testing4
                 PrimaryKey = AllUsers.Add();
                 // set the primary key of the test data
                 TestItem.UserId = PrimaryKey;
+                // find the record
+                AllUsers.ThisUser.Find(PrimaryKey);
+                // test to see if thw two values are the same
+                Assert.AreEqual(AllUsers.ThisUser, TestItem);
+            }
+            [TestMethod]
+            public void UpdateMethodOK()
+            {
+                // create an instance of the class we want to create
+                clsUserCollection AllUsers = new clsUserCollection();
+                // create the test data for it
+                clsUser TestItem = new clsUser();
+                // variable to store the primary key
+                Int32 PrimaryKey = 0;
+                // set it's properties
+                TestItem.UserName = "Test";
+                TestItem.HashedPass = "Test";
+                TestItem.Email = "omar@gmail.com";
+                TestItem.isStaff = false;
+                TestItem.DateofBirth = DateTime.Now;
+                TestItem.PhoneNumber = 123456789;
+                // set ThisUser to the test data
+                AllUsers.ThisUser = TestItem;
+                // add the record   
+                PrimaryKey = AllUsers.Add();
+               
+                // set the primary key of the test data
+                TestItem.UserId = PrimaryKey;
+                // modify test
+                TestItem.UserName = "Test2";
+                TestItem.HashedPass = "Test2";
+                TestItem.Email = "omar2@gmail.com";
+                TestItem.isStaff = true;
+                TestItem.DateofBirth = DateTime.Now;
+                TestItem.PhoneNumber = 12345678;
+                // set thisUser to the test data
+                AllUsers.ThisUser = TestItem;
+                //update the record
+                AllUsers.Update();
                 // find the record
                 AllUsers.ThisUser.Find(PrimaryKey);
                 // test to see if thw two values are the same
