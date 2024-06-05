@@ -10,9 +10,17 @@ using ClassLibrary;
 
 public partial class _1_DataEntry : System.Web.UI.Page
 {
+    Int32 UserId;
     protected void Page_Load(object sender, EventArgs e)
     {
+        UserId = Convert.ToInt32(Session["UserId"]);
+        if (IsPostBack == false)
+        {
+            // if this is not a new record
+            if (UserId != -1)
+                DisplayUser();
 
+        }
     }
 
 
@@ -102,7 +110,7 @@ public partial class _1_DataEntry : System.Web.UI.Page
     void DisplayUser()
     {
         clsUserCollection UserList = new clsUserCollection();
-        //UserList.ThisUser.Find(UserId);
+        UserList.ThisUser.Find(UserId);
         txtUserId.Text = UserList.ThisUser.UserId.ToString();
         txtUserName.Text = UserList.ThisUser.UserName;
         txtEmail.Text = UserList.ThisUser.Email;

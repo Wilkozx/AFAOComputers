@@ -566,6 +566,71 @@ namespace Testing4
                 // test to see if thw two values are the same
                 Assert.AreEqual(AllUsers.ThisUser, TestItem);
             }
+            [TestMethod]
+            public void DeleteMethodOk() 
+            {
+                clsUserCollection AllUsers = new clsUserCollection();
+                clsUser TestItem = new clsUser();
+
+                Int32 PrimaryKey = 0;
+                TestItem.UserName = "Test";
+                TestItem.HashedPass = "Test";
+                TestItem.UserId = 1;
+                TestItem.Email= "omar@gmail.com";
+                TestItem.isStaff = false;
+                TestItem.DateofBirth= DateTime.Now;
+                TestItem.PhoneNumber = 12345678;
+                AllUsers.ThisUser = TestItem;
+                PrimaryKey = AllUsers.Add();
+                TestItem.UserId = PrimaryKey;
+                AllUsers.ThisUser.Find(PrimaryKey);
+                AllUsers.Delete();
+                Boolean Found = AllUsers.ThisUser.Find(PrimaryKey);
+                Assert.IsFalse(Found);
+            }
+            [TestMethod]
+            public void ReportByUserNameMethodOk()
+            {
+                clsUserCollection AllUsers = new clsUserCollection();
+                clsUserCollection FilteredUserNames = new clsUserCollection();
+
+                FilteredUserNames.ReportByUserName("");
+                Assert.AreEqual(AllUsers.Count, FilteredUserNames.Count);
+            }
+            [TestMethod]
+            public void ReportByUserNameNoneFound()
+            {
+                clsUserCollection FilteredUserNames = new clsUserCollection();
+
+                FilteredUserNames.ReportByUserName("TestNotFound");
+
+                Assert.AreEqual(0, FilteredUserNames.Count);    
+            }
+            public void ReportByUserNameTestDataFound()
+            {
+                clsUserCollection FilteredUserNames = new clsUserCollection();
+                Boolean OK = true;
+
+                FilteredUserNames.ReportByUserName("TestData2");
+
+                if (FilteredUserNames.Count == 2)
+                {
+                    if (FilteredUserNames.UserList[0].UserId != 2014)
+                    {
+                        OK = false;
+                    }
+                    if (FilteredUserNames.UserList[1].UserId != 2015)
+                    {
+                        OK = false;
+                    }
+                }
+                else 
+                {
+                    OK = false;
+                }
+                Assert.IsTrue(OK);
+            }
+
 
         }
 

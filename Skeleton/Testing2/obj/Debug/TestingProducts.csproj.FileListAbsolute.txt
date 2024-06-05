@@ -358,3 +358,19 @@ H:\Week6 Pt6\Skeleton\Testing2\obj\Debug\TestingProducts.csproj.CoreCompileInput
 H:\Week6 Pt6\Skeleton\Testing2\obj\Debug\TestingP.EDDADD20.Up2Date
 H:\Week6 Pt6\Skeleton\Testing2\obj\Debug\Testing2.dll
 H:\Week6 Pt6\Skeleton\Testing2\obj\Debug\Testing2.pdb
+H:\FinalWeekpt1\Skeleton\Testing2\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+H:\FinalWeekpt1\Skeleton\Testing2\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+H:\FinalWeekpt1\Skeleton\Testing2\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+H:\FinalWeekpt1\Skeleton\Testing2\bin\Debug\Testing2.dll
+H:\FinalWeekpt1\Skeleton\Testing2\bin\Debug\Testing2.pdb
+H:\FinalWeekpt1\Skeleton\Testing2\bin\Debug\ClassLibrary.dll
+H:\FinalWeekpt1\Skeleton\Testing2\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+H:\FinalWeekpt1\Skeleton\Testing2\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+H:\FinalWeekpt1\Skeleton\Testing2\bin\Debug\ClassLibrary.pdb
+H:\FinalWeekpt1\Skeleton\Testing2\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+H:\FinalWeekpt1\Skeleton\Testing2\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+H:\FinalWeekpt1\Skeleton\Testing2\obj\Debug\TestingProducts.csproj.AssemblyReference.cache
+H:\FinalWeekpt1\Skeleton\Testing2\obj\Debug\TestingProducts.csproj.CoreCompileInputs.cache
+H:\FinalWeekpt1\Skeleton\Testing2\obj\Debug\TestingP.EDDADD20.Up2Date
+H:\FinalWeekpt1\Skeleton\Testing2\obj\Debug\Testing2.dll
+H:\FinalWeekpt1\Skeleton\Testing2\obj\Debug\Testing2.pdb

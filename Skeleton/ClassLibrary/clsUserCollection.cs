@@ -114,5 +114,24 @@ namespace ClassLibrary
             // execute the query returning the primary key value
             DB.Execute("sproc_tblUsers_Update");
         }
+
+        public void Delete()
+        {
+            clsDataConnection DB = new clsDataConnection();
+
+            DB.AddParameter("@userId", mThisUser.UserId);
+
+            DB.Execute("sproc_tblUsers_Delete");
+        }
+
+        public void ReportByUserName(string UserName)
+        {
+           clsDataConnection DB = new clsDataConnection();
+            DB.AddParameter("@UserName", UserName);
+
+            DB.Execute("sproc_tblUsers_FilterByUserName");
+
+            PopulateArray(DB);
+        }
     }
 }

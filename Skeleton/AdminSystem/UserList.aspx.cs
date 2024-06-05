@@ -9,9 +9,10 @@ using ClassLibrary;
 
 public partial class _1_List : System.Web.UI.Page
 {
+    Int32 UserId;
     protected void Page_Load(object sender, EventArgs e)
     {
-        //UserId = Convert.ToInt32(Session["UserId"]);
+        UserId = Convert.ToInt32(Session["UserId"]);
         if (IsPostBack == false) 
         {
             DisplayUsers();
@@ -51,5 +52,47 @@ public partial class _1_List : System.Web.UI.Page
         {
             lblError.Text = " please select a record from the list to edit";
         }
+    }
+
+    protected void btnDelete_Click(object sender, EventArgs e)
+    {
+        Int32 UserId;
+        if (lstUserList.SelectedIndex != -1)
+        {
+            UserId = Convert.ToInt32(lstUserList.SelectedValue);
+            Session["UserId"] = UserId;
+            Response.Redirect("UserConfirmDelete.aspx");
+        }
+        else
+        {
+            lblError.Text = "Please select a User from the list to Delete";
+        }
+
+    }
+
+    protected void btnApply_Click(object sender, EventArgs e)
+    {
+        clsUserCollection AUser = new clsUserCollection();
+        AUser.ReportByUserName(txtFilter.Text);
+
+        lstUserList.DataSource = AUser.UserList;
+
+        lstUserList.DataValueField = "UserID";
+        lstUserList.DataTextField = "UserName";
+
+        lstUserList.DataBind();
+    }
+
+    protected void btnClear_Click(object sender, EventArgs e)
+    {
+        clsUserCollection AUser = new clsUserCollection();
+        AUser.ReportByUserName("");
+
+        txtFilter.Text = "";
+        lstUserList.DataSource = AUser.UserList;
+        lstUserList.DataValueField = "UserId";
+        lstUserList.DataTextField = "UserName";
+
+        lstUserList.DataBind();
     }
 }
