@@ -13,7 +13,7 @@ namespace ClassLibrary
         private int mPhoneNumber;
         private bool misStaff;
 
-        public int UserId
+        public Int32 UserId
         {
             get
             {
@@ -97,12 +97,12 @@ namespace ClassLibrary
             }
         }
 
-        public bool Find(int userId)
+        public bool Find(int UserId)
         {
             // Create an instance of the data base connection
             clsDataConnection DB = new clsDataConnection();
             // Add the parameter for the staff id to search for
-            DB.AddParameter("@user_Id", userId);
+            DB.AddParameter("@user_Id", UserId);
             // Execute our stored procedure
             DB.Execute("sproc_tblUsers_FilterByUserId");
             // Check if a record exists
