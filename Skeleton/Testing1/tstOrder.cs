@@ -1,5 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
+using System.Collections.Generic;
+using System.Diagnostics;
 
 
 namespace Testing6
@@ -42,6 +44,7 @@ namespace Testing6
             public string ShipmentID { get; internal set; }
             public string CustomerId { get; internal set; }
             public DateTime ShipmentDate { get; internal set; }
+            public string PaymentMethod { get; internal set; }
 
             internal bool Find(int orderID)
             {
@@ -73,16 +76,16 @@ namespace Testing6
             Assert.AreEqual(AnOrder.ShipmentDate, TestData);
         }
         [TestMethod]
-        public void CustomerIdOK()
+        public void PaymentMethodOK()
         {
             // Creates an instance of the Class clsOrder.
             clsOrder AnOrder = new clsOrder();
             // Creates some test data to assign to the Property
-            String TestData = "CustomerId";
+            String TestData = "PaymentMethod";
             // Assign the data to the property.
-            AnOrder.CustomerId = TestData;
+            AnOrder.PaymentMethod = TestData;
             // Test to see that the two values are the same.
-            Assert.AreEqual(AnOrder.CustomerId, TestData);
+            Assert.AreEqual(AnOrder.PaymentMethod, TestData);
 
         }
         [TestMethod]
@@ -166,15 +169,15 @@ namespace Testing6
             Assert.IsTrue(Ok);
         }
         [TestMethod]
-        public void CustomerIDFound()
+        public void PaymentMethodFound()
         {
             clsOrder AnOrder = new clsOrder();
             Boolean Found = false;
             Boolean Ok = true;
-            String CustomerId = "123456789";
+            String PaymentMethod = "ApplyPay";
             Int32 OrderID = 2;
             Found = AnOrder.Find(OrderID);
-            if (AnOrder.CustomerId != CustomerId)
+            if (AnOrder.PaymentMethod != PaymentMethod)
             {
                 Ok = false;
             }
@@ -225,5 +228,600 @@ namespace Testing6
         }
     }
 }
-        
+
+[TestMethod]
+
+public void ValidMethodOkay()
+{
+    //creating an instance of the class i want to create
+    clsOrder AOrder = new clsOrder();
+    //string variable to store any error messages 
+    String Error = "";
+    //invoke the method
+    Error = AOrder.Valid(OrderID, Status, PaymentMethod, Quantity);
+    Assert.AreEqual(Error, "");
+}
+[TestMethod]
+public void OrderIDNoMinLessOne()
+{
+    clsOrder AProduct = new clsOrder();
+    //string error to store any error messages
+    string Error = "";
+    //create some test data to pass the method
+    string OrderID = "";
+    object AOrder = null;
+    Error = AOrder.Valid(OrderID, Status, PaymentMethod, Quantity);
+    //test to see that the results is correct
+    Assert.AreNotEqual(Error, "");
+}
+[TestMethod]
+public void OrderIDNoMinPlusOne()
+{
+    clsOrder AOrder = new clsOrder();
+    string Error = "";
+    string OrderID = "aa";
+    Error = AOrder.Valid(OrderID, Status, PaymentMethod, Quantity);
+    Assert.AreEqual(Error, "");
+}
+[TestMethod]
+
+public void OrderIDNoMin()
+{
+    clsOrder AOrder = new clsOrder();
+    string Error = "";
+    string OrderID = "aa";
+    Error = AOrder.Valid(OrderID, Status, PaymentMethod, Quantity);
+    Assert.AreEqual(Error, "");
+}
+[TestMethod]
+
+public void OrderIDNoMaxLessOne()
+{
+    clsOrder AOrder = new clsOrder();
+    string Error = "";
+    string OrderID = "aaaaaaaaaaa";
+    Error = AOrder.Valid(OrderID, Status, PaymentMethod, Quantity);
+    Assert.AreEqual(Error, "");
+}
+[TestMethod]
+
+public void OrderIDNoMax()
+{
+    clsOrder AOrder = new clsOrder();
+    string Error = "";
+    string OrderID = "aaaaaaaaaaa";
+    Error = AOrder.Valid(OrderID, Status, PaymentMethod, Quantity);
+    Assert.AreEqual(Error, "");
+}
+[TestMethod]
+
+public void OrderIDNoMid()
+{
+    clsOrder AOrder = new clsOrder();
+    string Error = "";
+    string OrderID = "aaaaaaaaaaaaa";
+    Error = AOrder.Valid(OrderID, Status, PaymentMethod, Quantity);
+    Assert.AreEqual(Error, "");
+}
+[TestMethod]
+
+public void OrderIDNoMaxPlusOne()
+{
+    clsOrder AOrder = new clsOrder();
+    string Error = "";
+    string OrderID = "aaaaaaaaaaaaaaaaaaa";
+    Error = AOrder.Valid(OrderID, Status, PaymentMethod, Quantity);
+    Assert.AreNotEqual(Error, "");
+}
+[TestMethod]
+
+public void OrderIDNoExtreme()
+{
+    clsOrder AOrder = new clsOrder();
+    string Error = "";
+    string OrderID = "";
+    OrderID = OrderID.PadRight(250, 'a');
+    Error = AOrder.Valid(OrderID, Status, PaymentMethod, Quantity);
+    Assert.AreNotEqual(Error, "");
+}
+[TestMethod]
+
+public void StatusMinLessOne()
+{
+    clsOrder AOrder = new clsOrder();
+    String Error = "";
+    String Status = "aaaa";
+    Error = AOrder.Valid(OrderID, Status, PaymentMethod, Quantity);
+    Assert.AreNotEqual(Error, "");
+}
+
+[TestMethod]
+public void StatusMin(string OrderID)
+{
+    clsOrder AOrder = new clsOrder();
+    String Error = "";
+    String Status = "aaaa";
+    Error = AOrder.Valid(OrderID, Status, PaymentMethod, Quantity);
+    Assert.AreEqual(Error, "");
+}
+[TestMethod]
+
+public void StatusMinPlusOne(string OrderID)
+{
+    clsOrder AOrder = new clsOrder();
+    String Error = "";
+    String Status = "aaaaaa";
+    Error = AOrder.Valid(OrderID, Status, PaymentMethod, Quantity);
+    Assert.AreEqual(Error, "");
+}
+[TestMethod]
+
+public void StatusMaxLessOne(string OrderID)
+{
+    clsOrder AOrder = new clsOrder();
+    String Error = "";
+    String Status = "aaaa";
+    Status = Status.PadRight(50, 'a');
+    Error = AOrder.Valid(OrderID, Status, PaymentMethod, Quantity);
+    Assert.AreEqual(Error, "");
+}
+[TestMethod]
+
+public void StatusMax(string OrderID)
+{
+    clsOrder AOrder = new clsOrder();
+    String Error = "";
+    String Status = "aaaa";
+    Status = Status.PadRight(51, 'a');
+    Error = AOrder.Valid(OrderID, Status, PaymentMethod, Quantity)
+    Assert.AreEqual(Error, "");
+}
+[TestMethod]
+
+public void StatusMaxPlusOne(string OrderID)
+{
+    clsOrder AOrder = new clsOrder();
+    String Error = "";
+    String Status = "aaaa";
+    Status = Status.PadRight(52, 'a');
+    Error = AOrder.Valid(OrderID, Status, PaymentMethod, Quantity);
+    Assert.AreNotEqual(Error, "");
+
+}
+[TestMethod]
+public void StatusMid(object OrderID)
+{
+    clsOrder AUser = new clsOrder();
+    String Error = "";
+    String Status = "aaaa";
+    Status = Status.PadRight(20, 'a');
+    Error = AOrder.Valid(OrderID, Status,PaymentMethod, Quantity);
+    Assert.AreEqual(Error, "");
+}
+[TestMethod]
+public void PaymentMethodLessOne()
+{
+    clsOrder AOrder = new clsOrder();
+    String Error = "";
+    String PaymentMethod = "1111";
+    Error = AOrder.Valid(OrderID, Status, PaymentMethod, Quantity);
+    Assert.AreNotEqual(Error, "");
+
+
+
+}
+[TestMethod]
+
+public void PaymentMethodMin()
+{
+    clsOrder AOrder = new clsOrder();
+    String Error = "";
+    String PaymentMethod = "11111";
+    Error = AOrder.Valid(OrderID, Status, PaymentMethod, Quantity);
+    Assert.AreEqual(Error, "");
+
+}
+[TestMethod]
+public void PaymentMethodMinPlusOne()
+{
+    clsOrder AOrder = new clsOrder();
+    String Error = "";
+    String PaymentMethod = "111111";
+    Error = AOrder.Valid(OrderID, Status, PaymentMethod, Quantity);
+    Assert.AreEqual(Error, "");
+
+}
+[TestMethod]
+public void PaymentMethodMaxLessOne()
+{
+    clsOrder AOrder = new clsOrder();
+    String Error = "";
+    String PaymentMethod = "1111111111111111";
+    Error = AOrder.Valid(OrderID, Status, PaymentMethod, Quantity);
+    Assert.AreEqual(Error, "");
+
+}
+[TestMethod]
+public void PaymentMethodMax()
+{
+    clsOrder AOrder = new clsOrder();
+    String Error = "";
+    String PaymentMethod = "1111111111111111";
+    Error = AOrder.Valid(OrderID, Status, PaymentMethod, Quantity);
+    Assert.AreEqual(Error, "");
+
+}
+[TestMethod]
+public void PaymentMethodMaxPlusOne()
+{
+    clsOrder AOrder = new clsOrder();
+    String Error = "";
+    String PaymentMethod = "111111111111111111";
+    Error = AOrder.Valid(OrderID, Status, PaymentMethod, Quantity);
+    Assert.AreNotEqual(Error, "");
+
+}
+[TestMethod]
+public void PaymentMethodMid()
+{
+    clsOrder AOrder = new clsOrder();
+    String Error = "";
+    String PaymentMethod = "11111111";
+    Error = AOrder.Valid(OrderID, Status, PaymentMethod, Quantity);
+    Assert.AreEqual(Error, "");
+
+}
+[TestMethod]
+public void PaymentMethodExtremMax()
+{
+    clsOrder AOrder = new clsOrder();
+    String Error = "";
+    String PaymentMethod = "11111111111111";
+    PaymentMethod = PaymentMethod.PadRight(255, '1');
+    Error = AOrder.Valid(OrderID, Status, PaymentMethod, Quantity);
+    Assert.AreNotEqual(Error, "");
+
+}
+public void PaymentMethodValidData()
+{
+    clsOrder AOrder = new clsOrder();
+    String Error = "";
+    string PaymentMethod = "card";
+    Error = AOrder.Valid(OrderID, Status, PaymentMethod, Quantity);
+    Assert.AreNotEqual(Error, "");
+}
+
+[TestMethod]
+
+public void PaymentMethodInvalidData()
+{
+    clsOrder AOrder = new clsOrder();
+    String Error = "";
+    String PaymentMethod = "card";
+    Error = AOrder.Valid(OrderID, Status, PaymentMethod, Quantity);
+    Assert.AreNotEqual(Error, "");
+}
+
+[TestMethod]
+
+public void QuantityMinLessOne()
+{
+    clsOrder AOrder = new clsOrder();
+    String Error = "";
+    String Quantity = "";
+    Error = AOrder.Valid(OrderID, Status, PaymentMethod, Quantity);
+    Assert.AreNotEqual(Error, "");
+
+}
+[TestMethod]
+public void QuantityMin()
+{
+    clsOrder AOrder = new clsOrder();
+    String Error = "";
+    String Quantity = "1";
+    Error = AOrder.Valid(OrderID, Status, PaymentMethod, Quantity);
+    Assert.AreEqual(Error, "");
+
+}
+[TestMethod]
+public void PlusMinPlusOne()
+{
+    clsOrder AOrder = new clsOrder();
+    String Error = "";
+    String Quantity = "15";
+    Error = AOrder.Valid(OrderID, Status, PaymentMethod, Quantity);
+    Assert.AreEqual(Error, "");
+
+}
+[TestMethod]
+
+public void QuantityMaxLessOne()
+{
+    clsOrder AOrder = new clsOrder();
+    String Error = "";
+    String Quantity = "1000";
+    Error = AOrder.Valid(OrderID, Status, PaymentMethod, Quantity);
+    Assert.AreEqual(Error, "");
+
+}
+[TestMethod]
+
+public void QuantityMax()
+{
+    clsOrder AOrder = new clsOrder();
+    String Error = "";
+    String Quantity = "1000";
+    Error = AOrder.Valid(OrderID, Status, PaymentMethod, Quantity);
+    Assert.AreEqual(Error, "");
+
+}
+[TestMethod]
+public void QuantityMaxPlusOne()
+{
+    clsOrder AOrder = new clsOrder();
+    String Error = "";
+    String Quantity = "1000";
+    Error = AOrder.Valid(OrderID, Status, PaymentMethod, Quantity);
+    Assert.AreNotEqual(Error, "");
+
+}
+[TestMethod]
+public void QuantityMid()
+{
+    clsOrder AOrder = new clsOrder();
+    String Error = "";
+    String Quantity = "500";
+    Error = AOrder.Valid(OrderID, Status, PaymentMethod, Quantity);
+    Assert.AreEqual(Error, "");
+
+}
+[TestMethod]
+
+public void QuantityExtremMax()
+{
+    clsOrder APOrder = new clsOrder();
+    String Error = "";
+    String Quantity = "1000";
+    Quantity = Status.PadRight(255, '1');
+    Error = AOrder.Valid(OrderID, Status, PaymentMethod, Quantity);
+    Assert.AreNotEqual(Error, "");
+
+}
+[TestMethod]
+
+public void QuantityOnlyNumbers()
+{
+    clsOrder AOrder = new clsOrder();
+    string Error = "";
+
+    // Test with valid quantity containing only numbers 
+    string Quantity = "11";
+    Error = AOrder.Valid(OrderID, Status, PaymentMethod, Quantity);
+    Assert.AreEqual(Error, "");
+
+    // Test with invalid quantity containing characters
+    Quantity = "1A"; // Non-numeric character 'A' present
+    Error = AOrder.Valid(OrderID, Status, PaymentMethod, Quantity);
+    Assert.AreNotEqual(Error, ""); // Expecting an error message
+}
+    }
+
+ [TestClass]
+public class tstOrderCollection
+{
+    [TestMethod]
+    public void instanceokay()
+    {
+        clsOrderCollection AllOrder = new clsOrderCollection();
+        //testing to see that it exists:
+        Assert.IsNotNull(AllOrder);
+    }
+    [TestMethod]
+    public void OrderListOk()
+    {
+        //lets create an instance of the class we want to create
+        clsOrderCollection AllOrder = new clsOrderCollection();
+        //create some test data to assign to the property
+        //in this case the data will be list of Order
+        List<clsOrder> TestList = new List<clsOrder>();
+        //add an Item to the list
+        //create the item of test data
+        clsOrder TestItem = new clsOrder();
+        //setting its properties
+        TestItem.Visible = true;
+        TestItem.OrderID = 1234;
+        TestItem.Status = "Pending";
+        TestItem.ShipmentDate = "24/05/2024";
+        TestItem.OrderDate = DateTime.Now;
+        TestItem.ShipmentID = 123456;
+        TestItem.Quantity = "11";
+        //Add the item to the test list
+        TestList.Add(TestItem);
+        //assign the data to the property
+        AllOrder.OrderList = TestList;
+        //test to see that the two values are the same
+        Assert.AreEqual(AllOrder.OrderList, TestList);
+    }
+
+    [TestMethod]
+    public void ThisOrderPropertyOkay()
+    {
+        clsOrderCollection AllOrder = new clsOrderCollection();
+        clsOrder TestOrder = new clsOrder();
+        //set the properties of the test object
+        TestOrder.Visible = true;
+        TestOrder.OrderID = 1234;
+        TestOrder.Status = "Pending";
+        TestOrder.ShipmentDate = "24/05/2024";
+        TestOrder.OrderDate = DateTime.Now;
+        TestOrder.ShipmentID = 123456;
+        TestOrder.Quantity = "11";
+
+        //assign the data to the property
+        AllOrder.ThisOrder = TestOrder;
+        //testing
+        Assert.AreEqual(AllOrder.ThisOrder, TestOrder);
+
+    }
+    [TestMethod]
+    public void ListAndCountOkay()
+    {
+        clsOrderCollection AllOrder = new clsOrderCollection();
+        List<clsOrder> TestList = new List<clsOrder>();
+        clsOrder TestItem = new clsOrder();
+        TestItem.Visible = true;
+        TestItem.OrderID = 1234;
+        TestItem.Status = "Pending";
+        TestItem.ShipmentDate = "24/05/2024";
+        TestItem.OrderDate = DateTime.Now;
+        TestItem.ShipmentID = 123456;
+        TestItem.Quantity = "11";
+        //Add the item to the test list
+        TestList.Add(TestItem);
+        //assign the data to the property
+        AllOrder.OrderList = TestList;
+        //test to see that the two values are the same
+        Assert.AreEqual(AllOrder.Count, TestList.Count);
+    }
+    [TestMethod]
+    public void AddOrderMethodOk()
+    {
+        clsOrderCollection AllOrder = new clsOrderCollection();
+        //creating the item of test
+        clsOrder TestItem = new clsOrder();
+        Int32 PrimaryKey = 0;
+        //set the properties 
+        TestItem.Visible = true;
+        TestItem.OrderId = 1234;
+        TestItem.Status = "Pending";
+        TestItem.ShipmentDate = "24/05/2024";
+        TestItem.OrderDate = DateTime.Now;
+        TestItem.ShipmentID = 123456;
+        TestItem.Quantity = "11";
+        //set thisProduct to the test data
+        AllOrder.ThisOrder = TestItem;
+        //add the record
+        PrimaryKey = AllOrder.Add();
+        TestItem.OrderId = PrimaryKey;
+        AllOrder.ThisOrder.Find(PrimaryKey);
+
+        Assert.AreEqual(AllOrder.ThisOrder, TestItem);
+
+    }
+    [TestMethod]
+    public void UpdateMethodOkay()
+    {
+        clsOrderCollection AllOrder = new clsOrderCollection();
+        clsOrderTestItem = new clsOrder();
+        Int32 PrimaryKey = 0;
+        TestItem.Visible = true;
+        TestItem.OrderId = 1234;
+        TestItem.Status = "Pending";
+        TestItem.ShipmentDate = "24/05/2024";
+        TestItem.OrderDate = DateTime.Now;
+        TestItem.ShipmentID = 123456;
+        TestItem.Quantity = "11";
+        //setting thisOrder to the test
+        AllOrder.ThisOrder = TestItem;
+        //Add the record
+        PrimaryKey = AllOrder.Add();
+        TestItem.Order = PrimaryKey;
+        //modify the test record
+        TestItem.Visible = true;
+        TestItem.OrderId = 1234;
+        TestItem.Status = "Pending";
+        TestItem.ShipmentDate = "24/05/2024";
+        TestItem.OrderDate = DateTime.Now;
+        TestItem.ShipmentID = 123456;
+        TestItem.Quantity = "11";
+        //set the record
+        AllOrder.ThisOrder = TestItem;
+        //updating the record
+        AllOrder.Update();
+        Assert.AreEqual(AllOrder.ThisOrder, TestItem);
+    }
+    [TestMethod]
+    public void DeleteMethodOkay()
+    {
+        clsOrderCollection AllOrder = new clsOrderCollection();
+        //create the item of test data
+        clsOrder TestItem = new clsOrder();
+        //variable to store the primary key
+        Int32 PrimaryKey = 0;
+        //set its properties 
+        TestItem.Visible = true;
+        TestItem.OrderId = 1234;
+        TestItem.Status = "Pending";
+        TestItem.ShipmentDate = "24/05/2024";
+        TestItem.OrderDate = DateTime.Now;
+        TestItem.ShipmentID = 123456;
+        TestItem.Quantity = "11";
+        //set thisProduct to the test data
+        AllOrder.ThisOrder = TestItem;
+        //add the record
+        PrimaryKey = AllOrder.Add();
+        //set the primary key of the test data
+        TestItem.OrderId = PrimaryKey;
+        //fine the record
+        AllOrder.ThisOrder.Find(PrimaryKey);
+        //delete the record
+        AllOrder.Delete();
+        //now find the record 
+        Boolean Found = AllOrder.ThisProduct.Find(PrimaryKey);
+        //test to see if the record exist
+        Assert.IsFalse(Found);
+
+    }
+    [TestMethod]
+    public void ReportByOrderIDMethodOkay()
+    {
+        //creating the instanse of the class
+        clsOrderCollection AllOrder = new clsOrderCollection();
+        //creating an instance of the filtered data
+        clsOrderCollection filteredOrders = new clsOrderCollection();
+        //apply a blank string (should return all record)
+        filteredOrders.ReportByName("");
+        //testing
+        Assert.AreEqual(AllOrder.Count, filteredOrders.Count);
+    }
+    [TestMethod]
+    public void ReportByOrderIDNoneFound()
+    {
+        clsOrderCollection FilteredOrders = new clsOrderCollection();
+        FilteredOrders.ReportByName("XXXXXX");
+        Assert.AreEqual(0, FilteredOrders.Count);
+    }
+
+    [TestMethod]
+
+    public void ReportByOrderIDTestDataFound()
+    {
+        clsOrderCollection filterOrders = new clsOrderCollection();
+        //variable to store the outcome
+        Boolean OK = true;
+        //apply a name that doestnt exist
+        filterOrders.ReportByOrderID("1234");
+        //check that the correct number of record are found
+        if (filterOrders.Count == 3)
+        {
+            if (filterOrders.OrderList[0].OrderId != 51)
+            {
+                OK = false;
+            }
+            if (filterOrders.OrderList[0].OrderId != 49)
+            {
+                OK = false;
+            }
+            if (filterOrders.OrderList[0].OrderId != 48)
+            {
+                OK = false;
+            }
+            else { OK = false; }
+        }
+        //test to see that there are no records
+        Assert.IsTrue(OK);
+    }
+
+}
+}
 
