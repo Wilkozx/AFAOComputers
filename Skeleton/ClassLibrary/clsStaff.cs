@@ -142,7 +142,6 @@ namespace ClassLibrary
             if (firstname == "")
             {
                 // Append the error to our error string.
-                Error = Error += "Firstname cannot be blank : ";
                 Error += "Firstname cannot be blank : ";
             }
 
@@ -168,6 +167,12 @@ namespace ClassLibrary
 
             // Sortcode Validation
 
+            int number;
+            if (int.TryParse(sortcode, out number) == false)
+            {
+                Error += "Sortcode must be 6 Digits : ";
+            }
+
             if ((sortcode.Length == 6) || sortcode.Length == 0)
             {
                 if (accountNumber.Length == 0)
@@ -181,6 +186,12 @@ namespace ClassLibrary
             }
 
             // Accountnumber Validation
+
+            int number2;
+            if (int.TryParse(accountNumber, out number2) == false)
+            {
+                Error += "Accoutnumber must be 8-10 Digits :";
+            }
 
             if ((accountNumber.Length >= 8 && accountNumber.Length <= 10) || accountNumber.Length == 0)
             {
@@ -206,10 +217,32 @@ namespace ClassLibrary
 
             // Joindate & Expiry Validation 
 
+            // make variable to check if can be converted to datetime
+            DateTime result;
+            if (DateTime.TryParse(join_Date, out result) == false)
+            {
+                Error += "Invalid Joindate format please use DD-MM-YYYY : ";
+            }
+
+            // make variable to check if can be converted to datetime
+            DateTime result2;
+            if (DateTime.TryParse(contract_Expiry_Date, out result2) == false)
+            {
+                Error += "Invalid ContractExpiryDate format please use DD-MM-YYYY : ";
+            }
+
+            // use Compare method to use int to compare the relationship
+            int result3 = DateTime.Compare(result, result2);
+            if (result3 > 0)
+            {
+                Error += "JoinDate cannot be before ContractExpiryDate : ";
+            }
+
             if (join_Date.Length == 0)
             {
                 Error += "Join date cannot be blank : ";
             }
+
 
             if (contract_Expiry_Date.Length == 0)
             {

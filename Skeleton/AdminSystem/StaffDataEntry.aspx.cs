@@ -146,12 +146,17 @@ public partial class _1_DataEntry : System.Web.UI.Page
         txtSortcode.Text = StaffList.ThisStaff.PayeeDetails.Substring(0, 6);
         txtAccountNumber.Text = StaffList.ThisStaff.PayeeDetails.Substring(6);
         txtHasPerms.Checked = StaffList.ThisStaff.HasPerms;
-        txtJoinDate.Text = StaffList.ThisStaff.JoinDate.ToString();
-        txtExpiryDate.Text = StaffList.ThisStaff.ContractExpiary.ToString();
+        txtJoinDate.Text = StaffList.ThisStaff.JoinDate.ToString("dd-mm-yyyy");
+        txtExpiryDate.Text = StaffList.ThisStaff.ContractExpiary.ToString("dd-mm-yyyy");
     }
 
     protected void btnMainMenu_Click(object sender, EventArgs e)
     {
         Response.Redirect("TeamMainMenu.aspx");
+    }
+
+    protected void btnCancel_Click1(object sender, EventArgs e)
+    {
+        Response.Redirect("StaffList.aspx");
     }
 }

@@ -125,7 +125,7 @@
 
     #error {
         display: grid;
-        grid-row-start: 5;
+        grid-row-start: 6;
         grid-column-start: 1;
         grid-column-end: 5;
         color: red;
@@ -178,7 +178,7 @@
             <asp:TextBox ID="txtExpiryDate" runat="server" CssId="txtExpiryDate" CssClass="input" style="z-index: 1"></asp:TextBox>
         </div>
         <asp:Button runat="server" id="btnOk" Text="ok" OnClick="btnOk_Click" />
-        <asp:Button runat="server" id="btnCancel" Text="cancel" />
+        <asp:Button runat="server" id="btnCancel" Text="cancel" OnClick="btnCancel_Click1" />
         <asp:Button runat="server" ID="btnFind" Text="find" OnClick="btnFind_Click"/>
         <asp:Button ID="btnMainMenu" runat="server" OnClick="btnMainMenu_Click" Text="Return To Main Menu" />
         <span runat="server" id="error"></span>
