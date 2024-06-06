@@ -7,8 +7,16 @@ using System.Diagnostics;
 namespace Testing6
 {
     [TestClass]
-    public class tstOrders
+    public class tstOrder
     {
+        String Order_ID = "1234";
+        String Status = "Pending";
+        String ShipmentDate = "24/05/2024";
+        String PaymentMethod = "ApplePay";
+        String ShipmentID = "123456";
+        String Quantity = "11";
+        String OrderDate = DateTime.Now.ToString();
+     
         [TestMethod]
         public void TestMethod1()
         {
@@ -227,22 +235,22 @@ namespace Testing6
             Assert.IsTrue(Ok);
         }
     }
-}
+
 
 [TestMethod]
 
-public void ValidMethodOkay()
+public void ValidMethodOK(string OrderID, object Status, object PaymentMethod, object Quantity)
 {
     //creating an instance of the class i want to create
     clsOrder AOrder = new clsOrder();
-    //string variable to store any error messages 
+    // Create variable to store error message
     String Error = "";
-    //invoke the method
+    // Invoke the method
     Error = AOrder.Valid(OrderID, Status, PaymentMethod, Quantity);
     Assert.AreEqual(Error, "");
 }
 [TestMethod]
-public void OrderIDNoMinLessOne()
+public void OrderIDNoMinLessOne(object Status, object PaymentMethod, object Quantity)
 {
     clsOrder AProduct = new clsOrder();
     //string error to store any error messages
@@ -255,7 +263,7 @@ public void OrderIDNoMinLessOne()
     Assert.AreNotEqual(Error, "");
 }
 [TestMethod]
-public void OrderIDNoMinPlusOne()
+public void OrderIDNoMinPlusOne(object Status, object PaymentMethod, object Quantity)
 {
     clsOrder AOrder = new clsOrder();
     string Error = "";
@@ -265,7 +273,7 @@ public void OrderIDNoMinPlusOne()
 }
 [TestMethod]
 
-public void OrderIDNoMin()
+public void OrderIDNoMin(object Status, object PaymentMethod, object Quantity)
 {
     clsOrder AOrder = new clsOrder();
     string Error = "";
@@ -275,7 +283,7 @@ public void OrderIDNoMin()
 }
 [TestMethod]
 
-public void OrderIDNoMaxLessOne()
+public void OrderIDNoMaxLessOne(object Status, object PaymentMethod, object Quantity)
 {
     clsOrder AOrder = new clsOrder();
     string Error = "";
@@ -285,7 +293,7 @@ public void OrderIDNoMaxLessOne()
 }
 [TestMethod]
 
-public void OrderIDNoMax()
+public void OrderIDNoMax(object Status, object PaymentMethod, object Quantity)
 {
     clsOrder AOrder = new clsOrder();
     string Error = "";
@@ -295,7 +303,7 @@ public void OrderIDNoMax()
 }
 [TestMethod]
 
-public void OrderIDNoMid()
+public void OrderIDNoMid(object Status, object PaymentMethod, object Quantity)
 {
     clsOrder AOrder = new clsOrder();
     string Error = "";
@@ -305,17 +313,18 @@ public void OrderIDNoMid()
 }
 [TestMethod]
 
-public void OrderIDNoMaxPlusOne()
+public void OrderIDNoMaxPlusOne(object Status, object Quantity)
 {
     clsOrder AOrder = new clsOrder();
     string Error = "";
     string OrderID = "aaaaaaaaaaaaaaaaaaa";
-    Error = AOrder.Valid(OrderID, Status, PaymentMethod, Quantity);
+        object PaymentMethod = null;
+        Error = AOrder.Valid(OrderID, Status, PaymentMethod, Quantity);
     Assert.AreNotEqual(Error, "");
 }
 [TestMethod]
 
-public void OrderIDNoExtreme()
+public void OrderIDNoExtreme(object Status, object PaymentMethod, object Quantity)
 {
     clsOrder AOrder = new clsOrder();
     string Error = "";
@@ -326,7 +335,7 @@ public void OrderIDNoExtreme()
 }
 [TestMethod]
 
-public void StatusMinLessOne()
+public void StatusMinLessOne(string OrderID, object PaymentMethod, object Quantity)
 {
     clsOrder AOrder = new clsOrder();
     String Error = "";
@@ -336,7 +345,7 @@ public void StatusMinLessOne()
 }
 
 [TestMethod]
-public void StatusMin(string OrderID)
+public void StatusMin(string OrderID, object PaymentMethod, object Quantity)
 {
     clsOrder AOrder = new clsOrder();
     String Error = "";
@@ -346,7 +355,7 @@ public void StatusMin(string OrderID)
 }
 [TestMethod]
 
-public void StatusMinPlusOne(string OrderID)
+public void StatusMinPlusOne(string OrderID, object PaymentMethod, object Quantity)
 {
     clsOrder AOrder = new clsOrder();
     String Error = "";
@@ -356,7 +365,7 @@ public void StatusMinPlusOne(string OrderID)
 }
 [TestMethod]
 
-public void StatusMaxLessOne(string OrderID)
+public void StatusMaxLessOne(string OrderID, object PaymentMethod, object Quantity)
 {
     clsOrder AOrder = new clsOrder();
     String Error = "";
@@ -367,7 +376,7 @@ public void StatusMaxLessOne(string OrderID)
 }
 [TestMethod]
 
-public void StatusMax(string OrderID)
+public void StatusMax(string OrderID, object PaymentMethod, object Quantity)
 {
     clsOrder AOrder = new clsOrder();
     String Error = "";
@@ -378,7 +387,7 @@ public void StatusMax(string OrderID)
 }
 [TestMethod]
 
-public void StatusMaxPlusOne(string OrderID)
+public void StatusMaxPlusOne(string OrderID, object PaymentMethod, object Quantity)
 {
     clsOrder AOrder = new clsOrder();
     String Error = "";
@@ -389,7 +398,7 @@ public void StatusMaxPlusOne(string OrderID)
 
 }
 [TestMethod]
-public void StatusMid(object OrderID)
+public void StatusMid(object OrderID, object PaymentMethod, object Quantity, object AOrder)
 {
     clsOrder AUser = new clsOrder();
     String Error = "";
@@ -399,7 +408,7 @@ public void StatusMid(object OrderID)
     Assert.AreEqual(Error, "");
 }
 [TestMethod]
-public void PaymentMethodLessOne()
+public void PaymentMethodLessOne(string OrderID, object Status, object Quantity)
 {
     clsOrder AOrder = new clsOrder();
     String Error = "";
@@ -412,7 +421,7 @@ public void PaymentMethodLessOne()
 }
 [TestMethod]
 
-public void PaymentMethodMin()
+public void PaymentMethodMin(string OrderID, object Status, object Quantity)
 {
     clsOrder AOrder = new clsOrder();
     String Error = "";
@@ -422,7 +431,7 @@ public void PaymentMethodMin()
 
 }
 [TestMethod]
-public void PaymentMethodMinPlusOne()
+public void PaymentMethodMinPlusOne(string OrderID, object Status, object Quantity)
 {
     clsOrder AOrder = new clsOrder();
     String Error = "";
@@ -432,7 +441,7 @@ public void PaymentMethodMinPlusOne()
 
 }
 [TestMethod]
-public void PaymentMethodMaxLessOne()
+public void PaymentMethodMaxLessOne(string OrderID, object Status, object Quantity)
 {
     clsOrder AOrder = new clsOrder();
     String Error = "";
@@ -442,7 +451,7 @@ public void PaymentMethodMaxLessOne()
 
 }
 [TestMethod]
-public void PaymentMethodMax()
+public void PaymentMethodMax(string OrderID, object Status, object Quantity)
 {
     clsOrder AOrder = new clsOrder();
     String Error = "";
@@ -452,7 +461,7 @@ public void PaymentMethodMax()
 
 }
 [TestMethod]
-public void PaymentMethodMaxPlusOne()
+public void PaymentMethodMaxPlusOne(string OrderID, object Status, object Quantity)
 {
     clsOrder AOrder = new clsOrder();
     String Error = "";
@@ -462,7 +471,7 @@ public void PaymentMethodMaxPlusOne()
 
 }
 [TestMethod]
-public void PaymentMethodMid()
+public void PaymentMethodMid(string OrderID, object Status, object Quantity)
 {
     clsOrder AOrder = new clsOrder();
     String Error = "";
@@ -472,7 +481,7 @@ public void PaymentMethodMid()
 
 }
 [TestMethod]
-public void PaymentMethodExtremMax()
+public void PaymentMethodExtremMax(string OrderID, object Status, object Quantity)
 {
     clsOrder AOrder = new clsOrder();
     String Error = "";
@@ -482,7 +491,7 @@ public void PaymentMethodExtremMax()
     Assert.AreNotEqual(Error, "");
 
 }
-public void PaymentMethodValidData()
+public void PaymentMethodValidData(string OrderID, object Status, object Quantity)
 {
     clsOrder AOrder = new clsOrder();
     String Error = "";
@@ -493,7 +502,7 @@ public void PaymentMethodValidData()
 
 [TestMethod]
 
-public void PaymentMethodInvalidData()
+public void PaymentMethodInvalidData(string OrderID, object Status, object Quantity)
 {
     clsOrder AOrder = new clsOrder();
     String Error = "";
@@ -504,7 +513,7 @@ public void PaymentMethodInvalidData()
 
 [TestMethod]
 
-public void QuantityMinLessOne()
+public void QuantityMinLessOne(string OrderID, object Status, object PaymentMethod)
 {
     clsOrder AOrder = new clsOrder();
     String Error = "";
@@ -514,7 +523,7 @@ public void QuantityMinLessOne()
 
 }
 [TestMethod]
-public void QuantityMin()
+public void QuantityMin(string OrderID, object Status, object PaymentMethod)
 {
     clsOrder AOrder = new clsOrder();
     String Error = "";
@@ -524,7 +533,7 @@ public void QuantityMin()
 
 }
 [TestMethod]
-public void PlusMinPlusOne()
+public void PlusMinPlusOne(string OrderID, object Status, object PaymentMethod)
 {
     clsOrder AOrder = new clsOrder();
     String Error = "";
@@ -535,7 +544,7 @@ public void PlusMinPlusOne()
 }
 [TestMethod]
 
-public void QuantityMaxLessOne()
+public void QuantityMaxLessOne(string OrderID, object Status, object PaymentMethod)
 {
     clsOrder AOrder = new clsOrder();
     String Error = "";
@@ -546,7 +555,7 @@ public void QuantityMaxLessOne()
 }
 [TestMethod]
 
-public void QuantityMax()
+public void QuantityMax(string OrderID, object Status, object PaymentMethod)
 {
     clsOrder AOrder = new clsOrder();
     String Error = "";
@@ -556,7 +565,7 @@ public void QuantityMax()
 
 }
 [TestMethod]
-public void QuantityMaxPlusOne()
+public void QuantityMaxPlusOne(string OrderID, object Status, object PaymentMethod)
 {
     clsOrder AOrder = new clsOrder();
     String Error = "";
@@ -566,7 +575,7 @@ public void QuantityMaxPlusOne()
 
 }
 [TestMethod]
-public void QuantityMid()
+public void QuantityMid(string OrderID, object Status, object PaymentMethod)
 {
     clsOrder AOrder = new clsOrder();
     String Error = "";
@@ -577,7 +586,7 @@ public void QuantityMid()
 }
 [TestMethod]
 
-public void QuantityExtremMax()
+public void QuantityExtremMax(object OrderID, object Status, object PaymentMethod)
 {
     clsOrder APOrder = new clsOrder();
     String Error = "";
@@ -589,7 +598,7 @@ public void QuantityExtremMax()
 }
 [TestMethod]
 
-public void QuantityOnlyNumbers()
+public void QuantityOnlyNumbers(string OrderID, object Status, object PaymentMethod)
 {
     clsOrder AOrder = new clsOrder();
     string Error = "";
@@ -609,6 +618,9 @@ public void QuantityOnlyNumbers()
  [TestClass]
 public class tstOrderCollection
 {
+    private clsOrder clsOrderTestItem;
+    private object TestItem;
+
     [TestMethod]
     public void instanceokay()
     {
@@ -722,10 +734,10 @@ public class tstOrderCollection
         TestItem.ShipmentID = 123456;
         TestItem.Quantity = "11";
         //setting thisOrder to the test
-        AllOrder.ThisOrder = TestItem;
+        AllOrder.ThisOrder = (clsOrder)TestItem;
         //Add the record
         PrimaryKey = AllOrder.Add();
-        TestItem.Order = PrimaryKey;
+        TestItem.OrderId = PrimaryKey;
         //modify the test record
         TestItem.Visible = true;
         TestItem.OrderId = 1234;
@@ -735,7 +747,7 @@ public class tstOrderCollection
         TestItem.ShipmentID = 123456;
         TestItem.Quantity = "11";
         //set the record
-        AllOrder.ThisOrder = TestItem;
+        AllOrder.ThisOrder = (clsOrder)TestItem;
         //updating the record
         AllOrder.Update();
         Assert.AreEqual(AllOrder.ThisOrder, TestItem);
@@ -767,7 +779,7 @@ public class tstOrderCollection
         //delete the record
         AllOrder.Delete();
         //now find the record 
-        Boolean Found = AllOrder.ThisProduct.Find(PrimaryKey);
+        Boolean Found = AllOrder.ThisOrder.Find(PrimaryKey);
         //test to see if the record exist
         Assert.IsFalse(Found);
 
@@ -780,7 +792,7 @@ public class tstOrderCollection
         //creating an instance of the filtered data
         clsOrderCollection filteredOrders = new clsOrderCollection();
         //apply a blank string (should return all record)
-        filteredOrders.ReportByName("");
+        filteredOrders.ReportByOrderID("");
         //testing
         Assert.AreEqual(AllOrder.Count, filteredOrders.Count);
     }
@@ -788,7 +800,7 @@ public class tstOrderCollection
     public void ReportByOrderIDNoneFound()
     {
         clsOrderCollection FilteredOrders = new clsOrderCollection();
-        FilteredOrders.ReportByName("XXXXXX");
+        FilteredOrders.ReportByOrderID("XXXXXX");
         Assert.AreEqual(0, FilteredOrders.Count);
     }
 
@@ -824,4 +836,29 @@ public class tstOrderCollection
 
 }
 }
+internal class clsOrderCollection
+{
+    internal List<clsOrder> OrderList;
+    internal clsOrder ThisOrder;
+    internal int Count;
 
+    internal int Add()
+    {
+        throw new NotImplementedException();
+    }
+
+    internal void Delete()
+    {
+        throw new NotImplementedException();
+    }
+
+    internal void ReportByOrderID(string v)
+    {
+        throw new NotImplementedException();
+    }
+
+    internal void Update()
+    {
+        throw new NotImplementedException();
+    }
+}
