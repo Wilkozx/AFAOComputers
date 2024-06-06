@@ -296,3 +296,7 @@ H:\Desktop\SubmitFinal\Skeleton\Testing1\obj\Debug\TestingOrders.csproj.CoreComp
 H:\Desktop\SubmitFinal\Skeleton\Testing1\obj\Debug\TestingO.64048BAB.Up2Date
 H:\Desktop\SubmitFinal\Skeleton\Testing1\obj\Debug\Testing1.dll
 H:\Desktop\SubmitFinal\Skeleton\Testing1\obj\Debug\Testing1.pdb
+H:\FinalweekPt2\Skeleton\Testing1\obj\Debug\TestingOrders.csproj.AssemblyReference.cache
+H:\FinalweekPt2\Skeleton\Testing1\obj\Debug\TestingOrders.csproj.CoreCompileInputs.cache
+H:\FinalweekPt2\Skeleton\Testing1\obj\Debug\Testing1.dll
+H:\FinalweekPt2\Skeleton\Testing1\obj\Debug\Testing1.pdb
