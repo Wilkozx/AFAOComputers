@@ -164,3 +164,9 @@ H:\Desktop\SubmitFinal\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.csproj.Assem
 H:\Desktop\SubmitFinal\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.csproj.CoreCompileInputs.cache
 H:\Desktop\SubmitFinal\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.dll
 H:\Desktop\SubmitFinal\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.pdb
+H:\FinalweekPt2\Skeleton\ClassLibrary\bin\Debug\ClassLibrary.dll
+H:\FinalweekPt2\Skeleton\ClassLibrary\bin\Debug\ClassLibrary.pdb
+H:\FinalweekPt2\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.csproj.AssemblyReference.cache
+H:\FinalweekPt2\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.csproj.CoreCompileInputs.cache
+H:\FinalweekPt2\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.dll
+H:\FinalweekPt2\Skeleton\ClassLibrary\obj\Debug\ClassLibrary.pdb
