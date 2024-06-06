@@ -73,9 +73,14 @@ public partial class _1_DataEntry : System.Web.UI.Page
         //creating variable to store the result of the find operation
         Boolean Found = false;
         //get the primary key entered by the user
-        ProductId = Convert.ToInt32(TxtProductId.Text);
+        
         //find the record
-        Found = AProduct.Find(ProductId);
+        Found = AProduct.Find(AProduct.ProductId);
+        if (TxtProductId.Text != "")
+        {
+            ProductId = Convert.ToInt32(TxtProductId.Text);
+            Found = AProduct.Find(ProductId);
+        }
         //I found
         if (Found == true)
 
@@ -88,6 +93,10 @@ public partial class _1_DataEntry : System.Web.UI.Page
             txtSKU.Text = AProduct.SKU.ToString();
             chkVisible.Checked = AProduct.Visible;
 
+        }
+        else
+        {
+            lblError.Text = "Please Enter a product Id to find";
         }
     }
 
@@ -103,6 +112,11 @@ public partial class _1_DataEntry : System.Web.UI.Page
             {
 
                 DisplayProduct();
+            }else
+            {
+                TxtProductId.Text = "";
+                TxtProductId.Enabled = false;
+                BtnFind.Enabled = false;
             }
         }
     }
