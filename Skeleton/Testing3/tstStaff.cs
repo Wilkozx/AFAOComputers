@@ -123,9 +123,9 @@ namespace Testing3
             clsStaff AStaff = new clsStaff();
             Boolean Found = false;
             Boolean Ok = true;
-            Int32 StaffID = 1;
+            Int32 StaffID = 2056;
             Found = AStaff.Find(StaffID);
-            if (AStaff.StaffId != 1)
+            if (AStaff.StaffId != 2056)
             {
                 Ok = false;
             }
@@ -139,7 +139,7 @@ namespace Testing3
             Boolean Found = false;
             Boolean Ok = true;
             String Firstname = "Alex";
-            Int32 StaffID = 1;
+            Int32 StaffID = 2056;
             Found = AStaff.Find(StaffID);
             if (AStaff.FirstName != Firstname)
             {
@@ -155,7 +155,7 @@ namespace Testing3
             Boolean Found = false;
             Boolean Ok = true;
             String Lastname = "Talks";
-            Int32 StaffID = 1;
+            Int32 StaffID = 2056;
             Found = AStaff.Find(StaffID);
             if (AStaff.LastName != Lastname)
             {
@@ -170,8 +170,8 @@ namespace Testing3
             clsStaff AStaff = new clsStaff();
             Boolean Found = false;
             Boolean Ok = true;
-            String PayeeDetails = "8743b52063cd84097a65d1633f5c74f5";
-            Int32 StaffID = 1;
+            String PayeeDetails = "12324219283748";
+            Int32 StaffID = 2056;
             Found = AStaff.Find(StaffID);
             if (AStaff.PayeeDetails != PayeeDetails)
             {
@@ -187,7 +187,7 @@ namespace Testing3
             Boolean Found = false;
             Boolean Ok = true;
             Boolean Perms = false;
-            Int32 StaffID = 1;
+            Int32 StaffID = 2056;
             Found = AStaff.Find(StaffID);
             if (AStaff.HasPerms != Perms)
             {
@@ -202,7 +202,7 @@ namespace Testing3
             clsStaff AStaff = new clsStaff();
             Boolean Found = false;
             Boolean OK = true;
-            Int32 StaffID = 1;
+            Int32 StaffID = 2056;
             Found = AStaff.Find(StaffID);
             if (AStaff.JoinDate != Convert.ToDateTime("26/07/2024"))
             {
@@ -217,7 +217,7 @@ namespace Testing3
             clsStaff AStaff = new clsStaff();
             Boolean Found = false;
             Boolean OK = true;
-            Int32 StaffID = 1;
+            Int32 StaffID = 2056;
             Found = AStaff.Find(StaffID);
             if (AStaff.ContractExpiary != Convert.ToDateTime("26/07/2026"))
             {
@@ -480,6 +480,17 @@ namespace Testing3
         }
 
         [TestMethod]
+        public void SortcodeTestInvalid()
+        {
+            clsStaff AStaff = new clsStaff();
+            String Error = "";
+            String Sortcode = "";
+            Sortcode = "INVALI";
+            Error = AStaff.Valid(Staff_Id, Firstname, Lastname, HasPerms, Sortcode, AccountNumber, Join_Date, Contract_Expiry_Date);
+            Assert.AreNotEqual(Error, "");
+        }
+
+        [TestMethod]
         public void AccountNumberMin()
         {
             clsStaff AStaff = new clsStaff();
@@ -606,7 +617,7 @@ namespace Testing3
         {
             clsStaff AStaff = new clsStaff();
             String Error = "";
-            String Join_Date = DateTime.Now.ToString();
+            String Join_Date = DateTime.Now.AddDays(1).ToString();
             String Contract_Expiry_Date = DateTime.Now.ToString();
             Error = AStaff.Valid(Staff_Id, Firstname, Lastname, HasPerms, Sortcode, AccountNumber, Join_Date, Contract_Expiry_Date);
             Assert.AreNotEqual(Error, "");

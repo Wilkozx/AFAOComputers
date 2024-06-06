@@ -28,18 +28,26 @@
             padding: 5px;
         }
 
+        #lblStaffList {
+            display: grid;
+            grid-column-start: 1;
+            grid-row-start: 0;
+            grid-row-end: 1;
+            grid-column-end: 4;
+        }
+
         #lstStaffList {
             display: grid;
             grid-column-start: 1;
             grid-row-start: 1;
             grid-row-end: 1;
             grid-column-end: 4;
-            height: 400px
+            height: 400px;
         }
 
         #Filterbundle {
             display: grid;
-            grid-column-start: 2;
+            grid-column-start: 1;
             grid-row-start: 2;
         }
 
@@ -49,26 +57,49 @@
         }
 
         #Modifybundle {
-            display: grid;
-            grid-column-start: 3;
-            grid-row-start: 1;
+            justify-content: center;
+            grid-column-start: 2;
+            grid-row-start: 2;
+            grid-column-end: 4;
         }
+
+        #Modifybundle {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #lblFilterInput {
+            padding-right: 5px;
+        }
+
+        #lblError {
+            grid-column-start: 1;
+            grid-row-start: 3;
+        }
+
+        #btnMainMenu {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 4;
+            height: 50px;
+        } 
 
     </style>
 </head>
 <body>
     <form id="form" runat="server">
         <asp:Button ID="btnMainMenu" runat="server" OnClick="btnMainMenu_Click" Text="Return To Main Menu" />
+        <asp:Label ID="lblStaffList" runat="server" Text="List of Staff Entries"></asp:Label>
         <asp:ListBox ID="lstStaffList" runat="server" OnSelectedIndexChanged="lstStaffList_SelectedIndexChanged"></asp:ListBox>
         <div id="Filterbundle">
             <div id="Filteritems">
-                <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+                <asp:Label ID="lblFilterInput" runat="server" Text="Search"></asp:Label>
                 <asp:TextBox ID="txtFilterInput" runat="server"></asp:TextBox>
                 <asp:Button ID="btnApplyFilter" runat="server" OnClick="btnApplyFilter_Click" Text="Apply Filter" />
                 <asp:Button ID="btnClearFilter" runat="server" OnClick="btnClearFilter_Click" Text="Clear Filter" />
             </div>
         </div>
-        <div id="Mofifybundle">
+        <div id="Modifybundle">
             <asp:Button ID="btnAdd" runat="server" OnClick="btnAdd_Click" Text="Add" />
             <asp:Button ID="btnEdit" runat="server" OnClick="btnEdit_Click" Text="Edit" />
             <asp:Button ID="btnDelete" runat="server" OnClick="btnDelete_Click" Text="Delete" />
