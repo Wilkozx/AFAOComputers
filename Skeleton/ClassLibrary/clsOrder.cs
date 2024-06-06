@@ -7,7 +7,7 @@ namespace ClassLibrary
         private String mOrderID;
         private bool mStatus;
         private DateTime mShipmentDate;
-        private String mCustomerID;
+        private String mPaymentMethod;
         private String mShipmentID;
         private int mQuantity;
         private DateTime mOrderDate;
@@ -48,15 +48,15 @@ namespace ClassLibrary
             }
         }
 
-        public string CustomerID
+        public string PaymentMethod
         {
             get
             {
-                return mCustomerID;
+                return mPaymentMethod;
             }
             set
             {
-                mCustomerID = value;
+                mPaymentMethod = value;
             }
         }
 
@@ -113,7 +113,7 @@ namespace ClassLibrary
                 mOrderID = Convert.ToString(DB.DataTable.Rows[0]["Order_ID"]);
                 mStatus = Convert.ToBoolean(DB.DataTable.Rows[0]["Status"]);
                 mShipmentDate = Convert.ToDateTime(DB.DataTable.Rows[0]["Shipment_Date"]);
-                mCustomerID = Convert.ToString(DB.DataTable.Rows[0]["Customer_ID"]);
+                mPaymentMethod = Convert.ToString(DB.DataTable.Rows[0]["PaymentMethod"]);
                 mShipmentID = Convert.ToString(DB.DataTable.Rows[0]["Shipment_ID"]);
                 mQuantity = Convert.ToInt32(DB.DataTable.Rows[0]["Quantity"]);
                 mOrderDate = Convert.ToDateTime(DB.DataTable.Rows[0]["Order_Date"]);

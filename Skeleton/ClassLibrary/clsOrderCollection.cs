@@ -61,7 +61,7 @@ namespace ClassLibrary
             DB.AddParameter("@OrderID", mThisOrder.OrderID);
             DB.AddParameter("@Status", mThisOrder.Status);
             DB.AddParameter("@ShipmentDate", mThisOrder.ShipmentDate);
-            DB.AddParameter("@CustomerID", mThisOrder.CustomerID);
+            DB.AddParameter("@PaymentMethod", mThisOrder.PaymentMethod);
             DB.AddParameter("@ShipmentID", mThisOrder.ShipmentID);
             DB.AddParameter("@OrderDate", mThisOrder.OrderDate);
 
@@ -75,7 +75,7 @@ namespace ClassLibrary
             DB.AddParameter("@OrderID", mThisOrder.OrderID);
             DB.AddParameter("@Status", mThisOrder.Status);
             DB.AddParameter("@ShipmentDate", mThisOrder.ShipmentDate);
-            DB.AddParameter("@CustomerID", mThisOrder.CustomerID);
+            DB.AddParameter("@PaymentMethod", mThisOrder.PaymentMethod);
             DB.AddParameter("@ShipmentID", mThisOrder.ShipmentID);
             DB.AddParameter("@Quantity", mThisOrder.Quantity);
             DB.AddParameter("@OrderDate", mThisOrder.OrderDate);
@@ -118,7 +118,7 @@ namespace ClassLibrary
                 AnOrder.OrderID = Convert.ToString(DB.DataTable.Rows[Index]["OrderID"]);
                 AnOrder.Status = Convert.ToBoolean(DB.DataTable.Rows[Index]["Status"]);
                 AnOrder.ShipmentDate = Convert.ToDateTime(DB.DataTable.Rows[Index]["Shipment_Date"]);
-                AnOrder.CustomerID = Convert.ToString(DB.DataTable.Rows[Index]["CustomerID"]);
+                AnOrder.PaymentMethod = Convert.ToString(DB.DataTable.Rows[Index]["PaymentMethod"]);
                 AnOrder.ShipmentID = Convert.ToString(DB.DataTable.Rows[Index]["ShipmentID"]);
                 AnOrder.Quantity = Convert.ToInt32(DB.DataTable.Rows[Index]["Quantity"]);
                 AnOrder.OrderDate = Convert.ToDateTime(DB.DataTable.Rows[Index]["Order_Date"]);
