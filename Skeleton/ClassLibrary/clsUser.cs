@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom.Compiler;
 using System.Data.Odbc;
 
 namespace ClassLibrary
@@ -127,27 +128,71 @@ namespace ClassLibrary
             }
         }
 
-        public string Valid(string userName, string email, string dateofBirth)
+        public string Valid(string userName, string email, string dateofBirth,string HashedPass, string PhoneNumber)
         {
             String Error = "";
             if (userName.Length < 4)
             {
-                Error = Error + "The Username must be greater than 4 characters";
+                Error = Error + "The Username must be greater than 4 characters :";
             }
+
             if (userName.Length > 15)
             {
-                Error = Error + "The Username must be Less than 15 characters";
+                Error = Error + "The Username must be Less than 15 characters :";
             }
+
             if (email.Length < 5)
             {
-                Error = Error + "The Email must be greater than 5 characters";
+                Error = Error + "The Email must be greater than 4 characters :";
             }
+
             if (email.Length > 50)
             {
-                Error = Error + "The Email must be Less than 50 characters";
+                Error = Error + "The Email must be Less than 50 characters :";
+            }
+
+            if(HashedPass.Length < 8) 
+            {
+                Error = Error + "The password must be Greater than 7 characters :";
+            }
+
+            if (HashedPass.Length > 50)
+            {
+                Error = Error + "The password must be less than 51 characters :";
             }
             
-            
+            if (PhoneNumber.ToString().Length < 6)
+            {
+                Error = Error + "The Phonenumber must be Greater than 5 characters :";
+            }
+            if (PhoneNumber.ToString().Length > 11)
+            {
+                Error = Error + "The Phonenumber must be less than 5 characters :";
+            }
+            DateTime TempDate = DateTime.Now.Date;
+            try
+            {
+               
+                
+               DateTime dateofB = Convert.ToDateTime(dateofBirth);
+                Int32 Age = TempDate.Year - dateofB.Year;
+                
+               
+                
+                if (Age < 18)
+                {
+                    Error = Error + "The User Must be Above 18: ";
+                }
+            }
+
+            catch
+            {
+                //record the error
+                Error = Error + "The date was not a valid date";
+            }
+
+
+
             return Error;
         }
     }

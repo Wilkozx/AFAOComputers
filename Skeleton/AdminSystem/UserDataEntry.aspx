@@ -38,12 +38,14 @@
             <asp:TextBox ID="txtEmail" runat="server" style="z-index: 1; left: 172px; top: 107px; position: absolute" width="128px"></asp:TextBox>
         </p>
         <asp:Button ID="btnCancel" runat="server" OnClick="btnCancel_Click" style="z-index: 1; left: 154px; top: 296px; position: absolute" Text="Cancel" />
+        <asp:Button ID="btnReturn" runat="server" OnClick="btnReturn_Click" style="z-index: 1; left: 250px; top: 296px; position: absolute" Text="Return to main menu" />
         <asp:Button ID="btnOk" runat="server" OnClick="btnOk_Click" style="z-index: 1; left: 46px; top: 296px; position: absolute; width: 54px" Text="Ok" />
         <p>
             &nbsp;</p>
-        <span runat="server" id="ERROR">
+        <asp:Label ID="ERROR" runat="server" style="z-index: 1; left: 450px; top: 224px; position: absolute; height: 15px; width: 150px"></asp:Label>
+        
 
-        </span>
+        
     </form>
 </body>
 </html>

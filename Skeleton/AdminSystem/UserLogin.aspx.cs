@@ -1,10 +1,11 @@
-﻿using ClassLibrary;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using ClassLibrary;
 
 public partial class UserLogin : System.Web.UI.Page
 {
@@ -15,18 +16,18 @@ public partial class UserLogin : System.Web.UI.Page
 
     protected void btnLogin_Click(object sender, EventArgs e)
     {
-        // creat an instance of the class
+        // create an instance of the class
         clsUserAccount AnAccount = new clsUserAccount();
-        // creat variable to store username and password
-        string Username = txtUsername.Text;
-        string Password = txtPassword.Text;
+        // create variable to store username and password
+        string UserName = txtUsername.Text;
+        string PassWord = txtPassword.Text;
         // create a variable to store result of find user operation
         Boolean Found = false;
         // get username entered by user
-        Username = Convert.ToString(txtUsername.Text);
-        Password = Convert.ToString(txtPassword.Text);
+        UserName = Convert.ToString(txtUsername.Text);
+        PassWord = Convert.ToString(txtPassword.Text);
         // find the record
-        Found = AnAccount.FindAccount(Username, Password);
+        Found = AnAccount.FindAccount(UserName, PassWord);
         // add session to capture username
         Session["AnAccount"] = AnAccount;
         // if username/password is empty
@@ -53,6 +54,7 @@ public partial class UserLogin : System.Web.UI.Page
         }
 
     }
+
 
     protected void btnCancel_Click(object sender, EventArgs e)
     {
