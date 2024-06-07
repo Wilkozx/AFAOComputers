@@ -26,14 +26,14 @@ public partial class _1_DataEntry : System.Web.UI.Page
 
     protected void btnCancel_Click(object sender, EventArgs e)
     {
-
+        Response.Redirect("UserList.aspx");
     }
 
     protected void btnOk_Click(object sender, EventArgs e)
     {
         //create a new instance of clsUser
         clsUser AUser = new clsUser();
-        string UserId = Convert.ToString(txtUserId.Text);
+        
         string UserName = txtUserName.Text;
         string Email = txtEmail.Text;
         string Password = txtPassword.Text; 
@@ -41,11 +41,11 @@ public partial class _1_DataEntry : System.Web.UI.Page
         string DateOfBirth = txtDateofBirth.Text;
         string isStaff = Convert.ToString(chkboxStaff.Text);
         string Error = "";
-        Error = AUser.Valid(UserName,Email,DateOfBirth);
+        Error = AUser.Valid(UserName,Email,DateOfBirth,Password, PhoneNumber);
         if (Error == "")
         {
             //capture UserId
-            AUser.UserId = Convert.ToInt32(UserId);
+            AUser.UserId = UserId;
             AUser.UserName = UserName;
             AUser.Email = Email;
             AUser.isStaff = chkboxStaff.Checked;
@@ -54,14 +54,14 @@ public partial class _1_DataEntry : System.Web.UI.Page
             AUser.DateofBirth = Convert.ToDateTime(DateOfBirth);
 
             clsUserCollection UserList = new clsUserCollection();
-            if (Convert.ToInt32(UserId) == -1)
+            if (UserId == -1)
             {
                 UserList.ThisUser = AUser;
                 UserList.Add();
             }
             else
             {
-                UserList.ThisUser.Find(Convert.ToInt32(UserId));
+                UserList.ThisUser.Find(UserId);
                 UserList.ThisUser = AUser;
                 UserList.Update();
             }
@@ -72,7 +72,7 @@ public partial class _1_DataEntry : System.Web.UI.Page
         }
         else
         {
-           ERROR.InnerText = Error;
+           ERROR.Text = Error;
         }
 
     }
@@ -86,9 +86,18 @@ public partial class _1_DataEntry : System.Web.UI.Page
         // Create a variable to store the result of the operation
         Boolean Found = false;
         // Get the primary key entered by the user
-        UserId = Convert.ToInt32(txtUserId.Text);
+        
         // Find the record
-        Found = AUser.Find(UserId);
+        try 
+        { 
+            UserId = Convert.ToInt32(txtUserId.Text);
+            Found = AUser.Find(UserId); 
+        }
+        catch 
+        { 
+            ERROR.Text = "Input User ID"; 
+        }
+        
         // If Found...
         if (Found == true)
         {
@@ -103,7 +112,8 @@ public partial class _1_DataEntry : System.Web.UI.Page
         }
         else
         {
-            ERROR.InnerText = "Bye";
+            
+            ERROR.Text = "Could not find";
         }
         
     }
@@ -116,16 +126,18 @@ public partial class _1_DataEntry : System.Web.UI.Page
         txtEmail.Text = UserList.ThisUser.Email;
         txtPassword.Text = UserList.ThisUser.HashedPass;
         chkboxStaff.Checked = UserList.ThisUser.isStaff;
-        txtDateofBirth.Text = UserList.ThisUser.DateofBirth.ToString("dd-mm-yyyy");
+        txtDateofBirth.Text = UserList.ThisUser.DateofBirth.ToString("d");
         txtPhoneNumber.Text = UserList.ThisUser.PhoneNumber.ToString();
+
 
 
 
     }
 
 
-    protected void Button1_Click(object sender, EventArgs e)
-    {
 
+    protected void btnReturn_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("TeamMainMenu.aspx");
     }
 }

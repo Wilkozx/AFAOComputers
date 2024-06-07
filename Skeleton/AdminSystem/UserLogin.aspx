@@ -17,7 +17,7 @@
             <asp:TextBox ID="txtPassword" runat="server" TextMode="Password"></asp:TextBox>
             <asp:Button ID="btnLogin" runat="server" OnClick="btnLogin_Click" Text="Login" />
             <asp:Button ID="btnCancel" runat="server" OnClick="btnCancel_Click" Text="Cancel" />
-            <asp:Label ID="lblError" runat="server" ForeColor="Red" Text="[lblError]"></asp:Label>
+            <asp:Label ID="lblError" runat="server" ForeColor="Red"></asp:Label>
         </div>
     </form>
     

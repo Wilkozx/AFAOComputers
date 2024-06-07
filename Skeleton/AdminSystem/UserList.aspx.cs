@@ -9,14 +9,18 @@ using ClassLibrary;
 
 public partial class _1_List : System.Web.UI.Page
 {
-    Int32 UserId;
     protected void Page_Load(object sender, EventArgs e)
     {
-        UserId = Convert.ToInt32(Session["UserId"]);
+        
         if (IsPostBack == false) 
         {
             DisplayUsers();
         }
+        clsUserAccount AnAccount = new clsUserAccount();
+
+        AnAccount = (clsUserAccount)Session["AnAccount"];
+
+        Response.Write("Logged in as : " + AnAccount.Username);
 
     }
     
@@ -94,5 +98,10 @@ public partial class _1_List : System.Web.UI.Page
         lstUserList.DataTextField = "UserName";
 
         lstUserList.DataBind();
+    }
+
+    protected void btnReturn_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("TeamMainMenu.aspx");
     }
 }

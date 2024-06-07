@@ -25,7 +25,7 @@ public partial class TeamMainMenu : System.Web.UI.Page
 
     protected void BtnUsers_Click(object sender, EventArgs e)
     {
-        Response.Redirect("");
+        Response.Redirect("UserLogin.aspx");
     }
 
     protected void BtnOrders_Click(object sender, EventArgs e)

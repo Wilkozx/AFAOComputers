@@ -11,9 +11,9 @@ namespace Testing4
         int UserId = 1;
         string UserName = "Omar";
         string Email = "omar@gmail.com";
-        string DateofBirth = DateTime.Now.ToShortDateString();
-        string HashedPass = "xxxxx";
-        int PhoneNumber = 12345678;
+        string DateofBirth = DateTime.Now.AddYears(-18).ToShortDateString();
+        string HashedPass = "xxxxxxxx";
+        string PhoneNumber = "12345678";
         bool isStaff = true;
         
         [TestMethod]
@@ -115,7 +115,7 @@ namespace Testing4
 
             clsUser AUser = new clsUser();
             Boolean Found = false;
-            Int32 UserId = 2;
+            Int32 UserId = 3;
             Found = AUser.Find(UserId);
             Assert.IsTrue(Found);
         }
@@ -125,9 +125,9 @@ namespace Testing4
             clsUser AUser = new clsUser();
             Boolean Found = false;
             Boolean Ok = true;
-            Int32 UserId = 2;
+            Int32 UserId = 3;
             Found = AUser.Find(UserId);
-            if (AUser.UserId != 2)
+            if (AUser.UserId != 3)
             {
                 Ok = false;
             }
@@ -139,7 +139,7 @@ namespace Testing4
             clsUser AUser = new clsUser();
             Boolean Found = false;
             Boolean Ok = true;
-            Int32 UserId = 2;
+            Int32 UserId = 3;
             Found = AUser.Find(UserId);
             if (AUser.UserName != "omar")
             {
@@ -153,7 +153,7 @@ namespace Testing4
             clsUser AUser = new clsUser();
             Boolean Found = false;
             Boolean Ok = true;
-            Int32 UserId = 2;
+            Int32 UserId = 3;
             Found = AUser.Find(UserId);
             if (AUser.Email != "omar@gmail.com")
             {
@@ -167,9 +167,9 @@ namespace Testing4
             clsUser AUser = new clsUser();
             Boolean Found = false;
             Boolean Ok = true;
-            Int32 UserId = 2;
+            Int32 UserId = 3;
             Found = AUser.Find(UserId);
-            if (AUser.DateofBirth != Convert.ToDateTime("23/12/2022"))
+            if (AUser.DateofBirth != Convert.ToDateTime("29/05/2024"))
             {
                 Ok = false;
             }
@@ -181,9 +181,9 @@ namespace Testing4
             clsUser AUser = new clsUser();
             Boolean Found = false;
             Boolean Ok = true;
-            Int32 UserId = 2;
+            Int32 UserId = 3;
             Found = AUser.Find(UserId);
-            if (AUser.HashedPass != "xxxxxxxxxx")
+            if (AUser.HashedPass != "12345678")
             {
                 Ok = false;
             }
@@ -195,9 +195,9 @@ namespace Testing4
             clsUser AUser = new clsUser();
             Boolean Found = false;
             Boolean Ok = true;
-            Int32 UserId = 2;
+            Int32 UserId = 3;
             Found = AUser.Find(UserId);
-            if (AUser.PhoneNumber != 12345678)
+            if (AUser.PhoneNumber != 123456789)
             {
                 Ok = false;
             }
@@ -209,7 +209,7 @@ namespace Testing4
             clsUser AUser = new clsUser();
             Boolean Found = false;
             Boolean Ok = true;
-            Int32 UserId = 2;
+            Int32 UserId = 3;
             Found = AUser.Find(UserId);
             if (AUser.isStaff != true)
             {
@@ -221,7 +221,7 @@ namespace Testing4
         public void ValidMethodOK() {
             clsUser AUser = new clsUser();
             String Error = "";
-            Error = AUser.Valid(UserName, Email, DateofBirth);
+            Error = AUser.Valid(UserName, Email, DateofBirth,HashedPass,PhoneNumber);
             Assert.AreEqual(Error, "");
         }
         [TestMethod]
@@ -230,7 +230,7 @@ namespace Testing4
             clsUser AUser = new clsUser();
             String Error = "";
             String UserName = "aaa";
-            Error = AUser.Valid(UserName, Email, DateofBirth);
+            Error = AUser.Valid(UserName, Email, DateofBirth, HashedPass, PhoneNumber);
             Assert.AreNotEqual(Error, "");
         }
         [TestMethod]
@@ -239,7 +239,7 @@ namespace Testing4
             clsUser AUser = new clsUser();
             String Error = "";
             String UserName = "aaaa";
-            Error = AUser.Valid(UserName, Email, DateofBirth);
+            Error = AUser.Valid(UserName, Email, DateofBirth, HashedPass, PhoneNumber);
             Assert.AreEqual(Error, "");
         }
         [TestMethod]
@@ -248,8 +248,8 @@ namespace Testing4
             clsUser AUser = new clsUser();
             String Error = "";
             String UserName = "aaaaa";
-            Error = AUser.Valid(UserName, Email, DateofBirth);
-            Assert.AreNotEqual(Error, "");
+            Error = AUser.Valid(UserName, Email, DateofBirth, HashedPass, PhoneNumber);
+            Assert.AreEqual(Error, "");
         }
         [TestMethod]
         public void UserNameMaxLessOne()
@@ -257,7 +257,7 @@ namespace Testing4
             clsUser AUser = new clsUser();
             String Error = "";
             String UserName = "aaaaaaaaaaaaaa";
-            Error = AUser.Valid(UserName, Email, DateofBirth);
+            Error = AUser.Valid(UserName, Email, DateofBirth, HashedPass, PhoneNumber);
             Assert.AreEqual(Error, "");
         }
         [TestMethod]
@@ -266,7 +266,7 @@ namespace Testing4
             clsUser AUser = new clsUser();
             String Error = "";
             String UserName = "aaaaaaaaaaaaaaa";
-            Error = AUser.Valid(UserName, Email, DateofBirth);
+            Error = AUser.Valid(UserName, Email, DateofBirth, HashedPass, PhoneNumber);
             Assert.AreEqual(Error, "");
         }
         [TestMethod]
@@ -275,7 +275,7 @@ namespace Testing4
             clsUser AUser = new clsUser();
             String Error = "";
             String UserName = "aaaaaaaaaaaaaaaa";
-            Error = AUser.Valid(UserName, Email, DateofBirth);
+            Error = AUser.Valid(UserName, Email, DateofBirth, HashedPass, PhoneNumber);
             Assert.AreNotEqual(Error, "");
         }
         [TestMethod]
@@ -284,7 +284,7 @@ namespace Testing4
             clsUser AUser = new clsUser();
             String Error = "";
             String UserName = "aaaaaaaaa";
-            Error = AUser.Valid(UserName, Email, DateofBirth);
+            Error = AUser.Valid(UserName, Email, DateofBirth, HashedPass, PhoneNumber);
             Assert.AreEqual(Error, "");
         }
         [TestMethod]
@@ -293,7 +293,7 @@ namespace Testing4
             clsUser AUser = new clsUser();
             String Error = "";
             String Email = "aaaa";
-            Error = AUser.Valid(UserName, Email, DateofBirth);
+            Error = AUser.Valid(UserName, Email, DateofBirth, HashedPass, PhoneNumber);
             Assert.AreNotEqual(Error, "");
         }
         [TestMethod]
@@ -302,7 +302,7 @@ namespace Testing4
             clsUser AUser = new clsUser();
             String Error = "";
             String Email = "aaaaa";
-            Error = AUser.Valid(UserName, Email, DateofBirth);
+            Error = AUser.Valid(UserName, Email, DateofBirth, HashedPass, PhoneNumber);
             Assert.AreEqual(Error, "");
         }
         [TestMethod]
@@ -311,7 +311,7 @@ namespace Testing4
             clsUser AUser = new clsUser();
             String Error = "";
             String Email = "aaaaaa";
-            Error = AUser.Valid(UserName, Email, DateofBirth);
+            Error = AUser.Valid(UserName, Email, DateofBirth, HashedPass, PhoneNumber);
             Assert.AreEqual(Error, "");
         }
         [TestMethod]
@@ -319,9 +319,9 @@ namespace Testing4
         {
             clsUser AUser = new clsUser();
             String Error = "";
-            String Email = "aaaa";
+            String Email = "";
             Email = Email.PadRight(49, 'a');
-            Error = AUser.Valid(UserName, Email, DateofBirth);
+            Error = AUser.Valid(UserName, Email, DateofBirth, HashedPass, PhoneNumber);
             Assert.AreEqual(Error, "");
         }
         [TestMethod]
@@ -329,9 +329,9 @@ namespace Testing4
         {
             clsUser AUser = new clsUser();
             String Error = "";
-            String Email = "aaaa";
+            String Email = "";
             Email = Email.PadRight(50, 'a');
-            Error = AUser.Valid(UserName, Email, DateofBirth);
+            Error = AUser.Valid(UserName, Email, DateofBirth, HashedPass, PhoneNumber);
             Assert.AreEqual(Error, "");
         }
         [TestMethod]
@@ -339,9 +339,9 @@ namespace Testing4
         {
             clsUser AUser = new clsUser();
             String Error = "";
-            String Email = "aaaa";
+            String Email = "";
             Email = Email.PadRight(51, 'a');
-            Error = AUser.Valid(UserName, Email, DateofBirth);
+            Error = AUser.Valid(UserName, Email, DateofBirth, HashedPass, PhoneNumber);
             Assert.AreNotEqual(Error, "");
 
         }
@@ -350,70 +350,287 @@ namespace Testing4
         {
             clsUser AUser = new clsUser();
             String Error = "";
-            String Email = "aaaa";
+            String Email = "";
             Email = Email.PadRight(25, 'a');
-            Error = AUser.Valid(UserName, Email, DateofBirth);
+            Error = AUser.Valid(UserName, Email, DateofBirth, HashedPass, PhoneNumber);
             Assert.AreEqual(Error, "");
         }
+        [TestMethod]
         public void PhoneNumberMinLessOne()
         {
             clsUser AUser = new clsUser();
             String Error = "";
-            int PhoneNumber = 11111;
-            Error = AUser.Valid(UserName, Email, DateofBirth);
+            Int64 PhoneNumber = 11111;
+            string PhoneNumberString = PhoneNumber.ToString();
+            Error = AUser.Valid(UserName, Email, DateofBirth, HashedPass, PhoneNumberString);
             Assert.AreNotEqual(Error, "");
         }
+        [TestMethod]
         public void PhoneNumberMin()
         {
             clsUser AUser = new clsUser();
             String Error = "";
-            int PhoneNumber = 111111;
-            Error = AUser.Valid(UserName, Email, DateofBirth);
-            Assert.AreNotEqual(Error, "");
+            Int64 PhoneNumber = 111111;
+            string PhoneNumberString = PhoneNumber.ToString();
+            Error = AUser.Valid(UserName, Email, DateofBirth, HashedPass, PhoneNumberString);
+            Assert.AreEqual(Error, "");
         }
+        [TestMethod]
         public void PhoneNumberMinPlusOne()
         {
             clsUser AUser = new clsUser();
             String Error = "";
-            int PhoneNumber = 1111111;
-            Error = AUser.Valid(UserName, Email, DateofBirth);
-            Assert.AreNotEqual(Error, "");
+            Int64 PhoneNumber = 1111111;
+            string PhoneNumberString = PhoneNumber.ToString();
+            Error = AUser.Valid(UserName, Email, DateofBirth, HashedPass, PhoneNumberString);
+            Assert.AreEqual(Error, "");
         }
+        [TestMethod]
         public void PhoneNumberMaxLessOne()
         {
             clsUser AUser = new clsUser();
             String Error = "";
-            Int64 PhoneNumber = 11111111111111;
-            
-            Error = AUser.Valid(UserName, Email, DateofBirth);
-            Assert.AreNotEqual(Error, "");
+            Int64 PhoneNumber = 1111111111;
+            string PhoneNumberString = PhoneNumber.ToString();
+            Error = AUser.Valid(UserName, Email, DateofBirth, HashedPass, PhoneNumberString);
+            Assert.AreEqual(Error, "");
         }
+        [TestMethod]
         public void PhoneNumberMax()
         {
             clsUser AUser = new clsUser();
             String Error = "";
-            Int64 PhoneNumber = 111111111111111;
-
-            Error = AUser.Valid(UserName, Email, DateofBirth);
-            Assert.AreNotEqual(Error, "");
+            Int64 PhoneNumber = 11111111111;
+            string PhoneNumberString = PhoneNumber.ToString();
+            Error = AUser.Valid(UserName, Email, DateofBirth, HashedPass, PhoneNumberString);
+            Assert.AreEqual(Error, "");
         }
+        [TestMethod]
         public void PhoneNumberMaxPlusOne()
         {
             clsUser AUser = new clsUser();
             String Error = "";
-            Int64 PhoneNumber = 1111111111111111;
-
-            Error = AUser.Valid(UserName, Email, DateofBirth);
+            Int64 PhoneNumber = 111111111111;
+            string PhoneNumberString = PhoneNumber.ToString();
+            Error = AUser.Valid(UserName, Email, DateofBirth, HashedPass, PhoneNumberString);
             Assert.AreNotEqual(Error, "");
         }
+        [TestMethod]
         public void PhoneNumberMid()
         {
             clsUser AUser = new clsUser();
             String Error = "";
-            Int64 PhoneNumber = 1111111111;
-
-            Error = AUser.Valid(UserName, Email, DateofBirth);
+            Int64 PhoneNumber = 11111111;
+            string PhoneNumberString = PhoneNumber.ToString();
+            Error = AUser.Valid(UserName, Email, DateofBirth, HashedPass, PhoneNumberString);
+            Assert.AreEqual(Error, "");
+        }
+        [TestMethod]
+        public void PasswordMinMinusOne()
+        {
+            clsUser AUser = new clsUser();
+            string Error = "";
+            string HashedPass = "aaaaaaa";
+            Error = AUser.Valid(UserName, Email, DateofBirth, HashedPass, PhoneNumber);
             Assert.AreNotEqual(Error, "");
+        }
+        [TestMethod]
+        public void PasswordMin()
+        {
+            clsUser AUser = new clsUser();
+            string Error = "";
+            string HashedPass = "aaaaaaaa";
+            Error = AUser.Valid(UserName, Email, DateofBirth, HashedPass, PhoneNumber);
+            Assert.AreEqual(Error, "");
+        }
+        [TestMethod]
+        public void PasswordMinplusOne()
+        {
+            clsUser AUser = new clsUser();
+            string Error = "";
+            string HashedPass = "aaaaaaaaa";
+            Error = AUser.Valid(UserName, Email, DateofBirth, HashedPass, PhoneNumber);
+            Assert.AreEqual(Error, "");
+        }
+        [TestMethod]
+        public void PasswordMaxMinusOne()
+        {
+            clsUser AUser = new clsUser();
+            string Error = "";
+            string HashedPass = "";
+            HashedPass = HashedPass.PadRight(49, 'a');
+            Error = AUser.Valid(UserName, Email, DateofBirth, HashedPass, PhoneNumber);
+            Assert.AreEqual(Error, "");
+        }
+        [TestMethod]
+        public void PasswordMax()
+        {
+            clsUser AUser = new clsUser();
+            string Error = "";
+            string HashedPass = "";
+            HashedPass = HashedPass.PadRight(50, 'a');
+            Error = AUser.Valid(UserName, Email, DateofBirth, HashedPass, PhoneNumber);
+            Assert.AreEqual(Error, "");
+        }
+        [TestMethod]
+        public void PasswordMaxPlusOne()
+        {
+            clsUser AUser = new clsUser();
+            string Error = "";
+            string HashedPass = "";
+            HashedPass = HashedPass.PadRight(51, 'a');
+            Error = AUser.Valid(UserName, Email, DateofBirth, HashedPass, PhoneNumber);
+            Assert.AreNotEqual(Error, "");
+        }
+        [TestMethod]
+        public void PasswordMid()
+        {
+            clsUser AUser = new clsUser();
+            string Error = "";
+            string HashedPass = "";
+            HashedPass = HashedPass.PadRight(30, 'a');
+            Error = AUser.Valid(UserName, Email, DateofBirth, HashedPass, PhoneNumber);
+            Assert.AreEqual(Error, "");
+        }
+        [TestMethod]
+        public void UserDateMin()
+        {
+
+            clsUser AUser = new clsUser();
+
+            String Error = "";
+
+            DateTime TestDate;
+
+            TestDate = DateTime.Now.Date;
+
+            TestDate = TestDate.AddYears(-18);
+
+            string DateofBirth = TestDate.ToString();
+
+            Error = AUser.Valid(UserName, Email, DateofBirth, HashedPass, PhoneNumber);
+
+            Assert.AreEqual(Error, "");
+        }
+        [TestMethod]
+        public void UserDateMinPlusOne()
+        {
+
+            clsUser AUser = new clsUser();
+
+            String Error = "";
+
+            DateTime TestDate;
+
+            TestDate = DateTime.Now.Date;
+
+            TestDate = TestDate.AddYears(-17);
+
+            string DateofBirth = TestDate.ToString();
+
+            Error = AUser.Valid(UserName, Email, DateofBirth, HashedPass, PhoneNumber);
+
+            Assert.AreNotEqual(Error, "");
+        }
+        [TestMethod]
+        public void UserDateMinMinusOne()
+        {
+
+            clsUser AUser = new clsUser();
+
+            String Error = "";
+
+            DateTime TestDate;
+
+            TestDate = DateTime.Now.Date;
+
+            TestDate = TestDate.AddYears(-19);
+
+            string DateofBirth = TestDate.ToString();
+
+            Error = AUser.Valid(UserName, Email, DateofBirth, HashedPass, PhoneNumber);
+
+            Assert.AreEqual(Error, "");
+        }
+        [TestMethod]
+        public void UserDateMaxMinusOne()
+        {
+
+            clsUser AUser = new clsUser();
+
+            String Error = "";
+
+            DateTime TestDate;
+
+            TestDate = DateTime.Now.Date;
+
+            TestDate = TestDate.AddYears(-151);
+
+            string DateofBirth = TestDate.ToString();
+
+            Error = AUser.Valid(UserName, Email, DateofBirth, HashedPass, PhoneNumber);
+
+            Assert.AreEqual(Error, "");
+        }
+        [TestMethod]
+        public void UserDateMax()
+        {
+
+            clsUser AUser = new clsUser();
+
+            String Error = "";
+
+            DateTime TestDate;
+
+            TestDate = DateTime.Now.Date;
+
+            TestDate = TestDate.AddYears(-150);
+
+            string DateofBirth = TestDate.ToString();
+
+            Error = AUser.Valid(UserName, Email, DateofBirth, HashedPass, PhoneNumber);
+
+            Assert.AreEqual(Error, "");
+        }
+        [TestMethod]
+        public void UserDateMaxPlusOne()
+        {
+
+            clsUser AUser = new clsUser();
+
+            String Error = "";
+
+            DateTime TestDate;
+
+            TestDate = DateTime.Now.Date;
+
+            TestDate = TestDate.AddYears(-149);
+
+            string DateofBirth = TestDate.ToString();
+
+            Error = AUser.Valid(UserName, Email, DateofBirth, HashedPass, PhoneNumber);
+
+            Assert.AreEqual(Error, "");
+        }
+        [TestMethod]
+        public void UserDateMid()
+        {
+
+            clsUser AUser = new clsUser();
+
+            String Error = "";
+
+            DateTime TestDate;
+
+            TestDate = DateTime.Now.Date;
+
+            TestDate = TestDate.AddYears(-70);
+
+            string DateofBirth = TestDate.ToString();
+
+            Error = AUser.Valid(UserName, Email, DateofBirth, HashedPass, PhoneNumber);
+
+            Assert.AreEqual(Error, "");
         }
         [TestClass]
         public class tstUserCollection
@@ -446,17 +663,7 @@ namespace Testing4
                 Assert.AreEqual(AllUsers.UserList, TestList);
 
             }
-            [TestMethod]
-            public void CountPropertyOK()
-            {
-                clsUserCollection AllUsers = new clsUserCollection();
-
-                Int32 SomeCount = 0;
-
-                AllUsers.Count = SomeCount;
-
-                Assert.AreEqual(AllUsers.Count, SomeCount);
-            }
+            
             [TestMethod]
             public void ThisUserPropertyOK() 
             {

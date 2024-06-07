@@ -23,8 +23,9 @@
             <asp:TextBox ID="txtFilter" runat="server" style="z-index: 1; left: 215px; top: 282px; position: absolute"></asp:TextBox>
             <asp:Button ID="btnApply" runat="server" style="z-index: 1; left: 87px; top: 324px; position: absolute; height: 34px" Text="Apply Filter" OnClick="btnApply_Click" />
             <asp:Button ID="btnClear" runat="server" style="z-index: 1; left: 219px; top: 323px; position: absolute; height: 36px; width: 107px;" Text="Clear Filter" OnClick="btnClear_Click" />
+            <asp:Button ID="btnReturn" runat="server" OnClick="btnReturn_Click" style="z-index: 1; left: 400px; top: 350px; position: absolute" Text="Return to main menu" />
         </p>
-        <asp:Label ID="lblError2" runat="server" style="z-index: 1; left: 104px; top: 377px; position: absolute" Text="lblError"></asp:Label>
+        <asp:Label ID="lblError2" runat="server" Style="z-index: 1; left: 104px; top: 377px; position: absolute"></asp:Label>
     </form>
 
 </body>
